@@ -165,14 +165,9 @@ namespace wcf.ulims.com.na
                 }
                 finally
                 {
-                    mIULIMSGISService.WriteErrorLog(@"Timer ticked and executePythonCode()  method or 
-                        job has successfully completed(But with a pinch of salt-There could be errors)");
-
-                    //GIS synch process has completed successfully.//Tell the GIS to Sharepoint client to start shipping erfs to SharePoint
-                    mIULIMSGISService.MGISSyncProcess = true;
-
-                    mIULIMSGISService.WriteErrorLog(@"GIS synch process has completed successfully.
-                        Tell the GIS to Sharepoint client to start shipping erfs to SharePoint)");
+                    //Tell the timer GIS synch process has stopped executing
+                    mIULIMSGISService.mEexecuting = false;
+                    mIULIMSGISService.WriteErrorLog(@"Tell the timer GIS synch process has stopped executing)");
 
                     //Tell process to stop GIS Synch Process
                     //save object file with false parameter. 
@@ -183,10 +178,14 @@ namespace wcf.ulims.com.na
                         save object file with false parameter. 
                         This stops the Windows service from running GIS synch process until instructed so by a client)");
 
-                    //Tell the timer GIS synch process has stopped executing
-                    mIULIMSGISService.mEexecuting = false;
+                    //GIS synch process has completed successfully.//Tell the GIS to Sharepoint client to start shipping erfs to SharePoint
+                    mIULIMSGISService.MGISSyncProcess = true;
 
-                    mIULIMSGISService.WriteErrorLog(@"Tell the timer GIS synch process has stopped executing)");
+                    mIULIMSGISService.WriteErrorLog(@"GIS synch process has completed successfully.
+                        Tell the GIS to Sharepoint client to start shipping erfs to SharePoint)");
+
+                    mIULIMSGISService.WriteErrorLog(@"Timer ticked and executePythonCode()  method or 
+                        job has successfully completed(But with a pinch of salt-There could be errors)");
 
                 }
             }

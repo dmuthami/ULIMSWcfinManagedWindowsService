@@ -94,7 +94,7 @@ namespace wcf.ulims.com.na
                     executePythonProcessPerTown((String)townpair.Value, "AutoReconcileAndPost.py");
 
                 }
-                
+
             }
             catch (Exception)
             {
@@ -266,30 +266,59 @@ namespace wcf.ulims.com.na
         }
         public string startGISSyncProcess(bool shallStart)
         {
-            saveObject(shallStart);        
+            try
+            {
+                saveObject(shallStart);
 
-            if (shallStart == true)
+                if (shallStart == true)
+                {
+                    MGISSyncProcess = false; //Tell the GIS to Sharepoint client to wait
+                    return "GIS Synch Service process has started";
+
+                }
+                else
+                {
+                    return "GIS Synch Service process has not started";
+                }
+            }
+            catch (Exception)
             {
-                MGISSyncProcess = false; //Tell the GIS to Sharepoint client to wait
-                return "GIS Synch Service process has started";
                 
+                throw;//In case of an error then throws it up the stack trace
             }
-            else
-            {
-                return "GIS Synch Service process has not started";
-            }
-            
+
         }
+        
         private bool mGISSyncProcess;
 
         public bool MGISSyncProcess
         {
             get { return mGISSyncProcess; }
-            set { mGISSyncProcess = value; }
+            set
+            {
+                mGISSyncProcess = value;
+
+                uLIMSSerializer.HasGISSyncProcessCompleted = value; // state of GIS Synch process complete      
+                //persist to binary file
+                Stream TestFileStream = File.Create(FileName);
+                BinaryFormatter serializer = new BinaryFormatter();
+                serializer.Serialize(TestFileStream, mULIMSSerializer);
+                TestFileStream.Close();
+            }
         }
         public bool isSuccessGISSyncProcess()
         {
-            return MGISSyncProcess;
+            try
+            {
+                //call method to read persistent object stored in the binary file
+                readObject();
+                return mULIMSSerializer.HasGISSyncProcessCompleted;
+            }
+            catch (Exception)
+            {
+                
+                throw;//In case of an error then throws it up the stack trace
+            }
         }
 
         private bool hasGISSyncProcessstarted;
@@ -310,22 +339,38 @@ namespace wcf.ulims.com.na
         }
         public void readObject()
         {
-            if (File.Exists(FileName))
+            try
             {
-                Stream TestFileStream = File.OpenRead(FileName);
-                BinaryFormatter deserializer = new BinaryFormatter();
-                mULIMSSerializer = (ULIMSSerializer.ULIMSSerializer)deserializer.Deserialize(TestFileStream);
-                TestFileStream.Close();
+                if (File.Exists(FileName))
+                {
+                    Stream TestFileStream = File.OpenRead(FileName);
+                    BinaryFormatter deserializer = new BinaryFormatter();
+                    mULIMSSerializer = (ULIMSSerializer.ULIMSSerializer)deserializer.Deserialize(TestFileStream);
+                    TestFileStream.Close();
+                }
+            }
+            catch (Exception)
+            {
+                
+                throw;//In case of an error then throws it up the stack trace
             }
         }
         public void saveObject(bool state1)
         {
-            uLIMSSerializer.HasGISSyncProcessstarted = state1;
+            try
+            {
+                mULIMSSerializer.HasGISSyncProcessstarted = state1; // state of GIS Synch process start      
 
-            Stream TestFileStream = File.Create(FileName);
-            BinaryFormatter serializer = new BinaryFormatter();
-            serializer.Serialize(TestFileStream, mULIMSSerializer);
-            TestFileStream.Close();
+                Stream TestFileStream = File.Create(FileName);
+                BinaryFormatter serializer = new BinaryFormatter();
+                serializer.Serialize(TestFileStream, mULIMSSerializer);
+                TestFileStream.Close();
+            }
+            catch (Exception)
+            {
+                
+                throw;//In case of an error then throws it up the stack trace
+            }
         }
     }
 }

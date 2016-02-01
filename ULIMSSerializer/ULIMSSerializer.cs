@@ -11,5 +11,7 @@ namespace ULIMSSerializer
     {
        public bool  HasGISSyncProcessstarted { get; set; }
 
+       public bool HasGISSyncProcessCompleted { get; set; }
+
     }
 }

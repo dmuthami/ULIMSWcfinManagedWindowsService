@@ -60,3 +60,121 @@
 [44] - ------------------------------------------------------------------
 01/02/2016 14:19:08: Timer ticked and executePythonCode()  method or 
                 job has successfully completed(But with a pinch of salt-There could be errors)
+02/02/2016 00:40:13: ULIMS GIS Synchonization Service started
+02/02/2016 00:42:13: Timer ticked and executePythonCode()  method or 
+                        job has been done fired
+02/02/2016 00:43:05: 
+[1] - ---------------------------------Compute Stand No---------------------------------
+[2] - Start Time : -16-02-02_00-42-51
+[3] - ------------------------------------------------------------------
+[4] -  Local Authority : helao_nafidi
+[5] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\helao_nafidi\connection_files\gisadmin_helao_nafidi@helao_nafidi@localhost.sde
+[6] -  Reference Number/Stand No : hn_stand_no
+[7] -  Feature Class to compute stand number : helao_nafidi_Parcels
+[8] -  Object ID Field Name : OBJECTID
+[9] -  Local Authority ID Field Name : hn_local_authority_id
+[10] - Computation of Stand No's is complete
+[11] - Exited Computing Stand No In Spectacular Success 
+[12] - -------------Compute Stand No-----------------------------------------------------
+[13] - End Time : -16-02-02_00-43-04
+[14] - ------------------------------------------------------------------
+02/02/2016 00:43:30: 
+[15] - --------------------------------Auto Reconcile and Post----------------------------------
+[16] - Start Time : -16-02-02_00-43-10
+[17] - ------------------------------------------------------------------
+[18] -  Local Authority : helao_nafidi
+[19] - Exited with Spectacular Success 
+[20] - ------------------Auto Reconcile and Post------------------------------------------------
+[21] - End Time : -16-02-02_00-43-29
+[22] - ------------------------------------------------------------------
+02/02/2016 00:43:42: 
+[23] - ---------------------------------Compute Stand No---------------------------------
+[24] - Start Time : -16-02-02_00-43-35
+[25] - ------------------------------------------------------------------
+[26] -  Local Authority : katima_mulilo
+[27] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\katima_mulilo\connection_files\gisadmin_katima_mulilo@katima_mulilo@localhost.sde
+[28] -  Reference Number/Stand No : km_stand_no
+[29] -  Feature Class to compute stand number : katima_Parcels
+[30] -  Object ID Field Name : OBJECTID
+[31] -  Local Authority ID Field Name : km_local_authority_id
+[32] - Computation of Stand No's is complete
+[33] - Exited Computing Stand No In Spectacular Success 
+[34] - -------------Compute Stand No-----------------------------------------------------
+[35] - End Time : -16-02-02_00-43-42
+[36] - ------------------------------------------------------------------
+02/02/2016 00:44:16: 
+[37] - --------------------------------Auto Reconcile and Post----------------------------------
+[38] - Start Time : -16-02-02_00-43-48
+[39] - ------------------------------------------------------------------
+[40] -  Local Authority : katima_mulilo
+[41] - Exited with Spectacular Success 
+[42] - ------------------Auto Reconcile and Post------------------------------------------------
+[43] - End Time : -16-02-02_00-44-15
+[44] - ------------------------------------------------------------------
+02/02/2016 00:44:16: Timer ticked and executePythonCode()  method or 
+                        job has successfully completed(But with a pinch of salt-There could be errors)
+02/02/2016 00:44:16: GIS synch process has completed successfully.
+                        Tell the GIS to Sharepoint client to start shipping erfs to SharePoint)
+02/02/2016 00:44:16: Tell process to stop GIS Synch Process
+                        save object file with false parameter. 
+                        This stops the Windows service from running GIS synch process until instructed so by a client)
+02/02/2016 00:44:16: Tell the timer GIS synch process has stopped executing)
+02/02/2016 01:36:01: ULIMS GIS Synchonization Service started
+02/02/2016 01:38:01: Timer ticked and executePythonCode()  method or 
+                        job has been done fired
+02/02/2016 01:38:08: 
+[1] - ---------------------------------Compute Stand No---------------------------------
+[2] - Start Time : -16-02-02_01-38-05
+[3] - ------------------------------------------------------------------
+[4] -  Local Authority : helao_nafidi
+[5] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\helao_nafidi\connection_files\gisadmin_helao_nafidi@helao_nafidi@localhost.sde
+[6] -  Reference Number/Stand No : hn_stand_no
+[7] -  Feature Class to compute stand number : helao_nafidi_Parcels
+[8] -  Object ID Field Name : OBJECTID
+[9] -  Local Authority ID Field Name : hn_local_authority_id
+[10] - Computation of Stand No's is complete
+[11] - Exited Computing Stand No In Spectacular Success 
+[12] - -------------Compute Stand No-----------------------------------------------------
+[13] - End Time : -16-02-02_01-38-08
+[14] - ------------------------------------------------------------------
+02/02/2016 01:38:25: 
+[15] - --------------------------------Auto Reconcile and Post----------------------------------
+[16] - Start Time : -16-02-02_01-38-12
+[17] - ------------------------------------------------------------------
+[18] -  Local Authority : helao_nafidi
+[19] - Exited with Spectacular Success 
+[20] - ------------------Auto Reconcile and Post------------------------------------------------
+[21] - End Time : -16-02-02_01-38-24
+[22] - ------------------------------------------------------------------
+02/02/2016 01:38:33: 
+[23] - ---------------------------------Compute Stand No---------------------------------
+[24] - Start Time : -16-02-02_01-38-29
+[25] - ------------------------------------------------------------------
+[26] -  Local Authority : katima_mulilo
+[27] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\katima_mulilo\connection_files\gisadmin_katima_mulilo@katima_mulilo@localhost.sde
+[28] -  Reference Number/Stand No : km_stand_no
+[29] -  Feature Class to compute stand number : katima_Parcels
+[30] -  Object ID Field Name : OBJECTID
+[31] -  Local Authority ID Field Name : km_local_authority_id
+[32] - Computation of Stand No's is complete
+[33] - Exited Computing Stand No In Spectacular Success 
+[34] - -------------Compute Stand No-----------------------------------------------------
+[35] - End Time : -16-02-02_01-38-32
+[36] - ------------------------------------------------------------------
+02/02/2016 01:39:01: 
+[37] - --------------------------------Auto Reconcile and Post----------------------------------
+[38] - Start Time : -16-02-02_01-38-37
+[39] - ------------------------------------------------------------------
+[40] -  Local Authority : katima_mulilo
+[41] - Exited with Spectacular Success 
+[42] - ------------------Auto Reconcile and Post------------------------------------------------
+[43] - End Time : -16-02-02_01-39-00
+[44] - ------------------------------------------------------------------
+02/02/2016 01:39:01: Tell the timer GIS synch process has stopped executing)
+02/02/2016 01:39:01: Tell process to stop GIS Synch Process
+                        save object file with false parameter. 
+                        This stops the Windows service from running GIS synch process until instructed so by a client)
+02/02/2016 01:39:01: GIS synch process has completed successfully.
+                        Tell the GIS to Sharepoint client to start shipping erfs to SharePoint)
+02/02/2016 01:39:01: Timer ticked and executePythonCode()  method or 
+                        job has successfully completed(But with a pinch of salt-There could be errors)
