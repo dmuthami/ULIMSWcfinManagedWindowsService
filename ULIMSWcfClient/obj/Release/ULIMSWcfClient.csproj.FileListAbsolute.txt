@@ -1,0 +1,5 @@
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\bin\Release\ULIMSWcfClient.exe.config
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\bin\Release\ULIMSWcfClient.exe
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\bin\Release\ULIMSWcfClient.pdb
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\obj\Release\ULIMSWcfClient.exe
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\obj\Release\ULIMSWcfClient.pdb

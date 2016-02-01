@@ -1,0 +1,92 @@
+2016-02-01 14:06:48,019 INFO 
+---------------------------------Compute Stand No---------------------------------
+Start Time : -16-02-01_14-06-48
+------------------------------------------------------------------
+
+2016-02-01 14:06:48,023 INFO 
+ Local Authority : helao_nafidi
+2016-02-01 14:06:48,023 INFO 
+ Config File Path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\helao_nafidi\Config.ini
+2016-02-01 14:06:48,023 INFO currDirDotNet path : 
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities
+
+2016-02-01 14:06:48,023 INFO ConnSDE path : 
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\helao_nafidi\connection_files\sde@helao_nafidi@localhost.sde
+
+2016-02-01 14:06:48,023 INFO 
+ Reconcile Log File Path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\helao_nafidi\helao_nafidi_reconcile.log
+2016-02-01 14:06:58,526 INFO 
+Exited Computing Stand No In Spectacular Success 
+-------------Compute Stand No-----------------------------------------------------
+End Time : -16-02-01_14-06-58
+------------------------------------------------------------------
+
+2016-02-01 14:07:22,079 INFO 
+--------------------------------Auto Reconcile and Post----------------------------------
+Start Time : -16-02-01_14-07-22
+------------------------------------------------------------------
+
+2016-02-01 14:07:22,081 INFO 
+ Local Authority : helao_nafidi
+2016-02-01 14:07:22,081 INFO 
+ Config File Path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\helao_nafidi\Config.ini
+2016-02-01 14:07:22,081 INFO currDirDotNet path : 
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities
+
+2016-02-01 14:07:22,081 INFO ConnSDE path : 
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\helao_nafidi\connection_files\sde@helao_nafidi@localhost.sde
+
+2016-02-01 14:07:22,081 INFO 
+ Reconcile Log File Path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\helao_nafidi\helao_nafidi_reconcile.log
+2016-02-01 14:07:36,720 INFO 
+Exited with Spectacular Success 
+------------------Auto Reconcile and Post------------------------------------------------
+End Time : -16-02-01_14-07-36
+------------------------------------------------------------------
+
+2016-02-01 14:17:43,861 INFO 
+---------------------------------Compute Stand No---------------------------------
+Start Time : -16-02-01_14-17-43
+------------------------------------------------------------------
+
+2016-02-01 14:17:43,861 INFO 
+ Local Authority : katima_mulilo
+2016-02-01 14:17:43,861 INFO 
+ Config File Path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\katima_mulilo\Config.ini
+2016-02-01 14:17:43,861 INFO currDirDotNet path : 
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities
+
+2016-02-01 14:17:43,861 INFO ConnSDE path : 
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\katima_mulilo\connection_files\sde@katima_mulilo@localhost.sde
+
+2016-02-01 14:17:43,862 INFO 
+ Reconcile Log File Path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\katima_mulilo\katima_mulilo_reconcile.log
+2016-02-01 14:18:30,494 INFO 
+Exited Computing Stand No In Spectacular Success 
+-------------Compute Stand No-----------------------------------------------------
+End Time : -16-02-01_14-18-30
+------------------------------------------------------------------
+
+2016-02-01 14:18:36,061 INFO 
+--------------------------------Auto Reconcile and Post----------------------------------
+Start Time : -16-02-01_14-18-36
+------------------------------------------------------------------
+
+2016-02-01 14:18:36,062 INFO 
+ Local Authority : katima_mulilo
+2016-02-01 14:18:36,062 INFO 
+ Config File Path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\katima_mulilo\Config.ini
+2016-02-01 14:18:36,062 INFO currDirDotNet path : 
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities
+
+2016-02-01 14:18:36,062 INFO ConnSDE path : 
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\katima_mulilo\connection_files\sde@katima_mulilo@localhost.sde
+
+2016-02-01 14:18:36,062 INFO 
+ Reconcile Log File Path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\katima_mulilo\katima_mulilo_reconcile.log
+2016-02-01 14:19:07,066 INFO 
+Exited with Spectacular Success 
+------------------Auto Reconcile and Post------------------------------------------------
+End Time : -16-02-01_14-19-07
+------------------------------------------------------------------
+
