@@ -751,3 +751,4 @@
                         Tell the GIS to Sharepoint client to start shipping erfs to SharePoint)
 02/02/2016 19:28:18: Timer ticked and executePythonCode()  method or 
                         job has successfully completed(But with a pinch of salt-There could be errors)
+03/02/2016 11:48:47: ULIMS GIS Synchonization Service started
