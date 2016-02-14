@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ULIMSWcfClient", "ULIMSWcfC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ULIMSSerializer", "ULIMSSerializer\ULIMSSerializer.csproj", "{2EF39110-C39B-4A9A-9F53-5F69D1559927}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ULIMSGISPython", "ULIMSGISPython\ULIMSGISPython.csproj", "{1CE50939-5390-421A-956C-AAA177453AE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{2EF39110-C39B-4A9A-9F53-5F69D1559927}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EF39110-C39B-4A9A-9F53-5F69D1559927}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EF39110-C39B-4A9A-9F53-5F69D1559927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CE50939-5390-421A-956C-AAA177453AE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CE50939-5390-421A-956C-AAA177453AE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CE50939-5390-421A-956C-AAA177453AE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CE50939-5390-421A-956C-AAA177453AE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

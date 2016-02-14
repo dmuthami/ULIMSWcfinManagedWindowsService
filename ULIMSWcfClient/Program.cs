@@ -60,7 +60,7 @@ namespace ULIMSWcfClient
                     }
 
                     //Write to console asking for patience
-                    Console.WriteLine(String.Format("...Wait for {0} milliseconds GIS Process to Complete", threadInterval));
+                    Console.WriteLine(String.Format("...Wait for {0} milliseconds for the GIS Process to Complete", threadInterval));
 
                     //Let cuurent thread sleep for x minutes
                     System.Threading.Thread.Sleep(threadInterval);

@@ -8,27 +8,22 @@ using System.Configuration;//Required to read config files
 using System.Collections.Specialized; //NameValueCollection
 using System.Collections;
 
-namespace wcf.ulims.com.na
+namespace ulimsgispython.ulims.com.na
 {
     class ConfigReader : IConfigReader
     {
-        private IULIMSGISService mULIMSGISService;
+        private IPythonLibrary iPythonLibrary;
 
-        internal IULIMSGISService MULIMSGISService
-        {
-            get { return mULIMSGISService; }
-            set { mULIMSGISService = value; }
-        }
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="MULIMSGISService"> The python library class</param>
-        public ConfigReader(IULIMSGISService pythonLibrary)
+        public ConfigReader(IPythonLibrary iPythonLibrary)
         {
             try
             {
                 //assign by ref the class level variable from the argument variable
-                MULIMSGISService = pythonLibrary;
+                this.iPythonLibrary = iPythonLibrary;
             }
             catch (Exception)
             {

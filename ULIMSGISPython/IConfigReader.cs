@@ -1,5 +1,5 @@
 ﻿using System;
-namespace wcf.ulims.com.na
+namespace ulimsgispython.ulims.com.na
 {
     interface IConfigReader
     {

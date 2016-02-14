@@ -7,23 +7,36 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
+using ULIMSGISPython = ulimsgispython.ulims.com.na ;
 
 namespace wcf.ulims.com.na
 {
     public class ULIMSGISWindowsService : ServiceBase
     {
+        #region Member Variables
+
         //Create a pointer to a timer as a member variable named MTimer
         private Timer mTimer = null;
 
+        //Create pointer for ULIMS GIS service object
+        private IULIMSGISService iULIMSGISService = null;
+        
+        
+        //Create pointer for python library object
+        private ULIMSGISPython.IPythonLibrary iPythonLibrary = null;
+
+        static ULIMSGISWindowsService uLIMSGISWindowsService = null;
+
+        public ServiceHost serviceHost = null;
+
+        #endregion
+
+        #region Getter and Setter Methods
         public Timer MTimer
         {
             get { return mTimer; }
             set { mTimer = value; }
         }
-
-        //Create pointer 
-        private IULIMSGISService iULIMSGISService = null;
-
         /// <summary>
         /// Get and Setter Methods
         /// </summary>
@@ -33,26 +46,39 @@ namespace wcf.ulims.com.na
             set { iULIMSGISService = value; }
         }
 
-        static ULIMSGISWindowsService uLIMSGISWindowsService = null;
+        public ULIMSGISPython.IPythonLibrary IPythonLibrary
+        {
+            get { return iPythonLibrary; }
+            set { iPythonLibrary = value; }
+        }
 
-        public ServiceHost serviceHost = null;
+        #endregion
 
-
+        /// <summary>
+        /// Constructor : ULIMSGISWindowsService method
+        /// </summary>
         public ULIMSGISWindowsService()
         {
             //Name the Windows Service Name
             ServiceName = "ULIMS WCF GIS Synch Service";
 
             //Call method to initialze python objects
-            initializePythonObjects();
+            initializeGISObjects();
         }
 
+        /// <summary>
+        /// Main method: entry point of this program
+        /// </summary>
         public static void Main()
         {
             uLIMSGISWindowsService = new ULIMSGISWindowsService();
             ServiceBase.Run(uLIMSGISWindowsService);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="args"></param>
         protected override void OnStart(string[] args)
         {
             if (serviceHost != null)
@@ -77,10 +103,13 @@ namespace wcf.ulims.com.na
             catch (Exception ex)
             {
 
-                mIULIMSGISService.WriteErrorLog(ex);//Write error to log file
+                IPythonLibrary.WriteErrorLog(ex);//Write error to log file
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         protected override void OnStop()
         {
             if (serviceHost != null)
@@ -90,14 +119,23 @@ namespace wcf.ulims.com.na
             }
         }
 
-        private void initializePythonObjects()
+        private void initializeGISObjects()
         {
             /*
              * Get instance of IPythonLibrary class
              * Contains propoerties and methods to help with execution
              */
+            IPythonLibrary = new ULIMSGISPython.PythonLibrary();
+
+
+            /*
+             * Get instance of GISService class
+             * Contains propoerties and methods to help with execution
+             */
             mIULIMSGISService = new ULIMSGISService();
-            mIULIMSGISService.mCalculatorWindowsService = uLIMSGISWindowsService;
+
+
+            //mIULIMSGISService.mCalculatorWindowsService = uLIMSGISWindowsService;
         }
 
         private void timerSettings()
@@ -125,13 +163,13 @@ namespace wcf.ulims.com.na
                 mIULIMSGISService.saveObject(false);
 
                 //Write to log file indicating GIS service has started successfully.
-                mIULIMSGISService.WriteErrorLog("ULIMS GIS Synchonization Service started");
+                IPythonLibrary.WriteErrorLog("ULIMS GIS Synchonization Service started");
 
             }
             catch (Exception ex)
             {
 
-                mIULIMSGISService.WriteErrorLog(ex);//Write error to log file
+                IPythonLibrary.WriteErrorLog(ex);//Write error to log file
             }
         }
 
@@ -140,7 +178,7 @@ namespace wcf.ulims.com.na
             mIULIMSGISService.readObject();
 
 
-            if (mIULIMSGISService.mULIMSSerializer.HasGISSyncProcessstarted==true)
+            if (mIULIMSGISService.mULIMSSerializer.HasGISSyncProcessstarted == true)
             {
                 //Check that elapsed event raises this event handler and executes code in it 
                 //  if and only if the previous execution has completed
@@ -153,7 +191,7 @@ namespace wcf.ulims.com.na
                 try
                 {
                     //Indicate and write to log file shouting that execution of python code is firing from all cylinders
-                    mIULIMSGISService.WriteErrorLog(@"Timer ticked and executePythonCode()  method or 
+                    IPythonLibrary.WriteErrorLog(@"Timer ticked and executePythonCode()  method or 
                         job has been done fired");
 
                     //Call method that executes python code
@@ -161,30 +199,30 @@ namespace wcf.ulims.com.na
                 }
                 catch (Exception ex)
                 {
-                    mIULIMSGISService.WriteErrorLog(ex);//Write error to log file
+                    IPythonLibrary.WriteErrorLog(ex);//Write error to log file
                 }
                 finally
                 {
                     //Tell the timer GIS synch process has stopped executing
                     mIULIMSGISService.mEexecuting = false;
-                    mIULIMSGISService.WriteErrorLog(@"Tell the timer GIS synch process has stopped executing)");
+                    IPythonLibrary.WriteErrorLog(@"Tell the timer GIS synch process has stopped executing)");
 
                     //Tell process to stop GIS Synch Process
                     //save object file with false parameter. 
                     //This stops the Windows service from running GIS synch process until instructed so by a client
                     mIULIMSGISService.saveObject(false);
 
-                    mIULIMSGISService.WriteErrorLog(@"Tell process to stop GIS Synch Process
+                    IPythonLibrary.WriteErrorLog(@"Tell process to stop GIS Synch Process
                         save object file with false parameter. 
                         This stops the Windows service from running GIS synch process until instructed so by a client)");
 
                     //GIS synch process has completed successfully.//Tell the GIS to Sharepoint client to start shipping erfs to SharePoint
                     mIULIMSGISService.MGISSyncProcess = true;
 
-                    mIULIMSGISService.WriteErrorLog(@"GIS synch process has completed successfully.
+                    IPythonLibrary.WriteErrorLog(@"GIS synch process has completed successfully.
                         Tell the GIS to Sharepoint client to start shipping erfs to SharePoint)");
 
-                    mIULIMSGISService.WriteErrorLog(@"Timer ticked and executePythonCode()  method or 
+                    IPythonLibrary.WriteErrorLog(@"Timer ticked and executePythonCode()  method or 
                         job has successfully completed(But with a pinch of salt-There could be errors)");
 
                 }
@@ -200,10 +238,10 @@ namespace wcf.ulims.com.na
             try
             {
                 //Load config settings from app.config file               
-                mIULIMSGISService.mPythonCodeFolder = ConfigurationManager.AppSettings["python_folder"];
+                IPythonLibrary.mPythonCodeFolder = ConfigurationManager.AppSettings["python_folder"];
 
                 //Call function to execute python process for all towns
-                mIULIMSGISService.executePythonProcess();
+                IPythonLibrary.executePythonProcess();
 
                 /*
                  * Add code to call .Net Synch Service that performs write to SharePoint Lists
@@ -211,7 +249,6 @@ namespace wcf.ulims.com.na
                  * Update to SharePoint lists
                  * Flag deleted erfs in SharePoint List
                  */
-
 
             }
             catch (Exception)

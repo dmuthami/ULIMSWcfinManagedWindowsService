@@ -45,8 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConfigReader.cs" />
-    <Compile Include="IConfigReader.cs" />
     <Compile Include="ULIMSGISService.cs" />
     <Compile Include="ULIMSGISWindowsService.cs">
       <SubType>Component</SubType>
@@ -153,6 +151,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ULIMSGISPython\ULIMSGISPython.csproj">
+      <Project>{1ce50939-5390-421a-956c-aaa177453ae2}</Project>
+      <Name>ULIMSGISPython</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ULIMSSerializer\ULIMSSerializer.csproj">
       <Project>{2ef39110-c39b-4a9a-9f53-5f69d1559927}</Project>
       <Name>ULIMSSerializer</Name>
