@@ -15,23 +15,11 @@ namespace ULIMSWcfClient.ULIMSGISServiceRef {
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://wcf.ulims.com.na", ConfigurationName="ULIMSGISServiceRef.IULIMSGISService")]
     public interface IULIMSGISService {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://wcf.ulims.com.na/IULIMSGISService/startGISSyncProcess", ReplyAction="http://wcf.ulims.com.na/IULIMSGISService/startGISSyncProcessResponse")]
-        string startGISSyncProcess(bool shallStart);
+        [System.ServiceModel.OperationContractAttribute(Action="http://wcf.ulims.com.na/IULIMSGISService/executePythonCode", ReplyAction="http://wcf.ulims.com.na/IULIMSGISService/executePythonCodeResponse")]
+        bool executePythonCode();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://wcf.ulims.com.na/IULIMSGISService/startGISSyncProcess", ReplyAction="http://wcf.ulims.com.na/IULIMSGISService/startGISSyncProcessResponse")]
-        System.Threading.Tasks.Task<string> startGISSyncProcessAsync(bool shallStart);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://wcf.ulims.com.na/IULIMSGISService/isSuccessGISSyncProcess", ReplyAction="http://wcf.ulims.com.na/IULIMSGISService/isSuccessGISSyncProcessResponse")]
-        bool isSuccessGISSyncProcess();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://wcf.ulims.com.na/IULIMSGISService/isSuccessGISSyncProcess", ReplyAction="http://wcf.ulims.com.na/IULIMSGISService/isSuccessGISSyncProcessResponse")]
-        System.Threading.Tasks.Task<bool> isSuccessGISSyncProcessAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://wcf.ulims.com.na/IULIMSGISService/executePythonProcessPerTown", ReplyAction="http://wcf.ulims.com.na/IULIMSGISService/executePythonProcessPerTownResponse")]
-        void executePythonProcessPerTown(string townName, string pythonFileToExecute);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://wcf.ulims.com.na/IULIMSGISService/executePythonProcessPerTown", ReplyAction="http://wcf.ulims.com.na/IULIMSGISService/executePythonProcessPerTownResponse")]
-        System.Threading.Tasks.Task executePythonProcessPerTownAsync(string townName, string pythonFileToExecute);
+        [System.ServiceModel.OperationContractAttribute(Action="http://wcf.ulims.com.na/IULIMSGISService/executePythonCode", ReplyAction="http://wcf.ulims.com.na/IULIMSGISService/executePythonCodeResponse")]
+        System.Threading.Tasks.Task<bool> executePythonCodeAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -61,28 +49,12 @@ namespace ULIMSWcfClient.ULIMSGISServiceRef {
                 base(binding, remoteAddress) {
         }
         
-        public string startGISSyncProcess(bool shallStart) {
-            return base.Channel.startGISSyncProcess(shallStart);
+        public bool executePythonCode() {
+            return base.Channel.executePythonCode();
         }
         
-        public System.Threading.Tasks.Task<string> startGISSyncProcessAsync(bool shallStart) {
-            return base.Channel.startGISSyncProcessAsync(shallStart);
-        }
-        
-        public bool isSuccessGISSyncProcess() {
-            return base.Channel.isSuccessGISSyncProcess();
-        }
-        
-        public System.Threading.Tasks.Task<bool> isSuccessGISSyncProcessAsync() {
-            return base.Channel.isSuccessGISSyncProcessAsync();
-        }
-        
-        public void executePythonProcessPerTown(string townName, string pythonFileToExecute) {
-            base.Channel.executePythonProcessPerTown(townName, pythonFileToExecute);
-        }
-        
-        public System.Threading.Tasks.Task executePythonProcessPerTownAsync(string townName, string pythonFileToExecute) {
-            return base.Channel.executePythonProcessPerTownAsync(townName, pythonFileToExecute);
+        public System.Threading.Tasks.Task<bool> executePythonCodeAsync() {
+            return base.Channel.executePythonCodeAsync();
         }
     }
 }

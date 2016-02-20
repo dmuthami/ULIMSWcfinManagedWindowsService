@@ -5,3 +5,16 @@ E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Debug\U
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\obj\Debug\ULIMSGISPython.csprojResolveAssemblyReference.cache
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\obj\Debug\ULIMSGISPython.dll
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\obj\Debug\ULIMSGISPython.pdb
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService-asynch_await\ULIMSGISPython\bin\Debug\ULIMSGISPython.dll
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService-asynch_await\ULIMSGISPython\bin\Debug\ULIMSGISPython.pdb
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService-asynch_await\ULIMSGISPython\bin\Debug\ULIMSSerializer.dll
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService-asynch_await\ULIMSGISPython\bin\Debug\ULIMSSerializer.pdb
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService-asynch_await\ULIMSGISPython\obj\Debug\ULIMSGISPython.csprojResolveAssemblyReference.cache
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService-asynch_await\ULIMSGISPython\obj\Debug\ULIMSGISPython.dll
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService-asynch_await\ULIMSGISPython\obj\Debug\ULIMSGISPython.pdb
+C:\Users\dmuthami\Desktop\Clone\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Debug\ULIMSGISPython.dll
+C:\Users\dmuthami\Desktop\Clone\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Debug\ULIMSGISPython.pdb
+C:\Users\dmuthami\Desktop\Clone\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Debug\ULIMSSerializer.dll
+C:\Users\dmuthami\Desktop\Clone\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Debug\ULIMSSerializer.pdb
+C:\Users\dmuthami\Desktop\Clone\ULIMSWcfinManagedWindowsService\ULIMSGISPython\obj\Debug\ULIMSGISPython.dll
+C:\Users\dmuthami\Desktop\Clone\ULIMSWcfinManagedWindowsService\ULIMSGISPython\obj\Debug\ULIMSGISPython.pdb

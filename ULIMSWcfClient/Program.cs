@@ -14,11 +14,13 @@ namespace ULIMSWcfClient
         {
             try
             {
-                //Create instance of this class
-                Program program = new Program();
 
-                //Call method to start GIS Synch process
-                program.GISSynchProcess();
+                Console.WriteLine("Start...");
+                //Call method to start GIS Synch process asynchronously
+                Task taskGISSynchProcess = new Task(GISSynchProcess);
+                taskGISSynchProcess.Start();
+                taskGISSynchProcess.Wait();
+                Console.ReadLine(); //Wait for user input
             }
             catch (Exception ex)
             {
@@ -29,7 +31,7 @@ namespace ULIMSWcfClient
         }
 
 
-        private void GISSynchProcess()
+        static async void GISSynchProcess()
         {
             //retieve config settings
             try
@@ -39,34 +41,17 @@ namespace ULIMSWcfClient
                 //Service Reference
                 ULIMSGISServiceClient client = new ULIMSGISServiceClient();
 
-                //Enable timer
-                string issuccess = client.startGISSyncProcess(true);
-                //Write to console
-
-                //Console.WriteLine("Default Timer Started");
-                Console.WriteLine(issuccess);
-
-                //Create infinit loop with 5 minutes break
-
-                while (true)
+                var task = Task.Factory.StartNew(() => client.executePythonCodeAsync());
+                var str = await task;              
+                await str.ContinueWith(e =>
                 {
-                    if (client.isSuccessGISSyncProcess() == true)
+                    if (e.IsCompleted)
                     {
-
-                        //Todo code to call ULIMS GIS Client Main
-
-                        Console.WriteLine("GIS Sync Process has completed");
-                        break;
+                        Console.WriteLine("Execution of Python Code Status = {0}", str.Result);
                     }
-
-                    //Write to console asking for patience
-                    Console.WriteLine(String.Format("...Wait for {0} milliseconds for the GIS Process to Complete", threadInterval));
-
-                    //Let cuurent thread sleep for x minutes
-                    System.Threading.Thread.Sleep(threadInterval);
-                }
-
-                Console.ReadLine(); //Wait for user input
+                });
+                Console.WriteLine("Waiting for the execution of python code asynchronously result");
+                
             }
             catch (Exception)
             {
@@ -75,7 +60,7 @@ namespace ULIMSWcfClient
             }
         }
 
-        private int retrieveConfigSettings()
+        static int retrieveConfigSettings()
         {
             try
             {

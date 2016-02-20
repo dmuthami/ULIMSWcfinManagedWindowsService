@@ -24,7 +24,7 @@ namespace ulimsgispython.ulims.com.na
         ///     For each town launches a process to perfom automatic reconcile and post
         /// </summary>
         /// 
-        void executePythonProcess();
+        bool executePythonProcess();
         /// <summary>
         /// Method : executePythonProcess(String townName)
         /// Creates a python process, passess it parameers and waits for completion. 

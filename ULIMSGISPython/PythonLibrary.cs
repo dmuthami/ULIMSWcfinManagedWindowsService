@@ -72,7 +72,7 @@ namespace ulimsgispython.ulims.com.na
         /// Loops through a dictionary object listing the 10 piloting towns
         ///     For each town launches a process to perfom automatic reconcile and post
         /// </summary>
-        public void executePythonProcess()
+        public bool executePythonProcess()
         {
             try
             {
@@ -95,7 +95,7 @@ namespace ulimsgispython.ulims.com.na
                     executePythonProcessPerTown((String)townpair.Value, "AutoReconcileAndPost.py");
 
                 }
-
+                return true;
             }
             catch (Exception)
             {
