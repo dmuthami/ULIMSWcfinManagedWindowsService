@@ -1,15 +1,33 @@
-14/02/2016 12:41:35: 
+22/02/2016 17:07:21: ULIMS GIS Synchonization Service started
+22/02/2016 17:08:21: Timer ticked and executePythonCode()  method or 
+                        job has been done fired
+22/02/2016 17:08:41: 
+[1] - ---------------------------------Compute Stand No---------------------------------
+[2] - Start Time : -16-02-22_17-08-29
+[3] - ------------------------------------------------------------------
+[4] -  Local Authority : helao_nafidi
+[5] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\helao_nafidi\connection_files\gisadmin_helao_nafidi@helao_nafidi@localhost.sde
+[6] -  Reference Number/Stand No : hn_stand_no
+[7] -  Feature Class to compute stand number : helao_nafidi_Parcels
+[8] -  Object ID Field Name : OBJECTID
+[9] -  Local Authority ID Field Name : hn_local_authority_id
+[10] - Computation of Stand No's is complete
+[11] - Exited Computing Stand No In Spectacular Success 
+[12] - -------------Compute Stand No-----------------------------------------------------
+[13] - End Time : -16-02-22_17-08-41
+[14] - ------------------------------------------------------------------
+22/02/2016 17:09:06: 
 [15] - --------------------------------Auto Reconcile and Post----------------------------------
-[16] - Start Time : -16-02-14_12-41-13
+[16] - Start Time : -16-02-22_17-08-46
 [17] - ------------------------------------------------------------------
 [18] -  Local Authority : helao_nafidi
 [19] - Exited with Spectacular Success 
 [20] - ------------------Auto Reconcile and Post------------------------------------------------
-[21] - End Time : -16-02-14_12-41-33
+[21] - End Time : -16-02-22_17-09-04
 [22] - ------------------------------------------------------------------
-14/02/2016 12:42:23: 
+22/02/2016 17:09:55: 
 [23] - ---------------------------------Compute Stand No---------------------------------
-[24] - Start Time : -16-02-14_12-41-39
+[24] - Start Time : -16-02-22_17-09-10
 [25] - ------------------------------------------------------------------
 [26] -  Local Authority : katima_mulilo
 [27] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\katima_mulilo\connection_files\gisadmin_katima_mulilo@katima_mulilo@localhost.sde
@@ -20,20 +38,20 @@
 [32] - Computation of Stand No's is complete
 [33] - Exited Computing Stand No In Spectacular Success 
 [34] - -------------Compute Stand No-----------------------------------------------------
-[35] - End Time : -16-02-14_12-42-22
+[35] - End Time : -16-02-22_17-09-55
 [36] - ------------------------------------------------------------------
-14/02/2016 12:43:06: 
+22/02/2016 17:10:38: 
 [37] - --------------------------------Auto Reconcile and Post----------------------------------
-[38] - Start Time : -16-02-14_12-42-27
+[38] - Start Time : -16-02-22_17-10-00
 [39] - ------------------------------------------------------------------
 [40] -  Local Authority : katima_mulilo
 [41] - Exited with Spectacular Success 
 [42] - ------------------Auto Reconcile and Post------------------------------------------------
-[43] - End Time : -16-02-14_12-43-05
+[43] - End Time : -16-02-22_17-10-37
 [44] - ------------------------------------------------------------------
-14/02/2016 12:43:58: 
+22/02/2016 17:11:31: 
 [45] - ---------------------------------Compute Stand No---------------------------------
-[46] - Start Time : -16-02-14_12-43-11
+[46] - Start Time : -16-02-22_17-10-44
 [47] - ------------------------------------------------------------------
 [48] -  Local Authority : keetmanshoop
 [49] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\keetmanshoop\connection_files\gisadmin_keetmanshoop@keetmanshoop@localhost.sde
@@ -44,20 +62,20 @@
 [54] - Computation of Stand No's is complete
 [55] - Exited Computing Stand No In Spectacular Success 
 [56] - -------------Compute Stand No-----------------------------------------------------
-[57] - End Time : -16-02-14_12-43-58
+[57] - End Time : -16-02-22_17-11-30
 [58] - ------------------------------------------------------------------
-14/02/2016 12:44:42: 
+22/02/2016 17:12:14: 
 [59] - --------------------------------Auto Reconcile and Post----------------------------------
-[60] - Start Time : -16-02-14_12-44-03
+[60] - Start Time : -16-02-22_17-11-36
 [61] - ------------------------------------------------------------------
 [62] -  Local Authority : keetmanshoop
 [63] - Exited with Spectacular Success 
 [64] - ------------------Auto Reconcile and Post------------------------------------------------
-[65] - End Time : -16-02-14_12-44-41
+[65] - End Time : -16-02-22_17-12-13
 [66] - ------------------------------------------------------------------
-14/02/2016 12:45:34: 
+22/02/2016 17:13:04: 
 [67] - ---------------------------------Compute Stand No---------------------------------
-[68] - Start Time : -16-02-14_12-44-46
+[68] - Start Time : -16-02-22_17-12-19
 [69] - ------------------------------------------------------------------
 [70] -  Local Authority : okahandja
 [71] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\okahandja\connection_files\gisadmin_okahandja@okahandja@localhost.sde
@@ -68,20 +86,20 @@
 [76] - Computation of Stand No's is complete
 [77] - Exited Computing Stand No In Spectacular Success 
 [78] - -------------Compute Stand No-----------------------------------------------------
-[79] - End Time : -16-02-14_12-45-33
+[79] - End Time : -16-02-22_17-13-03
 [80] - ------------------------------------------------------------------
-14/02/2016 12:46:10: 
+22/02/2016 17:13:43: 
 [81] - --------------------------------Auto Reconcile and Post----------------------------------
-[82] - Start Time : -16-02-14_12-45-38
+[82] - Start Time : -16-02-22_17-13-08
 [83] - ------------------------------------------------------------------
 [84] -  Local Authority : okahandja
 [85] - Exited with Spectacular Success 
 [86] - ------------------Auto Reconcile and Post------------------------------------------------
-[87] - End Time : -16-02-14_12-46-09
+[87] - End Time : -16-02-22_17-13-42
 [88] - ------------------------------------------------------------------
-14/02/2016 12:46:35: 
+22/02/2016 17:14:07: 
 [89] - ---------------------------------Compute Stand No---------------------------------
-[90] - Start Time : -16-02-14_12-46-15
+[90] - Start Time : -16-02-22_17-13-47
 [91] - ------------------------------------------------------------------
 [92] -  Local Authority : oshakati
 [93] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\oshakati\connection_files\gisadmin_oshakati@oshakati@localhost.sde
@@ -92,20 +110,20 @@
 [98] - Computation of Stand No's is complete
 [99] - Exited Computing Stand No In Spectacular Success 
 [100] - -------------Compute Stand No-----------------------------------------------------
-[101] - End Time : -16-02-14_12-46-35
+[101] - End Time : -16-02-22_17-14-06
 [102] - ------------------------------------------------------------------
-14/02/2016 12:47:00: 
+22/02/2016 17:14:31: 
 [103] - --------------------------------Auto Reconcile and Post----------------------------------
-[104] - Start Time : -16-02-14_12-46-40
+[104] - Start Time : -16-02-22_17-14-11
 [105] - ------------------------------------------------------------------
 [106] -  Local Authority : oshakati
 [107] - Exited with Spectacular Success 
 [108] - ------------------Auto Reconcile and Post------------------------------------------------
-[109] - End Time : -16-02-14_12-46-59
+[109] - End Time : -16-02-22_17-14-29
 [110] - ------------------------------------------------------------------
-14/02/2016 12:47:46: 
+22/02/2016 17:15:15: 
 [111] - ---------------------------------Compute Stand No---------------------------------
-[112] - Start Time : -16-02-14_12-47-05
+[112] - Start Time : -16-02-22_17-14-35
 [113] - ------------------------------------------------------------------
 [114] -  Local Authority : otjiwarongo
 [115] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\otjiwarongo\connection_files\gisadmin_otjiwarongo@otjiwarongo@localhost.sde
@@ -116,20 +134,20 @@
 [120] - Computation of Stand No's is complete
 [121] - Exited Computing Stand No In Spectacular Success 
 [122] - -------------Compute Stand No-----------------------------------------------------
-[123] - End Time : -16-02-14_12-47-46
+[123] - End Time : -16-02-22_17-15-14
 [124] - ------------------------------------------------------------------
-14/02/2016 12:48:31: 
+22/02/2016 17:16:01: 
 [125] - --------------------------------Auto Reconcile and Post----------------------------------
-[126] - Start Time : -16-02-14_12-47-51
+[126] - Start Time : -16-02-22_17-15-19
 [127] - ------------------------------------------------------------------
 [128] -  Local Authority : otjiwarongo
 [129] - Exited with Spectacular Success 
 [130] - ------------------Auto Reconcile and Post------------------------------------------------
-[131] - End Time : -16-02-14_12-48-30
+[131] - End Time : -16-02-22_17-16-00
 [132] - ------------------------------------------------------------------
-14/02/2016 12:48:56: 
+22/02/2016 17:16:30: 
 [133] - ---------------------------------Compute Stand No---------------------------------
-[134] - Start Time : -16-02-14_12-48-35
+[134] - Start Time : -16-02-22_17-16-08
 [135] - ------------------------------------------------------------------
 [136] -  Local Authority : outapi
 [137] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\outapi\connection_files\gisadmin_outapi@outapi@localhost.sde
@@ -140,20 +158,20 @@
 [142] - Computation of Stand No's is complete
 [143] - Exited Computing Stand No In Spectacular Success 
 [144] - -------------Compute Stand No-----------------------------------------------------
-[145] - End Time : -16-02-14_12-48-55
+[145] - End Time : -16-02-22_17-16-29
 [146] - ------------------------------------------------------------------
-14/02/2016 12:49:19: 
+22/02/2016 17:17:01: 
 [147] - --------------------------------Auto Reconcile and Post----------------------------------
-[148] - Start Time : -16-02-14_12-49-00
+[148] - Start Time : -16-02-22_17-16-40
 [149] - ------------------------------------------------------------------
 [150] -  Local Authority : outapi
 [151] - Exited with Spectacular Success 
 [152] - ------------------Auto Reconcile and Post------------------------------------------------
-[153] - End Time : -16-02-14_12-49-18
+[153] - End Time : -16-02-22_17-16-59
 [154] - ------------------------------------------------------------------
-14/02/2016 12:56:14: 
+22/02/2016 17:23:47: 
 [155] - ---------------------------------Compute Stand No---------------------------------
-[156] - Start Time : -16-02-14_12-49-23
+[156] - Start Time : -16-02-22_17-17-05
 [157] - ------------------------------------------------------------------
 [158] -  Local Authority : rundu
 [159] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\rundu\connection_files\gisadmin_rundu@rundu@localhost.sde
@@ -164,20 +182,20 @@
 [164] - Computation of Stand No's is complete
 [165] - Exited Computing Stand No In Spectacular Success 
 [166] - -------------Compute Stand No-----------------------------------------------------
-[167] - End Time : -16-02-14_12-56-13
+[167] - End Time : -16-02-22_17-23-47
 [168] - ------------------------------------------------------------------
-14/02/2016 12:58:46: 
+22/02/2016 17:25:57: 
 [169] - --------------------------------Auto Reconcile and Post----------------------------------
-[170] - Start Time : -16-02-14_12-56-18
+[170] - Start Time : -16-02-22_17-23-59
 [171] - ------------------------------------------------------------------
 [172] -  Local Authority : rundu
 [173] - Exited with Spectacular Success 
 [174] - ------------------Auto Reconcile and Post------------------------------------------------
-[175] - End Time : -16-02-14_12-58-44
+[175] - End Time : -16-02-22_17-25-55
 [176] - ------------------------------------------------------------------
-14/02/2016 12:59:39: 
+22/02/2016 17:26:47: 
 [177] - ---------------------------------Compute Stand No---------------------------------
-[178] - Start Time : -16-02-14_12-58-50
+[178] - Start Time : -16-02-22_17-26-06
 [179] - ------------------------------------------------------------------
 [180] -  Local Authority : tsumeb
 [181] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\tsumeb\connection_files\gisadmin_tsumeb@tsumeb@localhost.sde
@@ -188,20 +206,20 @@
 [186] - Computation of Stand No's is complete
 [187] - Exited Computing Stand No In Spectacular Success 
 [188] - -------------Compute Stand No-----------------------------------------------------
-[189] - End Time : -16-02-14_12-59-39
+[189] - End Time : -16-02-22_17-26-46
 [190] - ------------------------------------------------------------------
-14/02/2016 13:00:18: 
+22/02/2016 17:27:30: 
 [191] - --------------------------------Auto Reconcile and Post----------------------------------
-[192] - Start Time : -16-02-14_12-59-44
+[192] - Start Time : -16-02-22_17-26-56
 [193] - ------------------------------------------------------------------
 [194] -  Local Authority : tsumeb
 [195] - Exited with Spectacular Success 
 [196] - ------------------Auto Reconcile and Post------------------------------------------------
-[197] - End Time : -16-02-14_13-00-17
+[197] - End Time : -16-02-22_17-27-29
 [198] - ------------------------------------------------------------------
-14/02/2016 13:04:36: 
+22/02/2016 17:31:38: 
 [199] - ---------------------------------Compute Stand No---------------------------------
-[200] - Start Time : -16-02-14_13-00-22
+[200] - Start Time : -16-02-22_17-27-34
 [201] - ------------------------------------------------------------------
 [202] -  Local Authority : walvis_bay
 [203] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\walvis_bay\connection_files\gisadmin_walvis_bay@walvis_bay@localhost.sde
@@ -212,22 +230,22 @@
 [208] - Computation of Stand No's is complete
 [209] - Exited Computing Stand No In Spectacular Success 
 [210] - -------------Compute Stand No-----------------------------------------------------
-[211] - End Time : -16-02-14_13-04-35
+[211] - End Time : -16-02-22_17-31-38
 [212] - ------------------------------------------------------------------
-14/02/2016 13:06:51: 
+22/02/2016 17:33:52: 
 [213] - --------------------------------Auto Reconcile and Post----------------------------------
-[214] - Start Time : -16-02-14_13-04-40
+[214] - Start Time : -16-02-22_17-31-44
 [215] - ------------------------------------------------------------------
 [216] -  Local Authority : walvis_bay
 [217] - Exited with Spectacular Success 
 [218] - ------------------Auto Reconcile and Post------------------------------------------------
-[219] - End Time : -16-02-14_13-06-50
+[219] - End Time : -16-02-22_17-33-51
 [220] - ------------------------------------------------------------------
-14/02/2016 13:06:51: Tell the timer GIS synch process has stopped executing)
-14/02/2016 13:06:51: Tell process to stop GIS Synch Process
+22/02/2016 17:33:52: Tell the timer GIS synch process has stopped executing)
+22/02/2016 17:33:52: Tell process to stop GIS Synch Process
                         save object file with false parameter. 
                         This stops the Windows service from running GIS synch process until instructed so by a client)
-14/02/2016 13:06:51: GIS synch process has completed successfully.
+22/02/2016 17:33:52: GIS synch process has completed successfully.
                         Tell the GIS to Sharepoint client to start shipping erfs to SharePoint)
-14/02/2016 13:06:51: Timer ticked and executePythonCode()  method or 
+22/02/2016 17:33:52: Timer ticked and executePythonCode()  method or 
                         job has successfully completed(But with a pinch of salt-There could be errors)
