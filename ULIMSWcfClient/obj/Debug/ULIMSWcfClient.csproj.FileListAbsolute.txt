@@ -3,3 +3,16 @@ E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\bin\Debug\U
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\bin\Debug\ULIMSWcfClient.pdb
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\obj\Debug\ULIMSWcfClient.exe
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\obj\Debug\ULIMSWcfClient.pdb
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService-asynch_await\ULIMSWcfClient\bin\Debug\ULIMSWcfClient.exe.config
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService-asynch_await\ULIMSWcfClient\bin\Debug\ULIMSWcfClient.exe
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService-asynch_await\ULIMSWcfClient\bin\Debug\ULIMSWcfClient.pdb
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService-asynch_await\ULIMSWcfClient\obj\Debug\ULIMSWcfClient.exe
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService-asynch_await\ULIMSWcfClient\obj\Debug\ULIMSWcfClient.pdb
+C:\Users\dmuthami\Desktop\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\bin\Debug\ULIMSWcfClient.exe.config
+C:\Users\dmuthami\Desktop\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\obj\Debug\ULIMSWcfClient.exe
+C:\Users\dmuthami\Desktop\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\obj\Debug\ULIMSWcfClient.pdb
+C:\Users\dmuthami\Desktop\Clone\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\bin\Debug\ULIMSWcfClient.exe.config
+C:\Users\dmuthami\Desktop\Clone\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\bin\Debug\ULIMSWcfClient.exe
+C:\Users\dmuthami\Desktop\Clone\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\bin\Debug\ULIMSWcfClient.pdb
+C:\Users\dmuthami\Desktop\Clone\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\obj\Debug\ULIMSWcfClient.exe
+C:\Users\dmuthami\Desktop\Clone\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\obj\Debug\ULIMSWcfClient.pdb

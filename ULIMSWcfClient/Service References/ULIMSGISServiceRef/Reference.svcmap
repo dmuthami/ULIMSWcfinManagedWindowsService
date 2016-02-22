@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b726e99c-5cb3-448f-833a-3ff9263117e4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="761af5d4-922e-4ef1-b62c-a18ea878e718" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
-    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
-    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
     <EnableDataBinding>true</EnableDataBinding>
     <ExcludedTypes />
     <ImportXmlTypes>false</ImportXmlTypes>
@@ -22,11 +21,11 @@
     <MetadataSource Address="http://localhost:8888/ulimsgiswcf/service" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.disco" MetadataType="Disco" ID="ed82d822-2246-4c42-ac00-dc12a44f760e" SourceId="1" SourceUrl="http://localhost:8888/ulimsgiswcf/service?disco" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="b81d0d7f-2b39-469b-884c-9906f95e0b52" SourceId="1" SourceUrl="http://localhost:8888/ulimsgiswcf/service?xsd=xsd1" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="a2117a6d-b9a9-4899-ad43-13717e0d7c71" SourceId="1" SourceUrl="http://localhost:8888/ulimsgiswcf/service?xsd=xsd0" />
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="9ed8bb89-a2ed-40f2-bb70-b1d416abb952" SourceId="1" SourceUrl="http://localhost:8888/ulimsgiswcf/service?wsdl=wsdl0" />
-    <MetadataFile FileName="CalculatorService.wsdl" MetadataType="Wsdl" ID="ba4d6836-a86a-4e10-a5f8-dbf1706a470c" SourceId="1" SourceUrl="http://localhost:8888/ulimsgiswcf/service?wsdl" />
+    <MetadataFile FileName="service.disco" MetadataType="Disco" ID="b75dd3ec-fb0c-4583-bfb9-f0ed613ca11b" SourceId="1" SourceUrl="http://localhost:8888/ulimsgiswcf/service?disco" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="7881222c-aeeb-4f32-966c-e771bfffd2f9" SourceId="1" SourceUrl="http://localhost:8888/ulimsgiswcf/service?xsd=xsd1" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="521e7674-be9c-4e0b-9158-40669255e833" SourceId="1" SourceUrl="http://localhost:8888/ulimsgiswcf/service?xsd=xsd0" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="2cf507db-6e63-411d-b105-680abd4b4054" SourceId="1" SourceUrl="http://localhost:8888/ulimsgiswcf/service?wsdl=wsdl0" />
+    <MetadataFile FileName="ULIMSGISService.wsdl" MetadataType="Wsdl" ID="70e3ac9d-4bde-4cf2-8ab5-eed24f42ac26" SourceId="1" SourceUrl="http://localhost:8888/ulimsgiswcf/service?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

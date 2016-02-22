@@ -54,7 +54,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Service References\ULIMSGISServiceRef\CalculatorService.wsdl" />
     <None Include="Service References\ULIMSGISServiceRef\service.wsdl" />
     <None Include="Service References\ULIMSGISServiceRef\service.xsd">
       <SubType>Designer</SubType>
@@ -62,6 +61,7 @@
     <None Include="Service References\ULIMSGISServiceRef\service1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\ULIMSGISServiceRef\ULIMSGISService.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

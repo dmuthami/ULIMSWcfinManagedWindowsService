@@ -2,3 +2,11 @@ E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSSerializer\bin\Releas
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSSerializer\bin\Release\ULIMSSerializer.pdb
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSSerializer\obj\Release\ULIMSSerializer.dll
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSSerializer\obj\Release\ULIMSSerializer.pdb
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService-asynch_await\ULIMSSerializer\bin\Release\ULIMSSerializer.dll
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService-asynch_await\ULIMSSerializer\bin\Release\ULIMSSerializer.pdb
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService-asynch_await\ULIMSSerializer\obj\Release\ULIMSSerializer.dll
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService-asynch_await\ULIMSSerializer\obj\Release\ULIMSSerializer.pdb
+C:\Users\dmuthami\Desktop\Clone\ULIMSWcfinManagedWindowsService\ULIMSSerializer\bin\Release\ULIMSSerializer.dll
+C:\Users\dmuthami\Desktop\Clone\ULIMSWcfinManagedWindowsService\ULIMSSerializer\bin\Release\ULIMSSerializer.pdb
+C:\Users\dmuthami\Desktop\Clone\ULIMSWcfinManagedWindowsService\ULIMSSerializer\obj\Release\ULIMSSerializer.dll
+C:\Users\dmuthami\Desktop\Clone\ULIMSWcfinManagedWindowsService\ULIMSSerializer\obj\Release\ULIMSSerializer.pdb

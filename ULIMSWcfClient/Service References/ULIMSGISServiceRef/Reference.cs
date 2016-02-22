@@ -15,23 +15,13 @@ namespace ULIMSWcfClient.ULIMSGISServiceRef {
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://wcf.ulims.com.na", ConfigurationName="ULIMSGISServiceRef.IULIMSGISService")]
     public interface IULIMSGISService {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://wcf.ulims.com.na/IULIMSGISService/startGISSyncProcess", ReplyAction="http://wcf.ulims.com.na/IULIMSGISService/startGISSyncProcessResponse")]
-        string startGISSyncProcess(bool shallStart);
+        [System.ServiceModel.OperationContractAttribute(Action="http://wcf.ulims.com.na/IULIMSGISService/ExecutePythonCodeMethod", ReplyAction="http://wcf.ulims.com.na/IULIMSGISService/ExecutePythonCodeMethodResponse")]
+        bool ExecutePythonCodeMethod();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://wcf.ulims.com.na/IULIMSGISService/startGISSyncProcess", ReplyAction="http://wcf.ulims.com.na/IULIMSGISService/startGISSyncProcessResponse")]
-        System.Threading.Tasks.Task<string> startGISSyncProcessAsync(bool shallStart);
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://wcf.ulims.com.na/IULIMSGISService/ExecutePythonCodeMethod", ReplyAction="http://wcf.ulims.com.na/IULIMSGISService/ExecutePythonCodeMethodResponse")]
+        System.IAsyncResult BeginExecutePythonCodeMethod(System.AsyncCallback callback, object asyncState);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://wcf.ulims.com.na/IULIMSGISService/isSuccessGISSyncProcess", ReplyAction="http://wcf.ulims.com.na/IULIMSGISService/isSuccessGISSyncProcessResponse")]
-        bool isSuccessGISSyncProcess();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://wcf.ulims.com.na/IULIMSGISService/isSuccessGISSyncProcess", ReplyAction="http://wcf.ulims.com.na/IULIMSGISService/isSuccessGISSyncProcessResponse")]
-        System.Threading.Tasks.Task<bool> isSuccessGISSyncProcessAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://wcf.ulims.com.na/IULIMSGISService/executePythonProcessPerTown", ReplyAction="http://wcf.ulims.com.na/IULIMSGISService/executePythonProcessPerTownResponse")]
-        void executePythonProcessPerTown(string townName, string pythonFileToExecute);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://wcf.ulims.com.na/IULIMSGISService/executePythonProcessPerTown", ReplyAction="http://wcf.ulims.com.na/IULIMSGISService/executePythonProcessPerTownResponse")]
-        System.Threading.Tasks.Task executePythonProcessPerTownAsync(string townName, string pythonFileToExecute);
+        bool EndExecutePythonCodeMethod(System.IAsyncResult result);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -40,7 +30,32 @@ namespace ULIMSWcfClient.ULIMSGISServiceRef {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class ExecutePythonCodeMethodCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public ExecutePythonCodeMethodCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public bool Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public partial class ULIMSGISServiceClient : System.ServiceModel.ClientBase<ULIMSWcfClient.ULIMSGISServiceRef.IULIMSGISService>, ULIMSWcfClient.ULIMSGISServiceRef.IULIMSGISService {
+        
+        private BeginOperationDelegate onBeginExecutePythonCodeMethodDelegate;
+        
+        private EndOperationDelegate onEndExecutePythonCodeMethodDelegate;
+        
+        private System.Threading.SendOrPostCallback onExecutePythonCodeMethodCompletedDelegate;
         
         public ULIMSGISServiceClient() {
         }
@@ -61,28 +76,54 @@ namespace ULIMSWcfClient.ULIMSGISServiceRef {
                 base(binding, remoteAddress) {
         }
         
-        public string startGISSyncProcess(bool shallStart) {
-            return base.Channel.startGISSyncProcess(shallStart);
+        public event System.EventHandler<ExecutePythonCodeMethodCompletedEventArgs> ExecutePythonCodeMethodCompleted;
+        
+        public bool ExecutePythonCodeMethod() {
+            return base.Channel.ExecutePythonCodeMethod();
         }
         
-        public System.Threading.Tasks.Task<string> startGISSyncProcessAsync(bool shallStart) {
-            return base.Channel.startGISSyncProcessAsync(shallStart);
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginExecutePythonCodeMethod(System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginExecutePythonCodeMethod(callback, asyncState);
         }
         
-        public bool isSuccessGISSyncProcess() {
-            return base.Channel.isSuccessGISSyncProcess();
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public bool EndExecutePythonCodeMethod(System.IAsyncResult result) {
+            return base.Channel.EndExecutePythonCodeMethod(result);
         }
         
-        public System.Threading.Tasks.Task<bool> isSuccessGISSyncProcessAsync() {
-            return base.Channel.isSuccessGISSyncProcessAsync();
+        private System.IAsyncResult OnBeginExecutePythonCodeMethod(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            return this.BeginExecutePythonCodeMethod(callback, asyncState);
         }
         
-        public void executePythonProcessPerTown(string townName, string pythonFileToExecute) {
-            base.Channel.executePythonProcessPerTown(townName, pythonFileToExecute);
+        private object[] OnEndExecutePythonCodeMethod(System.IAsyncResult result) {
+            bool retVal = this.EndExecutePythonCodeMethod(result);
+            return new object[] {
+                    retVal};
         }
         
-        public System.Threading.Tasks.Task executePythonProcessPerTownAsync(string townName, string pythonFileToExecute) {
-            return base.Channel.executePythonProcessPerTownAsync(townName, pythonFileToExecute);
+        private void OnExecutePythonCodeMethodCompleted(object state) {
+            if ((this.ExecutePythonCodeMethodCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.ExecutePythonCodeMethodCompleted(this, new ExecutePythonCodeMethodCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void ExecutePythonCodeMethodAsync() {
+            this.ExecutePythonCodeMethodAsync(null);
+        }
+        
+        public void ExecutePythonCodeMethodAsync(object userState) {
+            if ((this.onBeginExecutePythonCodeMethodDelegate == null)) {
+                this.onBeginExecutePythonCodeMethodDelegate = new BeginOperationDelegate(this.OnBeginExecutePythonCodeMethod);
+            }
+            if ((this.onEndExecutePythonCodeMethodDelegate == null)) {
+                this.onEndExecutePythonCodeMethodDelegate = new EndOperationDelegate(this.OnEndExecutePythonCodeMethod);
+            }
+            if ((this.onExecutePythonCodeMethodCompletedDelegate == null)) {
+                this.onExecutePythonCodeMethodCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnExecutePythonCodeMethodCompleted);
+            }
+            base.InvokeAsync(this.onBeginExecutePythonCodeMethodDelegate, null, this.onEndExecutePythonCodeMethodDelegate, this.onExecutePythonCodeMethodCompletedDelegate, userState);
         }
     }
 }
