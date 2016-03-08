@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 using System.IO;
 using System.Diagnostics;
-using System.Runtime.Serialization.Formatters.Binary;//Process
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Configuration;//Process
 
 
 
@@ -85,14 +86,69 @@ namespace ulimsgispython.ulims.com.na
                 //Method returns listof towns as a dictionary
                 dictionary = iConfigReader.readNamibiaLocalAuthoritiesSection();
 
+                //Check if we can compute stand number
+                Boolean computeStandNo = Convert.ToBoolean(ConfigurationManager.AppSettings["compute_stand_no"].ToString());
+
+
+                //Check if we can conduct auto reconcile and post
+                Boolean autoReconcileAndPost = Convert.ToBoolean(ConfigurationManager.AppSettings["auto_reconcile_and_post"].ToString());
+
                 //Loop over pairs with foreach loop
                 foreach (KeyValuePair<string, string> townpair in dictionary)
                 {
-                    //Call function to execute python process for computing stand number for each town    
-                    executePythonProcessPerTown((String)townpair.Value, "InvokeComputeStandNo.py");
+                    //Check if we can compute stand number
+                    if (computeStandNo==true) {
+                        //Call function to execute python process for computing stand number for each town    
+                        executePythonProcessPerTown((String)townpair.Value, "InvokeComputeStandNo.py");
+                    }
+                    else
+                    {
 
-                    //Call function to execute python process for auto reconcile for each town   
-                    executePythonProcessPerTown((String)townpair.Value, "AutoReconcileAndPost.py");
+                        string msg = String.Format("{0}Execution of Compute Stand No : {1} has not been fired/started for {2}.", Environment.NewLine, computeStandNo.ToString(), townpair);
+                        this.WriteErrorLog(msg);
+
+                    }
+
+                    //Check if we can conduct auto reconcile and post
+                    if (autoReconcileAndPost == true)
+                    {
+                        //Call function to execute python process for auto reconcile for each town   
+                        executePythonProcessPerTown((String)townpair.Value, "AutoReconcileAndPost.py");
+                    }
+                    else
+                    {
+
+                        string msg = String.Format("{0}Execution of Auto Reconcile and Post : {1} has not been fired/started for {2}.", Environment.NewLine, autoReconcileAndPost.ToString(), townpair);
+                        this.WriteErrorLog(msg);
+
+                    }
+                }
+
+                
+                //Call code to excute SQL job
+                //Check if we can fire the SQL job
+                Boolean sqlJob = Convert.ToBoolean(ConfigurationManager.AppSettings["sql_job"].ToString());
+
+                //Check if we can conduct sql job execution
+                //Read job name from appconfig file
+                string jobName = (ConfigurationManager.AppSettings["jobName"].ToString());
+                if (sqlJob == true)
+                {
+                   //Write error log
+                    string msg = String.Format("{0}Execution of Job Name : {1} has been fired/started.", Environment.NewLine, jobName);
+                    this.WriteErrorLog(msg);
+
+                    //Instantiate class that runs SQL Job
+                    SQLJob2 sQLJob2 = new SQLJob2();
+                    sQLJob2.JobName = jobName;//pass the job name as an argument
+                    //Fire the execute method
+                    sQLJob2.Execute();
+                }
+                else
+                {
+
+                    string msg = String.Format("{0}Execution of Job Name : {1} has not been fired/started.", Environment.NewLine, jobName);
+                    this.WriteErrorLog(msg);
 
                 }
 
