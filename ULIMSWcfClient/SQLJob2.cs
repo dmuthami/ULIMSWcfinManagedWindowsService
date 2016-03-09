@@ -9,6 +9,7 @@ using Microsoft.SqlServer.Management.Smo;
 using Microsoft.SqlServer.Management.Smo.Agent;
 using System.Data;
 using System.Threading;
+using System.Configuration;
 
 namespace ULIMSWcfClient
 {
@@ -18,19 +19,40 @@ namespace ULIMSWcfClient
 
         public void Execute()
         {
-            string jobName = null;
-            Server server = new Server(); //Default instance
+
+            string jobName = null;          
+
+            //Pull instance name and server name
+            string instanceName = (ConfigurationManager.AppSettings["instance"].ToString());
+            string serverName = (ConfigurationManager.AppSettings["servername"].ToString());
+
+            //Server connection string
+            string serverConnectionString = @".\" + instanceName;
+            string serverConnectionString2 = serverName + "/" + instanceName;
+
+            //server\instance
+            ServerConnection serverConnection = new ServerConnection(serverName);
+            
+      
+
+            Server server = new Server(serverConnection); 
             try
             {
                 server.ConnectionContext.LoginSecure = false; //Set to false since we are using datbase authentication
 
                 //Login credentials
-                server.ConnectionContext.Login = "sa"; 
-                server.ConnectionContext.Password = "gisadmin";
+                string login = (ConfigurationManager.AppSettings["username"].ToString());
+                string password = (ConfigurationManager.AppSettings["password"].ToString());
+                
+                //server.InstanceName = @".\" + instanceName;
+                
+                server.ConnectionContext.Login = login;
+                server.ConnectionContext.Password = password;
                 server.ConnectionContext.Connect();
 
                 //Job name
-                jobName = "temp_h_job";
+                jobName = (ConfigurationManager.AppSettings["jobName"].ToString());
+
                 //Get job instance
                 Job job = server.JobServer.Jobs[jobName];
 
@@ -56,15 +78,19 @@ namespace ULIMSWcfClient
                     Thread.Sleep(threadWait);
                     job.Refresh();
                 }
-
+                Console.WriteLine(String.Format("{0}Job Name : {1} has successfully completed", Environment.NewLine, jobName)); //Write to console saying we are done
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.StackTrace); //Write to console the stack trace
             }
             finally
             {
                 if (server.ConnectionContext.IsOpen)
                 {
                     server.ConnectionContext.Disconnect();//Safely disconnect SQL Server
-                    Console.WriteLine(String.Format("{0}Job Name : {1} has successfully completed", Environment.NewLine, jobName)); //Write to console saying we are done
-                   
+                    Console.WriteLine(String.Format("{0}Job Name : {1} has it's connection closed successfully", 
+                        Environment.NewLine, jobName)); //Write to console saying we are done closing the SQL connection       
                 }
 
             }

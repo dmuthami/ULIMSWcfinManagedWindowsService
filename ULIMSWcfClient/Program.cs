@@ -20,8 +20,11 @@ namespace ULIMSWcfClient
                 //Call method to start GIS Synch process
                 program.GISSynchProcess();
 
+                //Execute the SQL Job
                 //SQLJob2 sQLJob2 = new SQLJob2();
                 //sQLJob2.Execute();
+                //Console.ReadLine();
+
 
             }
             catch (Exception ex)

@@ -140,8 +140,15 @@ namespace ulimsgispython.ulims.com.na
 
                     //Instantiate class that runs SQL Job
                     SQLJob2 sQLJob2 = new SQLJob2();
+                    /*
+                     * Set the folowing properties in the SQL Job object
+                     */
                     sQLJob2.JobName = jobName;//pass the job name as an argument
-                    //Fire the execute method
+                    sQLJob2.Login = (ConfigurationManager.AppSettings["username"].ToString());
+                    sQLJob2.Password = (ConfigurationManager.AppSettings["password"].ToString());
+                    sQLJob2.ServerName = (ConfigurationManager.AppSettings["servername"].ToString());
+                    sQLJob2.IPythonLibrary = this; //Pass an instance of this class to the instance of SQLjob class 
+                    //Fire the execute method to run te SQL job
                     sQLJob2.Execute();
                 }
                 else

@@ -1,133 +1,9 @@
-07/03/2016 18:59:29: ULIMS GIS Synchonization Service started
-07/03/2016 19:00:29: Timer ticked and executePythonCode()  method or 
+09/03/2016 18:05:22: ULIMS GIS Synchonization Service started
+09/03/2016 18:06:22: Timer ticked and executePythonCode()  method or 
                         job has been done fired
-07/03/2016 19:00:41: 
+09/03/2016 18:06:31: 
 [1] - ---------------------------------Compute Stand No---------------------------------
-[2] - Start Time : -16-03-07_19-00-36
-[3] - ------------------------------------------------------------------
-[4] -  Local Authority : katima_mulilo
-[5] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\katima_mulilo\connection_files\gisadmin_katima_mulilo@katima_mulilo@localhost.sde
-[6] -  Reference Number/Stand No : km_stand_no
-[7] -  Feature Class to compute stand number : katima_Parcels
-[8] -  Object ID Field Name : OBJECTID
-[9] -  Local Authority ID Field Name : km_local_authority_id
-[10] - Computation of Stand No's is complete
-[11] - Exited Computing Stand No In Spectacular Success 
-[12] - -------------Compute Stand No-----------------------------------------------------
-[13] - End Time : -16-03-07_19-00-40
-[14] - ------------------------------------------------------------------
-07/03/2016 19:01:35: 
-[15] - --------------------------------Auto Reconcile and Post----------------------------------
-[16] - Start Time : -16-03-07_19-00-47
-[17] - ------------------------------------------------------------------
-[18] -  Local Authority : katima_mulilo
-[19] - Exited with Spectacular Success 
-[20] - ------------------Auto Reconcile and Post------------------------------------------------
-[21] - End Time : -16-03-07_19-01-34
-[22] - ------------------------------------------------------------------
-07/03/2016 19:01:35: Tell the timer GIS synch process has stopped executing)
-07/03/2016 19:01:35: Tell process to stop GIS Synch Process
-                        save object file with false parameter. 
-                        This stops the Windows service from running GIS synch process until instructed so by a client)
-07/03/2016 19:01:35: GIS synch process has completed successfully.
-                        Tell the GIS to Sharepoint client to start shipping erfs to SharePoint)
-07/03/2016 19:01:35: Timer ticked and executePythonCode()  method or 
-                        job has successfully completed(But with a pinch of salt-There could be errors)
-08/03/2016 11:54:31: ULIMS GIS Synchonization Service started
-08/03/2016 14:14:31: Timer ticked and executePythonCode()  method or 
-                        job has been done fired
-08/03/2016 14:15:05: 
-[1] - ---------------------------------Compute Stand No---------------------------------
-[2] - Start Time : -16-03-08_14-14-52
-[3] - ------------------------------------------------------------------
-[4] -  Local Authority : katima_mulilo
-[5] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\katima_mulilo\connection_files\gisadmin_katima_mulilo@katima_mulilo@localhost.sde
-[6] -  Reference Number/Stand No : km_stand_no
-[7] -  Feature Class to compute stand number : katima_Parcels
-[8] -  Object ID Field Name : OBJECTID
-[9] -  Local Authority ID Field Name : km_local_authority_id
-[10] - Computation of Stand No's is complete
-[11] - Exited Computing Stand No In Spectacular Success 
-[12] - -------------Compute Stand No-----------------------------------------------------
-[13] - End Time : -16-03-08_14-15-04
-[14] - ------------------------------------------------------------------
-08/03/2016 14:15:48: 
-[15] - --------------------------------Auto Reconcile and Post----------------------------------
-[16] - Start Time : -16-03-08_14-15-10
-[17] - ------------------------------------------------------------------
-[18] -  Local Authority : katima_mulilo
-[19] - Exited with Spectacular Success 
-[20] - ------------------Auto Reconcile and Post------------------------------------------------
-[21] - End Time : -16-03-08_14-15-46
-[22] - ------------------------------------------------------------------
-08/03/2016 14:15:48: Tell the timer GIS synch process has stopped executing)
-08/03/2016 14:15:48: Tell process to stop GIS Synch Process
-                        save object file with false parameter. 
-                        This stops the Windows service from running GIS synch process until instructed so by a client)
-08/03/2016 14:15:48: GIS synch process has completed successfully.
-                        Tell the GIS to Sharepoint client to start shipping erfs to SharePoint)
-08/03/2016 14:15:48: Timer ticked and executePythonCode()  method or 
-                        job has successfully completed(But with a pinch of salt-There could be errors)
-08/03/2016 15:36:36: ULIMS GIS Synchonization Service started
-08/03/2016 15:49:44: ULIMS GIS Synchonization Service started
-08/03/2016 15:55:44: Timer ticked and executePythonCode()  method or 
-                        job has been done fired
-08/03/2016 15:56:21: 
-Execution of Compute Stand No : False has not been fired/started.
-08/03/2016 15:56:32: 
-Execution of Auto Reconcile and Post : False has not been fired/started.
-08/03/2016 15:56:47: 
-Execution of Compute Stand No : False has not been fired/started.
-08/03/2016 15:56:47: 
-Execution of Auto Reconcile and Post : False has not been fired/started.
-08/03/2016 15:56:47: 
-Execution of Compute Stand No : False has not been fired/started.
-08/03/2016 15:56:47: 
-Execution of Auto Reconcile and Post : False has not been fired/started.
-08/03/2016 15:56:47: 
-Execution of Compute Stand No : False has not been fired/started.
-08/03/2016 15:56:47: 
-Execution of Auto Reconcile and Post : False has not been fired/started.
-08/03/2016 15:56:47: 
-Execution of Compute Stand No : False has not been fired/started.
-08/03/2016 15:56:47: 
-Execution of Auto Reconcile and Post : False has not been fired/started.
-08/03/2016 15:56:47: 
-Execution of Compute Stand No : False has not been fired/started.
-08/03/2016 15:56:47: 
-Execution of Auto Reconcile and Post : False has not been fired/started.
-08/03/2016 15:56:47: 
-Execution of Compute Stand No : False has not been fired/started.
-08/03/2016 15:56:47: 
-Execution of Auto Reconcile and Post : False has not been fired/started.
-08/03/2016 15:56:47: 
-Execution of Compute Stand No : False has not been fired/started.
-08/03/2016 15:56:47: 
-Execution of Auto Reconcile and Post : False has not been fired/started.
-08/03/2016 15:56:47: 
-Execution of Compute Stand No : False has not been fired/started.
-08/03/2016 15:56:47: 
-Execution of Auto Reconcile and Post : False has not been fired/started.
-08/03/2016 15:56:47: 
-Execution of Compute Stand No : False has not been fired/started.
-08/03/2016 15:56:47: 
-Execution of Auto Reconcile and Post : False has not been fired/started.
-08/03/2016 15:57:01: 
-Execution of Job Name : temp_h_job has been fired/started.
-08/03/2016 15:57:35: Tell the timer GIS synch process has stopped executing)
-08/03/2016 15:57:35: Tell process to stop GIS Synch Process
-                        save object file with false parameter. 
-                        This stops the Windows service from running GIS synch process until instructed so by a client)
-08/03/2016 15:57:35: GIS synch process has completed successfully.
-                        Tell the GIS to Sharepoint client to start shipping erfs to SharePoint)
-08/03/2016 15:57:35: Timer ticked and executePythonCode()  method or 
-                        job has successfully completed(But with a pinch of salt-There could be errors)
-08/03/2016 16:20:46: ULIMS GIS Synchonization Service started
-08/03/2016 16:26:46: Timer ticked and executePythonCode()  method or 
-                        job has been done fired
-08/03/2016 16:27:03: 
-[1] - ---------------------------------Compute Stand No---------------------------------
-[2] - Start Time : -16-03-08_16-26-51
+[2] - Start Time : -16-03-09_18-06-27
 [3] - ------------------------------------------------------------------
 [4] -  Local Authority : helao_nafidi
 [5] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\helao_nafidi\connection_files\gisadmin_helao_nafidi@helao_nafidi@localhost.sde
@@ -138,20 +14,20 @@ Execution of Job Name : temp_h_job has been fired/started.
 [10] - Computation of Stand No's is complete
 [11] - Exited Computing Stand No In Spectacular Success 
 [12] - -------------Compute Stand No-----------------------------------------------------
-[13] - End Time : -16-03-08_16-27-02
+[13] - End Time : -16-03-09_18-06-30
 [14] - ------------------------------------------------------------------
-08/03/2016 16:27:23: 
+09/03/2016 18:06:49: 
 [15] - --------------------------------Auto Reconcile and Post----------------------------------
-[16] - Start Time : -16-03-08_16-27-07
+[16] - Start Time : -16-03-09_18-06-35
 [17] - ------------------------------------------------------------------
 [18] -  Local Authority : helao_nafidi
 [19] - Exited with Spectacular Success 
 [20] - ------------------Auto Reconcile and Post------------------------------------------------
-[21] - End Time : -16-03-08_16-27-22
+[21] - End Time : -16-03-09_18-06-48
 [22] - ------------------------------------------------------------------
-08/03/2016 16:27:31: 
+09/03/2016 18:06:57: 
 [23] - ---------------------------------Compute Stand No---------------------------------
-[24] - Start Time : -16-03-08_16-27-28
+[24] - Start Time : -16-03-09_18-06-53
 [25] - ------------------------------------------------------------------
 [26] -  Local Authority : katima_mulilo
 [27] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\katima_mulilo\connection_files\gisadmin_katima_mulilo@katima_mulilo@localhost.sde
@@ -162,20 +38,20 @@ Execution of Job Name : temp_h_job has been fired/started.
 [32] - Computation of Stand No's is complete
 [33] - Exited Computing Stand No In Spectacular Success 
 [34] - -------------Compute Stand No-----------------------------------------------------
-[35] - End Time : -16-03-08_16-27-30
+[35] - End Time : -16-03-09_18-06-57
 [36] - ------------------------------------------------------------------
-08/03/2016 16:28:05: 
+09/03/2016 18:07:31: 
 [37] - --------------------------------Auto Reconcile and Post----------------------------------
-[38] - Start Time : -16-03-08_16-27-35
+[38] - Start Time : -16-03-09_18-07-02
 [39] - ------------------------------------------------------------------
 [40] -  Local Authority : katima_mulilo
 [41] - Exited with Spectacular Success 
 [42] - ------------------Auto Reconcile and Post------------------------------------------------
-[43] - End Time : -16-03-08_16-28-04
+[43] - End Time : -16-03-09_18-07-30
 [44] - ------------------------------------------------------------------
-08/03/2016 16:28:51: 
+09/03/2016 18:07:40: 
 [45] - ---------------------------------Compute Stand No---------------------------------
-[46] - Start Time : -16-03-08_16-28-09
+[46] - Start Time : -16-03-09_18-07-35
 [47] - ------------------------------------------------------------------
 [48] -  Local Authority : keetmanshoop
 [49] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\keetmanshoop\connection_files\gisadmin_keetmanshoop@keetmanshoop@localhost.sde
@@ -186,20 +62,20 @@ Execution of Job Name : temp_h_job has been fired/started.
 [54] - Computation of Stand No's is complete
 [55] - Exited Computing Stand No In Spectacular Success 
 [56] - -------------Compute Stand No-----------------------------------------------------
-[57] - End Time : -16-03-08_16-28-50
+[57] - End Time : -16-03-09_18-07-40
 [58] - ------------------------------------------------------------------
-08/03/2016 16:29:35: 
+09/03/2016 18:08:13: 
 [59] - --------------------------------Auto Reconcile and Post----------------------------------
-[60] - Start Time : -16-03-08_16-28-56
+[60] - Start Time : -16-03-09_18-07-45
 [61] - ------------------------------------------------------------------
 [62] -  Local Authority : keetmanshoop
 [63] - Exited with Spectacular Success 
 [64] - ------------------Auto Reconcile and Post------------------------------------------------
-[65] - End Time : -16-03-08_16-29-34
+[65] - End Time : -16-03-09_18-08-12
 [66] - ------------------------------------------------------------------
-08/03/2016 16:30:20: 
+09/03/2016 18:08:22: 
 [67] - ---------------------------------Compute Stand No---------------------------------
-[68] - Start Time : -16-03-08_16-29-39
+[68] - Start Time : -16-03-09_18-08-17
 [69] - ------------------------------------------------------------------
 [70] -  Local Authority : okahandja
 [71] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\okahandja\connection_files\gisadmin_okahandja@okahandja@localhost.sde
@@ -210,20 +86,20 @@ Execution of Job Name : temp_h_job has been fired/started.
 [76] - Computation of Stand No's is complete
 [77] - Exited Computing Stand No In Spectacular Success 
 [78] - -------------Compute Stand No-----------------------------------------------------
-[79] - End Time : -16-03-08_16-30-20
+[79] - End Time : -16-03-09_18-08-21
 [80] - ------------------------------------------------------------------
-08/03/2016 16:31:01: 
+09/03/2016 18:08:53: 
 [81] - --------------------------------Auto Reconcile and Post----------------------------------
-[82] - Start Time : -16-03-08_16-30-25
+[82] - Start Time : -16-03-09_18-08-26
 [83] - ------------------------------------------------------------------
 [84] -  Local Authority : okahandja
 [85] - Exited with Spectacular Success 
 [86] - ------------------Auto Reconcile and Post------------------------------------------------
-[87] - End Time : -16-03-08_16-30-59
+[87] - End Time : -16-03-09_18-08-52
 [88] - ------------------------------------------------------------------
-08/03/2016 16:31:23: 
+09/03/2016 18:09:01: 
 [89] - ---------------------------------Compute Stand No---------------------------------
-[90] - Start Time : -16-03-08_16-31-05
+[90] - Start Time : -16-03-09_18-08-57
 [91] - ------------------------------------------------------------------
 [92] -  Local Authority : oshakati
 [93] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\oshakati\connection_files\gisadmin_oshakati@oshakati@localhost.sde
@@ -234,20 +110,20 @@ Execution of Job Name : temp_h_job has been fired/started.
 [98] - Computation of Stand No's is complete
 [99] - Exited Computing Stand No In Spectacular Success 
 [100] - -------------Compute Stand No-----------------------------------------------------
-[101] - End Time : -16-03-08_16-31-23
+[101] - End Time : -16-03-09_18-09-00
 [102] - ------------------------------------------------------------------
-08/03/2016 16:31:47: 
+09/03/2016 18:09:23: 
 [103] - --------------------------------Auto Reconcile and Post----------------------------------
-[104] - Start Time : -16-03-08_16-31-28
+[104] - Start Time : -16-03-09_18-09-06
 [105] - ------------------------------------------------------------------
 [106] -  Local Authority : oshakati
 [107] - Exited with Spectacular Success 
 [108] - ------------------Auto Reconcile and Post------------------------------------------------
-[109] - End Time : -16-03-08_16-31-46
+[109] - End Time : -16-03-09_18-09-22
 [110] - ------------------------------------------------------------------
-08/03/2016 16:32:30: 
+09/03/2016 18:09:33: 
 [111] - ---------------------------------Compute Stand No---------------------------------
-[112] - Start Time : -16-03-08_16-31-52
+[112] - Start Time : -16-03-09_18-09-28
 [113] - ------------------------------------------------------------------
 [114] -  Local Authority : otjiwarongo
 [115] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\otjiwarongo\connection_files\gisadmin_otjiwarongo@otjiwarongo@localhost.sde
@@ -258,20 +134,20 @@ Execution of Job Name : temp_h_job has been fired/started.
 [120] - Computation of Stand No's is complete
 [121] - Exited Computing Stand No In Spectacular Success 
 [122] - -------------Compute Stand No-----------------------------------------------------
-[123] - End Time : -16-03-08_16-32-30
+[123] - End Time : -16-03-09_18-09-33
 [124] - ------------------------------------------------------------------
-08/03/2016 16:33:23: 
+09/03/2016 18:10:13: 
 [125] - --------------------------------Auto Reconcile and Post----------------------------------
-[126] - Start Time : -16-03-08_16-32-35
+[126] - Start Time : -16-03-09_18-09-38
 [127] - ------------------------------------------------------------------
 [128] -  Local Authority : otjiwarongo
 [129] - Exited with Spectacular Success 
 [130] - ------------------Auto Reconcile and Post------------------------------------------------
-[131] - End Time : -16-03-08_16-33-22
+[131] - End Time : -16-03-09_18-10-11
 [132] - ------------------------------------------------------------------
-08/03/2016 16:33:47: 
+09/03/2016 18:10:21: 
 [133] - ---------------------------------Compute Stand No---------------------------------
-[134] - Start Time : -16-03-08_16-33-27
+[134] - Start Time : -16-03-09_18-10-17
 [135] - ------------------------------------------------------------------
 [136] -  Local Authority : outapi
 [137] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\outapi\connection_files\gisadmin_outapi@outapi@localhost.sde
@@ -282,20 +158,20 @@ Execution of Job Name : temp_h_job has been fired/started.
 [142] - Computation of Stand No's is complete
 [143] - Exited Computing Stand No In Spectacular Success 
 [144] - -------------Compute Stand No-----------------------------------------------------
-[145] - End Time : -16-03-08_16-33-47
+[145] - End Time : -16-03-09_18-10-20
 [146] - ------------------------------------------------------------------
-08/03/2016 16:34:12: 
+09/03/2016 18:10:42: 
 [147] - --------------------------------Auto Reconcile and Post----------------------------------
-[148] - Start Time : -16-03-08_16-33-52
+[148] - Start Time : -16-03-09_18-10-25
 [149] - ------------------------------------------------------------------
 [150] -  Local Authority : outapi
 [151] - Exited with Spectacular Success 
 [152] - ------------------Auto Reconcile and Post------------------------------------------------
-[153] - End Time : -16-03-08_16-34-11
+[153] - End Time : -16-03-09_18-10-41
 [154] - ------------------------------------------------------------------
-08/03/2016 16:39:57: 
+09/03/2016 18:10:52: 
 [155] - ---------------------------------Compute Stand No---------------------------------
-[156] - Start Time : -16-03-08_16-34-16
+[156] - Start Time : -16-03-09_18-10-47
 [157] - ------------------------------------------------------------------
 [158] -  Local Authority : rundu
 [159] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\rundu\connection_files\gisadmin_rundu@rundu@localhost.sde
@@ -306,20 +182,20 @@ Execution of Job Name : temp_h_job has been fired/started.
 [164] - Computation of Stand No's is complete
 [165] - Exited Computing Stand No In Spectacular Success 
 [166] - -------------Compute Stand No-----------------------------------------------------
-[167] - End Time : -16-03-08_16-39-56
+[167] - End Time : -16-03-09_18-10-52
 [168] - ------------------------------------------------------------------
-08/03/2016 16:42:00: 
+09/03/2016 18:12:32: 
 [169] - --------------------------------Auto Reconcile and Post----------------------------------
-[170] - Start Time : -16-03-08_16-40-01
+[170] - Start Time : -16-03-09_18-10-56
 [171] - ------------------------------------------------------------------
 [172] -  Local Authority : rundu
 [173] - Exited with Spectacular Success 
 [174] - ------------------Auto Reconcile and Post------------------------------------------------
-[175] - End Time : -16-03-08_16-41-59
+[175] - End Time : -16-03-09_18-12-31
 [176] - ------------------------------------------------------------------
-08/03/2016 16:42:41: 
+09/03/2016 18:12:41: 
 [177] - ---------------------------------Compute Stand No---------------------------------
-[178] - Start Time : -16-03-08_16-42-04
+[178] - Start Time : -16-03-09_18-12-36
 [179] - ------------------------------------------------------------------
 [180] -  Local Authority : tsumeb
 [181] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\tsumeb\connection_files\gisadmin_tsumeb@tsumeb@localhost.sde
@@ -330,20 +206,20 @@ Execution of Job Name : temp_h_job has been fired/started.
 [186] - Computation of Stand No's is complete
 [187] - Exited Computing Stand No In Spectacular Success 
 [188] - -------------Compute Stand No-----------------------------------------------------
-[189] - End Time : -16-03-08_16-42-41
+[189] - End Time : -16-03-09_18-12-41
 [190] - ------------------------------------------------------------------
-08/03/2016 16:43:24: 
+09/03/2016 18:13:13: 
 [191] - --------------------------------Auto Reconcile and Post----------------------------------
-[192] - Start Time : -16-03-08_16-42-46
+[192] - Start Time : -16-03-09_18-12-46
 [193] - ------------------------------------------------------------------
 [194] -  Local Authority : tsumeb
 [195] - Exited with Spectacular Success 
 [196] - ------------------Auto Reconcile and Post------------------------------------------------
-[197] - End Time : -16-03-08_16-43-22
+[197] - End Time : -16-03-09_18-13-12
 [198] - ------------------------------------------------------------------
-08/03/2016 16:46:58: 
+09/03/2016 18:13:24: 
 [199] - ---------------------------------Compute Stand No---------------------------------
-[200] - Start Time : -16-03-08_16-43-28
+[200] - Start Time : -16-03-09_18-13-18
 [201] - ------------------------------------------------------------------
 [202] -  Local Authority : walvis_bay
 [203] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\walvis_bay\connection_files\gisadmin_walvis_bay@walvis_bay@localhost.sde
@@ -354,24 +230,30 @@ Execution of Job Name : temp_h_job has been fired/started.
 [208] - Computation of Stand No's is complete
 [209] - Exited Computing Stand No In Spectacular Success 
 [210] - -------------Compute Stand No-----------------------------------------------------
-[211] - End Time : -16-03-08_16-46-57
+[211] - End Time : -16-03-09_18-13-24
 [212] - ------------------------------------------------------------------
-08/03/2016 16:49:14: 
+09/03/2016 18:15:11: 
 [213] - --------------------------------Auto Reconcile and Post----------------------------------
-[214] - Start Time : -16-03-08_16-47-02
+[214] - Start Time : -16-03-09_18-13-29
 [215] - ------------------------------------------------------------------
 [216] -  Local Authority : walvis_bay
 [217] - Exited with Spectacular Success 
 [218] - ------------------Auto Reconcile and Post------------------------------------------------
-[219] - End Time : -16-03-08_16-49-13
+[219] - End Time : -16-03-09_18-15-10
 [220] - ------------------------------------------------------------------
-08/03/2016 16:49:14: 
+09/03/2016 18:15:11: 
 Execution of Job Name : temp_h_job has been fired/started.
-08/03/2016 16:49:35: Tell the timer GIS synch process has stopped executing)
-08/03/2016 16:49:35: Tell process to stop GIS Synch Process
+09/03/2016 18:15:16: 
+Job Name : temp_h_job is processing. Please wait for 5000 milliseconds
+09/03/2016 18:15:21: 
+Job Name : temp_h_job has successfully completed
+09/03/2016 18:15:21: 
+Job Name : temp_h_job has successfully completed
+09/03/2016 18:15:21: Tell the timer GIS synch process has stopped executing)
+09/03/2016 18:15:21: Tell process to stop GIS Synch Process
                         save object file with false parameter. 
                         This stops the Windows service from running GIS synch process until instructed so by a client)
-08/03/2016 16:49:35: GIS synch process has completed successfully.
+09/03/2016 18:15:21: GIS synch process has completed successfully.
                         Tell the GIS to Sharepoint client to start shipping erfs to SharePoint)
-08/03/2016 16:49:35: Timer ticked and executePythonCode()  method or 
+09/03/2016 18:15:21: Timer ticked and executePythonCode()  method or 
                         job has successfully completed(But with a pinch of salt-There could be errors)

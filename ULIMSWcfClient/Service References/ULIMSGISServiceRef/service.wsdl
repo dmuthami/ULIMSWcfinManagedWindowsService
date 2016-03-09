@@ -18,12 +18,6 @@
   <wsdl:message name="IULIMSGISService_isSuccessGISSyncProcess_OutputMessage">
     <wsdl:part name="parameters" element="tns:isSuccessGISSyncProcessResponse" />
   </wsdl:message>
-  <wsdl:message name="IULIMSGISService_executePythonProcessPerTown_InputMessage">
-    <wsdl:part name="parameters" element="tns:executePythonProcessPerTown" />
-  </wsdl:message>
-  <wsdl:message name="IULIMSGISService_executePythonProcessPerTown_OutputMessage">
-    <wsdl:part name="parameters" element="tns:executePythonProcessPerTownResponse" />
-  </wsdl:message>
   <wsdl:portType name="IULIMSGISService">
     <wsdl:operation name="startGISSyncProcess">
       <wsdl:input wsaw:Action="http://wcf.ulims.com.na/IULIMSGISService/startGISSyncProcess" message="tns:IULIMSGISService_startGISSyncProcess_InputMessage" />
@@ -32,10 +26,6 @@
     <wsdl:operation name="isSuccessGISSyncProcess">
       <wsdl:input wsaw:Action="http://wcf.ulims.com.na/IULIMSGISService/isSuccessGISSyncProcess" message="tns:IULIMSGISService_isSuccessGISSyncProcess_InputMessage" />
       <wsdl:output wsaw:Action="http://wcf.ulims.com.na/IULIMSGISService/isSuccessGISSyncProcessResponse" message="tns:IULIMSGISService_isSuccessGISSyncProcess_OutputMessage" />
-    </wsdl:operation>
-    <wsdl:operation name="executePythonProcessPerTown">
-      <wsdl:input wsaw:Action="http://wcf.ulims.com.na/IULIMSGISService/executePythonProcessPerTown" message="tns:IULIMSGISService_executePythonProcessPerTown_InputMessage" />
-      <wsdl:output wsaw:Action="http://wcf.ulims.com.na/IULIMSGISService/executePythonProcessPerTownResponse" message="tns:IULIMSGISService_executePythonProcessPerTown_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
 </wsdl:definitions>
