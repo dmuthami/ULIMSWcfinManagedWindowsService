@@ -11,6 +11,9 @@ using System.Data;
 using System.Threading;
 using System.Configuration;
 
+using Utility.ulims.com.na;
+
+
 namespace ulimsgispython.ulims.com.na
 {
     class SQLJob2
@@ -110,19 +113,19 @@ namespace ulimsgispython.ulims.com.na
                 {
                     
                     //Write to console asking for patience as the job executes
-                    IPythonLibrary.WriteErrorLog(String.Format("{0}Job Name : {1} is processing. Please wait for {2} milliseconds", Environment.NewLine, JobName, threadWait));
+                    Logger.WriteErrorLog(String.Format("{0}Job Name : {1} is processing. Please wait for {2} milliseconds", Environment.NewLine, JobName, threadWait));
                     Thread.Sleep(threadWait);
                     job.Refresh();
                 }
                 //Log message
-                IPythonLibrary.WriteErrorLog(String.Format("{0}Job Name : {1} has successfully completed", Environment.NewLine, JobName)); //Write to console saying we are done
+                Logger.WriteErrorLog(String.Format("{0}Job Name : {1} has successfully completed", Environment.NewLine, JobName)); //Write to console saying we are done
             }
             finally
             {
                 if (server.ConnectionContext.IsOpen) //Check if still connection is open
                 {
                     server.ConnectionContext.Disconnect();//Safely disconnect SQL Server
-                    IPythonLibrary.WriteErrorLog(String.Format("{0}Job Name : {1} has successfully completed", Environment.NewLine, JobName)); //Write to console saying we are done
+                    Logger.WriteErrorLog(String.Format("{0}Job Name : {1} has successfully completed", Environment.NewLine, JobName)); //Write to console saying we are done
                    
                 }
 

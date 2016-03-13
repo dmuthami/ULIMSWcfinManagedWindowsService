@@ -1,0 +1,4 @@
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\Utility\bin\Debug\Utility.dll
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\Utility\bin\Debug\Utility.pdb
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\Utility\obj\Debug\Utility.dll
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\Utility\obj\Debug\Utility.pdb

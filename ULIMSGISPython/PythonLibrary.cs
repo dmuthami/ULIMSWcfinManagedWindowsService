@@ -9,6 +9,8 @@ using System.Diagnostics;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Configuration;//Process
 
+using Utility.ulims.com.na;
+
 
 
 namespace ulimsgispython.ulims.com.na
@@ -24,57 +26,19 @@ namespace ulimsgispython.ulims.com.na
 
 
         #region Getter and Setters
-        /// <summary>
-        /// Property : mExecutablePath
-        /// Wrapped up in a getter and setter
-        /// </summary>
-        public string ExecutablePath
-        {
-            get { return mExecutablePath; }
-            set
-            {
-                try
-                {
-                    mExecutablePath = value;//get path to *.exe
 
-                }
-                catch (Exception)
-                {
-
-                    throw;//In case of an error then throws it up the stack trace
-                }
-            }
-        }
-        /// <summary>
-        /// Property : mExecutableRootDirectory
-        /// Wrapped up in a getter and setter
-        /// </summary>
-        public string ExecutableRootDirectory
-        {
-            get { return mExecutableRootDirectory; }
-            set
-            {
-                try
-                {
-                    mExecutableRootDirectory = value; // get directory containing the *.exe
-                }
-                catch (Exception)
-                {
-
-                    throw;//In case of an error then throws it up the stack trace
-                }
-            }
-        }
         /// <summary>
         /// Property : mSortOutput
         /// Wrapped up in a getter and setter
         /// </summary>
         public StringBuilder mSortOutput { get; set; }
+
         /// <summary>
         /// Property : mNumOutputLines
         /// Wrapped up in a getter and setter
         /// </summary>
         public int mNumOutputLines { get; set; }
+
         /// <summary>
         /// Property : mPythonCodeFolder
         /// Wrapped up in a getter and setter
@@ -83,64 +47,7 @@ namespace ulimsgispython.ulims.com.na
 
         #endregion
 
-        /// <summary>
-        /// Create a log method (WriteErrorLog) to log the exceptions
-        /// </summary>
-        /// <param name="ex"></param>
 
-        public PythonLibrary()
-        {
-            getPaths();
-        }
-        public void WriteErrorLog(Exception ex)
-        {
-            StreamWriter streamWriter = null;
-            try
-            {
-                //initializes a new instance of the StreamWriter class for the specified file in the location of the *.exe. Allows create or append to the file.
-                streamWriter = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "logfile.txt", true);
-
-                //Write string followed by line terminator. Components of string is time and source & message of the exception object
-                streamWriter.WriteLine(DateTime.Now.ToString() + ": " + ex.Source.ToString().Trim() +
-                    ex.Message.ToString().Trim());
-
-                //Clears all buffers for the current writer and causes any buffered data to be written to the underlying stream.
-                streamWriter.Flush();
-
-                //Closes the current StreamWriter object and the underlying stream
-                streamWriter.Close();
-            }
-            catch
-            {
-                //Nothing goes here
-            }
-        }
-        /// <summary>
-        /// Create a log method (WriteErrorLog) to log the custom messages
-        /// </summary>
-        /// <param name="Message"></param>
-        public void WriteErrorLog(string Message)
-        {
-            StreamWriter streamWriter = null;
-            try
-            {
-                //initializes a new instance of the StreamWriter class for the specified file in the location of the *.exe. Allows create or append to the file.
-                streamWriter = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "logfile.txt", true);
-
-                //Write string followed by line terminator. Components of string is time and custom message
-                streamWriter.WriteLine(DateTime.Now.ToString() + ": " + Message);
-
-                //Clears all buffers for the current writer and causes any buffered data to be written to the underlying stream.
-                streamWriter.Flush();
-
-                //Closes the current StreamWriter object and the underlying stream
-                streamWriter.Close();
-            }
-            catch
-            {
-                //Nothing goes here
-            }
-        }
         /// <summary>
         /// Method : executePythonProcess()
         /// Loops through a dictionary object listing the 10 piloting towns
@@ -179,7 +86,7 @@ namespace ulimsgispython.ulims.com.na
                     {
 
                         string msg = String.Format("{0}Execution of Compute Stand No : {1} has not been fired/started for {2}.", Environment.NewLine, computeStandNo.ToString(), townpair);
-                        this.WriteErrorLog(msg);
+                        Logger.WriteErrorLog(msg);
 
                     }
 
@@ -193,7 +100,7 @@ namespace ulimsgispython.ulims.com.na
                     {
 
                         string msg = String.Format("{0}Execution of Auto Reconcile and Post : {1} has not been fired/started for {2}.", Environment.NewLine, autoReconcileAndPost.ToString(), townpair);
-                        this.WriteErrorLog(msg);
+                        Logger.WriteErrorLog(msg);
 
                     }
                 }
@@ -210,7 +117,7 @@ namespace ulimsgispython.ulims.com.na
                 {
                     //Write error log
                     string msg = String.Format("{0}Execution of Job Name : {1} has been fired/started.", Environment.NewLine, jobName);
-                    this.WriteErrorLog(msg);
+                    Logger.WriteErrorLog(msg);
 
                     //Instantiate class that runs SQL Job
                     SQLJob2 sQLJob2 = new SQLJob2();
@@ -229,7 +136,7 @@ namespace ulimsgispython.ulims.com.na
                 {
 
                     string msg = String.Format("{0}Execution of Job Name : {1} has not been fired/started.", Environment.NewLine, jobName);
-                    this.WriteErrorLog(msg);
+                    Logger.WriteErrorLog(msg);
 
                 }
 
@@ -253,16 +160,16 @@ namespace ulimsgispython.ulims.com.na
             {
 
                 //Get path of config file
-                String configFilePath = "\"" + ExecutableRootDirectory + String.Format("\\local_authorities\\{0}\\Config.ini", townName) + "\"";
+                String configFilePath = "\"" + Logger.ExecutableRootDirectory + String.Format("\\local_authorities\\{0}\\Config.ini", townName) + "\"";
 
                 //Get path of main python file
-                String pathToPythonMainFile = "\"" + ExecutableRootDirectory + String.Format("\\local_authorities\\{0}\\{1}", mPythonCodeFolder, pythonFileToExecute) + "\"";
+                String pathToPythonMainFile = "\"" + Logger.ExecutableRootDirectory + String.Format("\\local_authorities\\{0}\\{1}", mPythonCodeFolder, pythonFileToExecute) + "\"";
 
                 //Get path of reconcile log file
-                String reconcileLogFilePath = "\"" + ExecutableRootDirectory + String.Format("\\local_authorities\\{0}\\{0}_reconcile.log", townName) + "\"";
+                String reconcileLogFilePath = "\"" + Logger.ExecutableRootDirectory + String.Format("\\local_authorities\\{0}\\{0}_reconcile.log", townName) + "\"";
 
                 //Set path for current directory or strictly speaking directory of interest that you want to make current
-                String currDirPath = "\"" + ExecutableRootDirectory + String.Format("\\local_authorities", "") + "\"";
+                String currDirPath = "\"" + Logger.ExecutableRootDirectory + String.Format("\\local_authorities", "") + "\"";
 
                 //Create an instance of Python Process class
                 Process process = new Process();
@@ -306,7 +213,7 @@ namespace ulimsgispython.ulims.com.na
                 //Wait for the python process
                 process.WaitForExit();
 
-                WriteErrorLog(mSortOutput.ToString());//Write to dotnet log file
+                Logger.WriteErrorLog(mSortOutput.ToString());//Write to dotnet log file
 
                 //Releases all resources by the component
                 process.Close();
@@ -319,23 +226,7 @@ namespace ulimsgispython.ulims.com.na
             }
 
         }
-        /// <summary>
-        /// Method : getPaths()
-        /// Retuns path and directory of the exutable file and stores in member variables
-        /// </summary>        
-        private void getPaths()
-        {
-            try
-            {
-                ExecutablePath = System.Reflection.Assembly.GetExecutingAssembly().Location;//get path to *.exe
-                ExecutableRootDirectory = System.IO.Path.GetDirectoryName(ExecutablePath); // get directory containing the *.exe
-            }
-            catch (Exception)
-            {
 
-                throw;//In case of an error then throws it up the stack trace
-            }
-        }
         /// <summary>
         /// event Handler : sortOutputHandler
         /// Asynchronously captures ouptput writen to console by python

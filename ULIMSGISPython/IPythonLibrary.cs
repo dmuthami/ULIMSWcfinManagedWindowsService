@@ -9,16 +9,6 @@ namespace ulimsgispython.ulims.com.na
     public interface IPythonLibrary
     {
         /// <summary>
-        /// Create a log method (WriteErrorLog) to log the exceptions
-        /// </summary>
-        /// <param name="ex"></param>        
-        void WriteErrorLog(Exception ex);
-        /// <summary>
-        /// Create a log method (WriteErrorLog) to log the custom messages
-        /// </summary>
-        /// <param name="Message"></param>        
-        void WriteErrorLog(string Message);
-        /// <summary>
         /// Method : executePythonProcess()
         /// Loops through a dictionary object listing the 10 piloting towns
         ///     For each town launches a process to perfom automatic reconcile and post
@@ -34,17 +24,6 @@ namespace ulimsgispython.ulims.com.na
         /// <param name="pythonFileExecute"></param>  
         void executePythonProcessPerTown(string townName, String pythonFileToExecute);
 
-        /// <summary>
-        /// Property : mExecutablePath
-        /// Wrapped up in a getter and setter
-        /// </summary>        
-        string ExecutablePath { get; set; }
-        /// <summary>
-        /// Property : mExecutableRootDirectory
-        /// Wrapped up in a getter and setter
-        /// </summary>        
-
-        string ExecutableRootDirectory { get; set; }
         /// <summary>
         /// Property : mNumOutputLines
         /// Wrapped up in a getter and setter

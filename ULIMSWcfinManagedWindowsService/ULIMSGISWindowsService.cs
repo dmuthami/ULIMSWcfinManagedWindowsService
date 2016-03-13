@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Timers;
 using ULIMSGISPython = ulimsgispython.ulims.com.na ;
 
+//Utility Clacc library
+using Utility.ulims.com.na;
+
 namespace wcf.ulims.com.na
 {
     public class ULIMSGISWindowsService : ServiceBase
@@ -103,7 +106,7 @@ namespace wcf.ulims.com.na
             catch (Exception ex)
             {
 
-                IPythonLibrary.WriteErrorLog(ex);//Write error to log file
+                Logger.WriteErrorLog(ex);//Write error to log file
             }
         }
 
@@ -136,9 +139,18 @@ namespace wcf.ulims.com.na
 
             mIULIMSGISService.MIPythonLibrary = IPythonLibrary;
 
-            mIULIMSGISService.SetFileNamePath();
+            //Code ensures execute path and execute directory are returned successfully
+            Logger.ExecutablePath = ""; Logger.ExecutableRootDirectory = "";
+            
+            //Get path
+            string filePathForSerializedObject = Logger.ExecutableRootDirectory + @"\" + "SavedULIMSObjects.bin";
 
-            mIULIMSGISService.saveObject(mIULIMSGISService.MFileName);
+            //Call save object
+            mIULIMSGISService.saveObject(filePathForSerializedObject);
+
+            //Write to logger
+            Logger.WriteErrorLog("Executable Path :"+Environment.NewLine + Logger.ExecutablePath);
+            Logger.WriteErrorLog("Execute Root Directory"+Environment.NewLine + Logger.ExecutableRootDirectory);
 
             //mIULIMSGISService.mCalculatorWindowsService = uLIMSGISWindowsService;
         }
@@ -168,13 +180,13 @@ namespace wcf.ulims.com.na
                 mIULIMSGISService.saveObject(false);
 
                 //Write to log file indicating GIS service has started successfully.
-                IPythonLibrary.WriteErrorLog("ULIMS GIS Synchonization Service started");
+                Logger.WriteErrorLog("ULIMS GIS Synchonization Service started");
 
             }
             catch (Exception ex)
             {
 
-                IPythonLibrary.WriteErrorLog(ex);//Write error to log file
+                Logger.WriteErrorLog(ex);//Write error to log file
             }
         }
 
@@ -196,7 +208,7 @@ namespace wcf.ulims.com.na
                 try
                 {
                     //Indicate and write to log file shouting that execution of python code is firing from all cylinders
-                    IPythonLibrary.WriteErrorLog(@"Timer ticked and executePythonCode()  method or 
+                    Logger.WriteErrorLog(@"Timer ticked and executePythonCode()  method or 
                         job has been done fired");
 
                     //Call method that executes python code
@@ -204,30 +216,30 @@ namespace wcf.ulims.com.na
                 }
                 catch (Exception ex)
                 {
-                    IPythonLibrary.WriteErrorLog(ex);//Write error to log file
+                    Logger.WriteErrorLog(ex);//Write error to log file
                 }
                 finally
                 {
                     //Tell the timer GIS synch process has stopped executing
                     mIULIMSGISService.mEexecuting = false;
-                    IPythonLibrary.WriteErrorLog(@"Tell the timer GIS synch process has stopped executing)");
+                    Logger.WriteErrorLog(@"Tell the timer GIS synch process has stopped executing)");
 
                     //Tell process to stop GIS Synch Process
                     //save object file with false parameter. 
                     //This stops the Windows service from running GIS synch process until instructed so by a client
                     mIULIMSGISService.saveObject(false);
 
-                    IPythonLibrary.WriteErrorLog(@"Tell process to stop GIS Synch Process
+                    Logger.WriteErrorLog(@"Tell process to stop GIS Synch Process
                         save object file with false parameter. 
                         This stops the Windows service from running GIS synch process until instructed so by a client)");
 
                     //GIS synch process has completed successfully.//Tell the GIS to Sharepoint client to start shipping erfs to SharePoint
                     mIULIMSGISService.MGISSyncProcess = true;
 
-                    IPythonLibrary.WriteErrorLog(@"GIS synch process has completed successfully.
+                    Logger.WriteErrorLog(@"GIS synch process has completed successfully.
                         Tell the GIS to Sharepoint client to start shipping erfs to SharePoint)");
 
-                    IPythonLibrary.WriteErrorLog(@"Timer ticked and executePythonCode()  method or 
+                    Logger.WriteErrorLog(@"Timer ticked and executePythonCode()  method or 
                         job has successfully completed(But with a pinch of salt-There could be errors)");
 
                 }

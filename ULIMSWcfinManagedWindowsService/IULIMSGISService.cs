@@ -38,9 +38,6 @@ namespace wcf.ulims.com.na
 
         IPythonLibrary MIPythonLibrary { get; set; }
 
-        string MFileName { get; set; }
-
-        void SetFileNamePath();
     }
 }
 

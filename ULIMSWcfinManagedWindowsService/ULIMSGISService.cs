@@ -9,14 +9,15 @@ using System.Diagnostics;
 using System.Runtime.Serialization.Formatters.Binary;
 using ulimsgispython.ulims.com.na;//Process
 
+using Utility.ulims.com.na;
+
+
 namespace wcf.ulims.com.na
 {
     public class ULIMSGISService : IULIMSGISService
     {
 
         #region Member Variables
-        private string mFileName = null;
-
 
         private bool mGISSyncProcess;
         private ULIMSSerializer.ULIMSSerializer uLIMSSerializer = new ULIMSSerializer.ULIMSSerializer();
@@ -32,11 +33,6 @@ namespace wcf.ulims.com.na
             get { return mIPythonLibrary; }
             set { mIPythonLibrary = value; }
         }
-        public string MFileName
-        {
-            get { return mFileName; }
-            set { mFileName = value; }
-        }
 
         #endregion
         /// <summary>
@@ -45,35 +41,16 @@ namespace wcf.ulims.com.na
         /// </summary>       
         public bool mEexecuting { get; set; }
 
-        public ULIMSGISService() { 
-
-        }
-        public ULIMSGISService(IPythonLibrary iPythonLibrary)
+        #region Constructors
+        public ULIMSGISService()
         {
-            MIPythonLibrary = iPythonLibrary;
-            try
-            {
-                SetFileNamePath();
-            }
-            catch (Exception  ex)
-            {
-                
-                MIPythonLibrary.WriteErrorLog(ex.ToString());
-            }
-        }
 
-        public void SetFileNamePath(){
-
-            MFileName = MIPythonLibrary.ExecutableRootDirectory + @"\" + "SavedULIMSObjects.bin";
         }
+        #endregion
 
         private void SetFileNamePath(bool local)
         {
-
-
-            string executablePath = System.Reflection.Assembly.GetExecutingAssembly().Location;//get path to *.exe
-            string eExecutableRootDirectory = System.IO.Path.GetDirectoryName(executablePath); // get directory containing the *.exe
-            MFileName = eExecutableRootDirectory + @"\" + "SavedULIMSObjects.bin";
+            Logger.MFileName = Logger.ExecutableRootDirectory + @"\" + "SavedULIMSObjects.bin";
         }
         /// <summary>
         /// startGISSyncProcess Method: Exposed to the wcf clents 
@@ -119,7 +96,7 @@ namespace wcf.ulims.com.na
 
                 uLIMSSerializer.HasGISSyncProcessCompleted = value; // state of GIS Synch process complete      
                 //persist to binary file
-                Stream TestFileStream = File.Create(MFileName);
+                Stream TestFileStream = File.Create(Logger.MFileName);
                 BinaryFormatter serializer = new BinaryFormatter();
                 serializer.Serialize(TestFileStream, mULIMSSerializer);
                 TestFileStream.Close();
@@ -159,10 +136,10 @@ namespace wcf.ulims.com.na
         {
             try
             {
-                if (String.IsNullOrEmpty(MFileName) == true) { SetFileNamePath(true); }
-                if (File.Exists(MFileName))
+                if (String.IsNullOrEmpty(Logger.MFileName) == true) { SetFileNamePath(true); }
+                if (File.Exists(Logger.MFileName))
                 {
-                    Stream TestFileStream = File.OpenRead(MFileName);
+                    Stream TestFileStream = File.OpenRead(Logger.MFileName);
                     BinaryFormatter deserializer = new BinaryFormatter();
                     mULIMSSerializer = (ULIMSSerializer.ULIMSSerializer)deserializer.Deserialize(TestFileStream);
                     TestFileStream.Close();
@@ -179,11 +156,11 @@ namespace wcf.ulims.com.na
         {
             try
             {
-                if (String.IsNullOrEmpty(MFileName) == true) { SetFileNamePath(true); }
+                if (String.IsNullOrEmpty(Logger.MFileName) == true) { SetFileNamePath(true); }
 
                 mULIMSSerializer.HasGISSyncProcessstarted = state1; // state of GIS Synch process start      
 
-                Stream TestFileStream = File.Create(MFileName);
+                Stream TestFileStream = File.Create(Logger.MFileName);
                 BinaryFormatter serializer = new BinaryFormatter();
                 serializer.Serialize(TestFileStream, mULIMSSerializer);
                 TestFileStream.Close();
@@ -199,14 +176,15 @@ namespace wcf.ulims.com.na
         {
             try
             {
-                mULIMSSerializer.mFileName = filePathForSerializedObject; // state of GIS Synch process start      
+                
+                Logger.MFileName = filePathForSerializedObject; // state of GIS Synch process start      
 
-                Stream TestFileStream = File.Create(MFileName);
+                Stream TestFileStream = File.Create(Logger.MFileName);
                 BinaryFormatter serializer = new BinaryFormatter();
                 serializer.Serialize(TestFileStream, mULIMSSerializer);
                 TestFileStream.Close();
 
-                MIPythonLibrary.WriteErrorLog(Environment.NewLine + "Serialized Object File Path :" + MFileName);
+                Logger.WriteErrorLog(Environment.NewLine + "Serialized Object File Path :" + Logger.MFileName);
             }
             catch (Exception)
             {

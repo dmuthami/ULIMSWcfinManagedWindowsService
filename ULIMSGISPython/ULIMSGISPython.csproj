@@ -68,6 +68,10 @@
       <Project>{2ef39110-c39b-4a9a-9f53-5f69d1559927}</Project>
       <Name>ULIMSSerializer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.csproj">
+      <Project>{a31cb773-c545-4049-a676-b3b3a04e731e}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

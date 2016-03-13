@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using ULIMSWcfClient.ULIMSGISServiceRef;
 
+
+
 namespace ULIMSWcfClient
 {
     class Program
@@ -19,6 +21,10 @@ namespace ULIMSWcfClient
 
                 //Call method to start GIS Synch process
                 program.GISSynchProcess();
+
+                //Logger.ExecutablePath = ""; Logger.ExecutableRootDirectory = "";
+                //Console.WriteLine(Environment.NewLine + Logger.ExecutablePath);
+                //Console.WriteLine(Environment.NewLine + Logger.ExecutableRootDirectory);
 
                 //Execute the SQL Job
                 //SQLJob2 sQLJob2 = new SQLJob2();
