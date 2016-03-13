@@ -58,6 +58,7 @@
   <ItemGroup>
     <None Include="App.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </None>
     <None Include="local_authorities\helao_nafidi\Config.ini">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

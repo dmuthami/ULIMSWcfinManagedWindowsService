@@ -38,13 +38,13 @@ namespace ulimsgispython.ulims.com.na
         /// Property : mExecutablePath
         /// Wrapped up in a getter and setter
         /// </summary>        
-        string mExecutablePath { get; set; }
+        string ExecutablePath { get; set; }
         /// <summary>
         /// Property : mExecutableRootDirectory
         /// Wrapped up in a getter and setter
         /// </summary>        
 
-        string mExecutableRootDirectory { get; set; }
+        string ExecutableRootDirectory { get; set; }
         /// <summary>
         /// Property : mNumOutputLines
         /// Wrapped up in a getter and setter

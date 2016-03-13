@@ -5,3 +5,10 @@ E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Release
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\obj\Release\ULIMSGISPython.csprojResolveAssemblyReference.cache
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\obj\Release\ULIMSGISPython.dll
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\obj\Release\ULIMSGISPython.pdb
+C:\Users\dmuthami\Desktop\clone\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Release\ULIMSGISPython.dll
+C:\Users\dmuthami\Desktop\clone\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Release\ULIMSGISPython.pdb
+C:\Users\dmuthami\Desktop\clone\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Release\ULIMSSerializer.dll
+C:\Users\dmuthami\Desktop\clone\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Release\ULIMSSerializer.pdb
+C:\Users\dmuthami\Desktop\clone\ULIMSWcfinManagedWindowsService\ULIMSGISPython\obj\Release\ULIMSGISPython.csprojResolveAssemblyReference.cache
+C:\Users\dmuthami\Desktop\clone\ULIMSWcfinManagedWindowsService\ULIMSGISPython\obj\Release\ULIMSGISPython.dll
+C:\Users\dmuthami\Desktop\clone\ULIMSWcfinManagedWindowsService\ULIMSGISPython\obj\Release\ULIMSGISPython.pdb

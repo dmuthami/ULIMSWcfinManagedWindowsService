@@ -13,5 +13,6 @@ namespace ULIMSSerializer
 
        public bool HasGISSyncProcessCompleted { get; set; }
 
+       public string mFileName { get; set; }
     }
 }

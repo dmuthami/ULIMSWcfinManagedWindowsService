@@ -15,10 +15,83 @@ namespace ulimsgispython.ulims.com.na
 {
     public class PythonLibrary : IPythonLibrary
     {
+        #region Member Variables
+
+        private string mExecutablePath;
+        private string mExecutableRootDirectory;
+
+        #endregion
+
+
+        #region Getter and Setters
+        /// <summary>
+        /// Property : mExecutablePath
+        /// Wrapped up in a getter and setter
+        /// </summary>
+        public string ExecutablePath
+        {
+            get { return mExecutablePath; }
+            set
+            {
+                try
+                {
+                    mExecutablePath = value;//get path to *.exe
+
+                }
+                catch (Exception)
+                {
+
+                    throw;//In case of an error then throws it up the stack trace
+                }
+            }
+        }
+        /// <summary>
+        /// Property : mExecutableRootDirectory
+        /// Wrapped up in a getter and setter
+        /// </summary>
+        public string ExecutableRootDirectory
+        {
+            get { return mExecutableRootDirectory; }
+            set
+            {
+                try
+                {
+                    mExecutableRootDirectory = value; // get directory containing the *.exe
+                }
+                catch (Exception)
+                {
+
+                    throw;//In case of an error then throws it up the stack trace
+                }
+            }
+        }
+        /// <summary>
+        /// Property : mSortOutput
+        /// Wrapped up in a getter and setter
+        /// </summary>
+        public StringBuilder mSortOutput { get; set; }
+        /// <summary>
+        /// Property : mNumOutputLines
+        /// Wrapped up in a getter and setter
+        /// </summary>
+        public int mNumOutputLines { get; set; }
+        /// <summary>
+        /// Property : mPythonCodeFolder
+        /// Wrapped up in a getter and setter
+        /// </summary>
+        public string mPythonCodeFolder { get; set; }
+
+        #endregion
+
         /// <summary>
         /// Create a log method (WriteErrorLog) to log the exceptions
         /// </summary>
         /// <param name="ex"></param>
+
+        public PythonLibrary()
+        {
+            getPaths();
+        }
         public void WriteErrorLog(Exception ex)
         {
             StreamWriter streamWriter = null;
@@ -97,7 +170,8 @@ namespace ulimsgispython.ulims.com.na
                 foreach (KeyValuePair<string, string> townpair in dictionary)
                 {
                     //Check if we can compute stand number
-                    if (computeStandNo==true) {
+                    if (computeStandNo == true)
+                    {
                         //Call function to execute python process for computing stand number for each town    
                         executePythonProcessPerTown((String)townpair.Value, "InvokeComputeStandNo.py");
                     }
@@ -124,7 +198,7 @@ namespace ulimsgispython.ulims.com.na
                     }
                 }
 
-                
+
                 //Call code to excute SQL job
                 //Check if we can fire the SQL job
                 Boolean sqlJob = Convert.ToBoolean(ConfigurationManager.AppSettings["sql_job"].ToString());
@@ -134,7 +208,7 @@ namespace ulimsgispython.ulims.com.na
                 string jobName = (ConfigurationManager.AppSettings["jobName"].ToString());
                 if (sqlJob == true)
                 {
-                   //Write error log
+                    //Write error log
                     string msg = String.Format("{0}Execution of Job Name : {1} has been fired/started.", Environment.NewLine, jobName);
                     this.WriteErrorLog(msg);
 
@@ -177,20 +251,18 @@ namespace ulimsgispython.ulims.com.na
         {
             try
             {
-                //Get path of the exe and its directory path
-                getPaths();
 
                 //Get path of config file
-                String configFilePath = "\"" + mExecutableRootDirectory + String.Format("\\local_authorities\\{0}\\Config.ini", townName) + "\"";
+                String configFilePath = "\"" + ExecutableRootDirectory + String.Format("\\local_authorities\\{0}\\Config.ini", townName) + "\"";
 
                 //Get path of main python file
-                String pathToPythonMainFile = "\"" + mExecutableRootDirectory + String.Format("\\local_authorities\\{0}\\{1}", mPythonCodeFolder, pythonFileToExecute) + "\"";
+                String pathToPythonMainFile = "\"" + ExecutableRootDirectory + String.Format("\\local_authorities\\{0}\\{1}", mPythonCodeFolder, pythonFileToExecute) + "\"";
 
                 //Get path of reconcile log file
-                String reconcileLogFilePath = "\"" + mExecutableRootDirectory + String.Format("\\local_authorities\\{0}\\{0}_reconcile.log", townName) + "\"";
+                String reconcileLogFilePath = "\"" + ExecutableRootDirectory + String.Format("\\local_authorities\\{0}\\{0}_reconcile.log", townName) + "\"";
 
                 //Set path for current directory or strictly speaking directory of interest that you want to make current
-                String currDirPath = "\"" + mExecutableRootDirectory + String.Format("\\local_authorities", "") + "\"";
+                String currDirPath = "\"" + ExecutableRootDirectory + String.Format("\\local_authorities", "") + "\"";
 
                 //Create an instance of Python Process class
                 Process process = new Process();
@@ -246,7 +318,7 @@ namespace ulimsgispython.ulims.com.na
                 throw;//In case of an error then throws it up the stack trace
             }
 
-        }        
+        }
         /// <summary>
         /// Method : getPaths()
         /// Retuns path and directory of the exutable file and stores in member variables
@@ -255,8 +327,8 @@ namespace ulimsgispython.ulims.com.na
         {
             try
             {
-                mExecutablePath = System.Reflection.Assembly.GetExecutingAssembly().Location;//get path to *.exe
-                mExecutableRootDirectory = System.IO.Path.GetDirectoryName(mExecutablePath); // get directory containing the *.exe
+                ExecutablePath = System.Reflection.Assembly.GetExecutingAssembly().Location;//get path to *.exe
+                ExecutableRootDirectory = System.IO.Path.GetDirectoryName(ExecutablePath); // get directory containing the *.exe
             }
             catch (Exception)
             {
@@ -290,31 +362,7 @@ namespace ulimsgispython.ulims.com.na
                 throw;//In case of an error then throws it up the stack trace
             }
         }
-        /// <summary>
-        /// Property : mExecutablePath
-        /// Wrapped up in a getter and setter
-        /// </summary>
-        public string mExecutablePath { get; set; }
-        /// <summary>
-        /// Property : mExecutableRootDirectory
-        /// Wrapped up in a getter and setter
-        /// </summary>
-        public string mExecutableRootDirectory { get; set; }
-        /// <summary>
-        /// Property : mSortOutput
-        /// Wrapped up in a getter and setter
-        /// </summary>
-        public StringBuilder mSortOutput { get; set; }
-        /// <summary>
-        /// Property : mNumOutputLines
-        /// Wrapped up in a getter and setter
-        /// </summary>
-        public int mNumOutputLines { get; set; }
-        /// <summary>
-        /// Property : mPythonCodeFolder
-        /// Wrapped up in a getter and setter
-        /// </summary>
-        public string mPythonCodeFolder { get; set; }
+
 
     }
 }

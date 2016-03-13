@@ -4,6 +4,7 @@ using System.Linq;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
+using ulimsgispython.ulims.com.na;
 
 namespace wcf.ulims.com.na
 {
@@ -32,6 +33,14 @@ namespace wcf.ulims.com.na
         void readObject();
 
         void saveObject(bool state1);
+
+        void saveObject(string filePathForSerializedObject);
+
+        IPythonLibrary MIPythonLibrary { get; set; }
+
+        string MFileName { get; set; }
+
+        void SetFileNamePath();
     }
 }
 

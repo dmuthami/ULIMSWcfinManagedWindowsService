@@ -134,6 +134,11 @@ namespace wcf.ulims.com.na
              */
             mIULIMSGISService = new ULIMSGISService();
 
+            mIULIMSGISService.MIPythonLibrary = IPythonLibrary;
+
+            mIULIMSGISService.SetFileNamePath();
+
+            mIULIMSGISService.saveObject(mIULIMSGISService.MFileName);
 
             //mIULIMSGISService.mCalculatorWindowsService = uLIMSGISWindowsService;
         }

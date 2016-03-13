@@ -71,7 +71,9 @@
     <Compile Include="SQLJob2.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\ULIMSGISServiceRef\CalculatorService.wsdl" />
     <None Include="Service References\ULIMSGISServiceRef\service.wsdl" />
     <None Include="Service References\ULIMSGISServiceRef\service.xsd">

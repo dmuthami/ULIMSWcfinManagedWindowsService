@@ -3,3 +3,8 @@ E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\bin\Debug\U
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\bin\Debug\ULIMSWcfClient.pdb
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\obj\Debug\ULIMSWcfClient.exe
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\obj\Debug\ULIMSWcfClient.pdb
+C:\Users\dmuthami\Desktop\clone\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\bin\Debug\ULIMSWcfClient.exe.config
+C:\Users\dmuthami\Desktop\clone\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\bin\Debug\ULIMSWcfClient.exe
+C:\Users\dmuthami\Desktop\clone\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\bin\Debug\ULIMSWcfClient.pdb
+C:\Users\dmuthami\Desktop\clone\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\obj\Debug\ULIMSWcfClient.exe
+C:\Users\dmuthami\Desktop\clone\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\obj\Debug\ULIMSWcfClient.pdb
