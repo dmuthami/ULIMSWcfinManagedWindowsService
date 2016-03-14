@@ -9,21 +9,30 @@ using System.Threading.Tasks;
 
 namespace wcf.ulims.com.na
 {
-    [RunInstaller(true)]
+    [RunInstaller(true)]//allows 
     public class ProjectInstaller : Installer
     {
+
+        #region Member Variables
         private ServiceProcessInstaller process;
         private ServiceInstaller service;
 
+        #endregion
+
+        #region Constructor
+
+        /// <summary>
+        /// Constructor Method: ProjectInstaller()
+        /// </summary>
         public ProjectInstaller()
         {
             try
             {
                 process = new ServiceProcessInstaller();
-                process.Account = ServiceAccount.LocalSystem;
-                service = new ServiceInstaller();
-                service.ServiceName = "ULIMS WCF GIS Synch Service";
-                Installers.Add(process);
+                process.Account = ServiceAccount.LocalSystem; //Run services as local system account
+                service = new ServiceInstaller(); //Service installer
+                service.ServiceName = "ULIMS WCF GIS Synch Service"; //Service Name
+                Installers.Add(process); 
                 Installers.Add(service);
             }
             catch (Exception ex)
@@ -33,5 +42,8 @@ namespace wcf.ulims.com.na
                 throw new Exception("ProjectInstaller.ProjectInstaller() : ", ex);
             }
         }
+
+        #endregion
+
     }
 }

@@ -73,6 +73,8 @@ namespace Utility.ulims.com.na
         }
         #endregion
 
+        #region Logger Methods
+
         /// <summary>
         /// Create a log method (WriteErrorLog) to log the exceptions
         /// </summary>
@@ -127,5 +129,8 @@ namespace Utility.ulims.com.na
                 //Nothing goes here
             }
         }
+   
+        #endregion
+
     }
 }

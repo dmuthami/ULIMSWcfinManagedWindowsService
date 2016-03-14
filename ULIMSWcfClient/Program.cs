@@ -10,8 +10,13 @@ using Utility.ulims.com.na;
 
 namespace ULIMSWcfClient
 {
+    /// <summary>
+    /// WCF client
+    /// WCF Service is hosted on Windows Service
+    /// </summary>
     class Program
     {
+        #region Entry Method
         /// <summary>
         /// Method; Main
         /// WCF Client entry point
@@ -46,6 +51,10 @@ namespace ULIMSWcfClient
             }
 
         }
+
+        #endregion
+
+        #region Other Methods
 
         /// <summary>
         /// Method :  GISSynchProcess()
@@ -119,6 +128,9 @@ namespace ULIMSWcfClient
                 throw new Exception("Program.retrieveConfigSettings() : ", ex);
             }
         }
+    
+        #endregion
+
     }
 }
 

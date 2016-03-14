@@ -12,6 +12,10 @@ using Utility.ulims.com.na;
 
 namespace ulimsgispython.ulims.com.na
 {
+    /// <summary>
+    /// ConfigReader.cs implements IConfigReader
+    /// Responsible for reading the app.config file
+    /// </summary>
     class ConfigReader : IConfigReader
     {
 
@@ -102,7 +106,9 @@ namespace ulimsgispython.ulims.com.na
         {
             try
             {
-                StringBuilder stringBuilder = new StringBuilder("");
+                StringBuilder stringBuilder = new StringBuilder(""); //instatntiate stringbuilder object
+
+                //Header line for the stringbuilder object
                 stringBuilder.Append(Environment.NewLine + "Local authorities read from config file" + Environment.NewLine);
 
                 //Loop over pairs with foreach loop
@@ -111,6 +117,7 @@ namespace ulimsgispython.ulims.com.na
                     //Call function to execute python process for each town        
                     stringBuilder.Append(String.Format("Town : {0}", (String)townpair.Value));
                 }
+                //Write to log file
                 Logger.WriteErrorLog("ConfigReader.writeSectionToLog(Dictionary<String, String> dictionary) : "+
                     Environment.NewLine + stringBuilder.ToString() + Environment.NewLine);
                 

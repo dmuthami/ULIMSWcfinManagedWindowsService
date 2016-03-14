@@ -7,7 +7,7 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
-using ULIMSGISPython = ulimsgispython.ulims.com.na;
+using ULIMSGISPython = ulimsgispython.ulims.com.na; //python class
 
 //Utility Clacc library
 using Utility.ulims.com.na;
@@ -16,25 +16,33 @@ namespace wcf.ulims.com.na
 {
     public class ULIMSGISWindowsService : ServiceBase
     {
+
         #region Member Variables
 
         //Create a pointer to a timer as a member variable named MTimer
         private Timer mTimer = null;
 
         //Create pointer for ULIMS GIS service object
-        private IULIMSGISService iULIMSGISService = null;
+        private IULIMSGISService mULIMSGISService = null;
 
 
         //Create pointer for python library object
         private ULIMSGISPython.IPythonLibrary iPythonLibrary = null;
 
+        //An instance of this class
         static ULIMSGISWindowsService uLIMSGISWindowsService = null;
 
+        //Add a local variable to reference the ServiceHost Instance
         public ServiceHost serviceHost = null;
 
         #endregion
 
         #region Getter and Setter Methods
+
+        /// <summary>
+        /// Property: Timer
+        /// Getter and Setter Methods
+        /// </summary>
         public Timer MTimer
         {
             get
@@ -64,39 +72,45 @@ namespace wcf.ulims.com.na
                 }
             }
         }
+        
         /// <summary>
+        /// Property : MIULIMSGISService of type ULIMSGISService
         /// Get and Setter Methods
         /// </summary>
-        public IULIMSGISService mIULIMSGISService
+        public IULIMSGISService MIULIMSGISService
         {
             get
             {
                 try
                 {
-                    return iULIMSGISService;
+                    return mULIMSGISService;
                 }
                 catch (Exception ex)
                 {
                     
                     //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
-                    throw new Exception("ULIMSGISWindowsService.IULIMSGISService mIULIMSGISService get : ", ex); 
+                    throw new Exception("ULIMSGISWindowsService.IULIMSGISService MIULIMSGISService get : ", ex); 
                 }
             }
             set
             {
                 try
                 {
-                    iULIMSGISService = value;
+                    mULIMSGISService = value;
                 }
                 catch (Exception ex)
                 {
                     
                     //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
-                    throw new Exception("ULIMSGISWindowsService.IULIMSGISService mIULIMSGISService set : ", ex); 
+                    throw new Exception("ULIMSGISWindowsService.IULIMSGISService MIULIMSGISService set : ", ex); 
                 }
             }
         }
 
+        /// <summary>
+        /// Property : IPythonLibrary of type ULIMSGISPython.IPythonLibrary 
+        /// Get and Setter Methods
+        /// </summary>
         public ULIMSGISPython.IPythonLibrary IPythonLibrary
         {
             get
@@ -129,17 +143,21 @@ namespace wcf.ulims.com.na
 
         #endregion
 
+        #region Constructor
+
         /// <summary>
         /// Constructor : ULIMSGISWindowsService method
+        /// Defines the name of the Windows Service
+        /// Calls method to instantiate needed classes into required objects
         /// </summary>
         public ULIMSGISWindowsService()
         {
             try
             {
-                //Name the Windows Service Name
+                //Name the Windows Service Name. This is what appears in services.msc
                 ServiceName = "ULIMS WCF GIS Synch Service";
 
-                //Call method to initialze python objects
+                //Call method to initialze python objects and other related objects
                 initializeGISObjects();
             }
             catch (Exception ex)
@@ -150,8 +168,13 @@ namespace wcf.ulims.com.na
             }
         }
 
+        #endregion 
+
+        #region Windows Service Methods
+
         /// <summary>
         /// Main method: entry point of this program
+        /// //Define the main method that calls the service base
         /// </summary>
         public static void Main()
         {
@@ -168,7 +191,9 @@ namespace wcf.ulims.com.na
         }
 
         /// <summary>
-        /// 
+        ///  Start the Windows service
+        ///  Override the OnStart(String[]) method by creating and opening a new
+        ///  ServiceHost instance as shown in the following code.
         /// </summary>
         /// <param name="args"></param>
         protected override void OnStart(string[] args)
@@ -190,25 +215,23 @@ namespace wcf.ulims.com.na
             }
             catch (Exception ex)
             {
-
+                //Write any messages to the log file. Failure to which error is written onto the event  viewerlogs
                 Logger.WriteErrorLog("ULIMSGISWindowsService.OnStart(string[] args)" + Environment.NewLine + ex.ToString());//Write error to log file
             }
 
-            //Apply Timer Settings
-
             try
             {
+                //Apply Timer Settings for the windows service
                 timerSettings();
             }
             catch (Exception ex)
             {
-
                 Logger.WriteErrorLog(ex.ToString());//Write error to log file
             }
         }
 
         /// <summary>
-        /// 
+        /// Override the OnStop method closing the ServiceHost as shown in the following code.
         /// </summary>
         protected override void OnStop()
         {
@@ -226,6 +249,15 @@ namespace wcf.ulims.com.na
             }
         }
 
+        #endregion
+
+        #region Other Methods
+
+        /// <summary>
+        /// Method : initializeGISObjects
+        /// Creates python object tasked to perform execution of python code from .Net
+        /// instantiates the WCF Service library code
+        /// </summary>
         private void initializeGISObjects()
         {
             try
@@ -236,23 +268,22 @@ namespace wcf.ulims.com.na
                  */
                 IPythonLibrary = new ULIMSGISPython.PythonLibrary();
 
-
                 /*
                  * Get instance of GISService class
                  * Contains propoerties and methods to help with execution
                  */
-                mIULIMSGISService = new ULIMSGISService();
+                MIULIMSGISService = new ULIMSGISService();
 
-                mIULIMSGISService.MIPythonLibrary = IPythonLibrary;
+                MIULIMSGISService.MIPythonLibrary = IPythonLibrary;
 
                 //Code ensures execute path and execute directory are returned successfully
                 Logger.ExecutablePath = ""; Logger.ExecutableRootDirectory = "";
 
-                //Get path
+                //Get path to the binary file that serializes 
                 string filePathForSerializedObject = Logger.ExecutableRootDirectory + @"\" + "SavedULIMSObjects.bin";
 
                 //Call save object
-                mIULIMSGISService.saveObject(filePathForSerializedObject);
+                MIULIMSGISService.saveObject(filePathForSerializedObject);
 
                 //Write to logger
                 Logger.WriteErrorLog("Executable Path :" + Environment.NewLine + Logger.ExecutablePath);
@@ -267,6 +298,13 @@ namespace wcf.ulims.com.na
 
         }
 
+        /// <summary>
+        /// Method : timerSettings
+        /// Reads time interval from the app.config files
+        /// Wires the timer to its event handler and enables the timer
+        /// Save binary file and tell it that GISsynch process has not started
+        /// Write to log file telling it GIS GIS synch Service has started
+        /// </summary>
         private void timerSettings()
         {
             try
@@ -289,7 +327,7 @@ namespace wcf.ulims.com.na
 
                 //save object file with false parameter. 
                 //This stops the Windows service from running GIS synch process until instructed so by a client
-                mIULIMSGISService.saveObject(false);
+                MIULIMSGISService.saveObject(false);
 
                 //Write to log file indicating GIS service has started successfully.
                 Logger.WriteErrorLog("ULIMS GIS Synchonization Service started");
@@ -303,21 +341,26 @@ namespace wcf.ulims.com.na
             }
         }
 
+        /// <summary>
+        /// Timer event handler
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void mTimer_Tick(object sender, ElapsedEventArgs e)
         {
             try
             {
-                mIULIMSGISService.readObject();
+                MIULIMSGISService.readObject();
 
-                if (mIULIMSGISService.mULIMSSerializer.HasGISSyncProcessstarted == true)
+                if (MIULIMSGISService.mULIMSSerializer.HasGISSyncProcessstarted == true)
                 {
                     //Check that elapsed event raises this event handler and executes code in it 
                     //  if and only if the previous execution has completed
-                    if (mIULIMSGISService.mEexecuting)
+                    if (MIULIMSGISService.mEexecuting)
                         return;
 
                     //Set MPythonLibrary is executing as true
-                    mIULIMSGISService.mEexecuting = true;
+                    MIULIMSGISService.mEexecuting = true;
 
                     try
                     {
@@ -335,20 +378,20 @@ namespace wcf.ulims.com.na
                     finally
                     {
                         //Tell the timer GIS synch process has stopped executing
-                        mIULIMSGISService.mEexecuting = false;
+                        MIULIMSGISService.mEexecuting = false;
                         Logger.WriteErrorLog(@"Tell the timer GIS synch process has stopped executing)");
 
                         //Tell process to stop GIS Synch Process
                         //save object file with false parameter. 
                         //This stops the Windows service from running GIS synch process until instructed so by a client
-                        mIULIMSGISService.saveObject(false);
+                        MIULIMSGISService.saveObject(false);
 
                         Logger.WriteErrorLog(@"Tell process to stop GIS Synch Process
                         save object file with false parameter. 
                         This stops the Windows service from running GIS synch process until instructed so by a client)");
 
                         //GIS synch process has completed successfully.//Tell the GIS to Sharepoint client to start shipping erfs to SharePoint
-                        mIULIMSGISService.MGISSyncProcess = true;
+                        MIULIMSGISService.MGISSyncProcess = true;
 
                         Logger.WriteErrorLog(@"GIS synch process has completed successfully.
                         Tell the GIS to Sharepoint client to start shipping erfs to SharePoint)");
@@ -394,5 +437,8 @@ namespace wcf.ulims.com.na
                 throw new Exception("ULIMSGISWindowsService.executePythonCode() ", ex);
             }
         }
+   
+        #endregion
+
     }
 }

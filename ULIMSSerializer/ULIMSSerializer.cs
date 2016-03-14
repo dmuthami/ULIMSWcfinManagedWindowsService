@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace ULIMSSerializer
 {
+
     /// <summary>
     /// Class performs binary serialization
     /// </summary>
     [Serializable()]
     public class ULIMSSerializer
     {
+
+        #region Properties to Serialize
+
         /// <summary>
         /// Property : HasGISSyncProcessstarted
         /// Wrapped up in a getter and setter
@@ -26,6 +30,8 @@ namespace ULIMSSerializer
        /// Stores status of whether GIS  sync process has completed
        /// </summary>
        public bool HasGISSyncProcessCompleted { get; set; }
+
+        #endregion
 
     }
 }

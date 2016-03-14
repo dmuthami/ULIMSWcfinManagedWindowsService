@@ -16,9 +16,15 @@ using Utility.ulims.com.na;
 
 namespace ulimsgispython.ulims.com.na
 {
-    class SQLJob2
+    /// <summary>
+    /// SQLJob2.cs
+    /// Connects to SQL server database and executes the relevant SQL Job
+    /// The name of SQL job is read from the app.config file
+    /// </summary>
+    class SQLJob2 : ulimsgispython.ISQLJob2
     {
         #region Member Variables
+
         //Name of the job;
         string m_JobName = null; 
 

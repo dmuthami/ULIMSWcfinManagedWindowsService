@@ -22,11 +22,14 @@ namespace ulimsgispython.ulims.com.na
     {
 
         #region Member Variables
+
         //Add memeber variables here
         private StringBuilder mSortOutput;
 
+        //Variable serves as a memory pointer to the output lines being written to the console or log file
         private int mNumOutputLines;
 
+        //Varible stores path to the python folder 
         private string mPythonCodeFolder;
 
         #endregion
@@ -127,16 +130,16 @@ namespace ulimsgispython.ulims.com.na
                     Logger.WriteErrorLog("PythonLibrary.executePythonProcess() : " + msg);
 
                     //Instantiate class that runs SQL Job
-                    SQLJob2 sQLJob2 = new SQLJob2();
+                    ISQLJob2 iSQLJob2 = new SQLJob2();
                     /*
                      * Set the folowing properties in the SQL Job object
                      */
-                    sQLJob2.JobName = jobName;//pass the job name as an argument
-                    sQLJob2.Login = (ConfigurationManager.AppSettings["username"].ToString());
-                    sQLJob2.Password = (ConfigurationManager.AppSettings["password"].ToString());
-                    sQLJob2.ServerName = (ConfigurationManager.AppSettings["servername"].ToString());
+                    iSQLJob2.JobName = jobName;//pass the job name as an argument
+                    iSQLJob2.Login = (ConfigurationManager.AppSettings["username"].ToString());
+                    iSQLJob2.Password = (ConfigurationManager.AppSettings["password"].ToString());
+                    iSQLJob2.ServerName = (ConfigurationManager.AppSettings["servername"].ToString());
                     //Fire the execute method to run te SQL job
-                    sQLJob2.Execute();
+                    iSQLJob2.Execute();
                 }
                 else
                 {

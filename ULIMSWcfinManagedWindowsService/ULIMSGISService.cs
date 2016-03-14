@@ -9,8 +9,7 @@ using System.Diagnostics;
 using System.Runtime.Serialization.Formatters.Binary;
 using ulimsgispython.ulims.com.na;//Process
 
-using Utility.ulims.com.na;
-
+using Utility.ulims.com.na; /*Utility assembly*/
 
 namespace wcf.ulims.com.na
 {
@@ -78,6 +77,8 @@ namespace wcf.ulims.com.na
 
         }
         #endregion
+
+        #region Methods
 
         /// <summary>
         /// Method : SetFileNamePath
@@ -213,7 +214,6 @@ namespace wcf.ulims.com.na
             }
         }
 
-
         /// <summary>
         /// Property : ULIMSSerializer.ULIMSSerializer mULIMSSerializer
         /// Wrapped up in a getter and setter
@@ -246,7 +246,6 @@ namespace wcf.ulims.com.na
                 }
             }
         }
-
 
         /// <summary>
         /// Method : readObject()
@@ -302,6 +301,11 @@ namespace wcf.ulims.com.na
             }
         }
 
+        /// <summary>
+        /// Method saveObject
+        /// Pass appropriate state as an argument 
+        /// </summary>
+        /// <param name="filePathForSerializedObject"> path to the binary file serializing the object</param>
         public void saveObject(string filePathForSerializedObject)
         {
             try
@@ -324,6 +328,8 @@ namespace wcf.ulims.com.na
                 throw new Exception("ULIMSGISService.saveObject(string filePathForSerializedObject) : ", ex);
             }
         }
+        
+        #endregion
 
     }
 }
