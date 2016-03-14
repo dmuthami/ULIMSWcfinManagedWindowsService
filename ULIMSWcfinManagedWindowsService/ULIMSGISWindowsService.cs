@@ -7,7 +7,7 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
-using ULIMSGISPython = ulimsgispython.ulims.com.na ;
+using ULIMSGISPython = ulimsgispython.ulims.com.na;
 
 //Utility Clacc library
 using Utility.ulims.com.na;
@@ -23,8 +23,8 @@ namespace wcf.ulims.com.na
 
         //Create pointer for ULIMS GIS service object
         private IULIMSGISService iULIMSGISService = null;
-        
-        
+
+
         //Create pointer for python library object
         private ULIMSGISPython.IPythonLibrary iPythonLibrary = null;
 
@@ -37,22 +37,94 @@ namespace wcf.ulims.com.na
         #region Getter and Setter Methods
         public Timer MTimer
         {
-            get { return mTimer; }
-            set { mTimer = value; }
+            get
+            {
+                try
+                {
+                    return mTimer;
+                }
+                catch (Exception ex)
+                {
+                    
+                    //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                    throw new Exception("ULIMSGISWindowsService.Timer MTimer get : ", ex); 
+                }
+            }
+            set
+            {
+                try
+                {
+                    mTimer = value;
+                }
+                catch (Exception ex)
+                {
+                    
+                     //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                    throw new Exception("ULIMSGISWindowsService.Timer MTimer set : ", ex); 
+                }
+            }
         }
         /// <summary>
         /// Get and Setter Methods
         /// </summary>
         public IULIMSGISService mIULIMSGISService
         {
-            get { return iULIMSGISService; }
-            set { iULIMSGISService = value; }
+            get
+            {
+                try
+                {
+                    return iULIMSGISService;
+                }
+                catch (Exception ex)
+                {
+                    
+                    //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                    throw new Exception("ULIMSGISWindowsService.IULIMSGISService mIULIMSGISService get : ", ex); 
+                }
+            }
+            set
+            {
+                try
+                {
+                    iULIMSGISService = value;
+                }
+                catch (Exception ex)
+                {
+                    
+                    //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                    throw new Exception("ULIMSGISWindowsService.IULIMSGISService mIULIMSGISService set : ", ex); 
+                }
+            }
         }
 
         public ULIMSGISPython.IPythonLibrary IPythonLibrary
         {
-            get { return iPythonLibrary; }
-            set { iPythonLibrary = value; }
+            get
+            {
+                try
+                {
+                    return iPythonLibrary;
+                }
+                catch (Exception ex)
+                {
+                    
+                //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                throw new Exception("ULIMSGISWindowsService.ULIMSGISPython.IPythonLibrary IPythonLibrary get : ", ex);
+                }
+            }
+            set
+            {
+                try
+                {
+                    iPythonLibrary = value;
+                }
+                catch (Exception ex)
+                {
+
+                    //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                    throw new Exception("ULIMSGISWindowsService.ULIMSGISPython.IPythonLibrary IPythonLibrary set : ", ex);
+                }
+            }
         }
 
         #endregion
@@ -62,11 +134,20 @@ namespace wcf.ulims.com.na
         /// </summary>
         public ULIMSGISWindowsService()
         {
-            //Name the Windows Service Name
-            ServiceName = "ULIMS WCF GIS Synch Service";
+            try
+            {
+                //Name the Windows Service Name
+                ServiceName = "ULIMS WCF GIS Synch Service";
 
-            //Call method to initialze python objects
-            initializeGISObjects();
+                //Call method to initialze python objects
+                initializeGISObjects();
+            }
+            catch (Exception ex)
+            {
+                
+                //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                throw new Exception("ULIMSGISWindowsService.ULIMSGISWindowsService() : ", ex);
+            }
         }
 
         /// <summary>
@@ -74,8 +155,16 @@ namespace wcf.ulims.com.na
         /// </summary>
         public static void Main()
         {
-            uLIMSGISWindowsService = new ULIMSGISWindowsService();
-            ServiceBase.Run(uLIMSGISWindowsService);
+            try
+            {
+                uLIMSGISWindowsService = new ULIMSGISWindowsService();
+                ServiceBase.Run(uLIMSGISWindowsService);
+            }
+            catch (Exception ex)
+            {
+                
+                Logger.WriteErrorLog("ULIMSGISWindowsService.Main()" + Environment.NewLine + ex.ToString());//Write error to log file
+            }
         }
 
         /// <summary>
@@ -84,18 +173,26 @@ namespace wcf.ulims.com.na
         /// <param name="args"></param>
         protected override void OnStart(string[] args)
         {
-            if (serviceHost != null)
+            try
             {
-                serviceHost.Close();
+                if (serviceHost != null)
+                {
+                    serviceHost.Close();
+                }
+
+                // Create a ServiceHost for the ULIMSGISService type and 
+                // provide the base address.
+                serviceHost = new ServiceHost(typeof(ULIMSGISService));
+
+                // Open the ServiceHostBase to create listeners and start 
+                // listening for messages.
+                serviceHost.Open();
             }
+            catch (Exception ex)
+            {
 
-            // Create a ServiceHost for the ULIMSGISService type and 
-            // provide the base address.
-            serviceHost = new ServiceHost(typeof(ULIMSGISService));
-
-            // Open the ServiceHostBase to create listeners and start 
-            // listening for messages.
-            serviceHost.Open();
+                Logger.WriteErrorLog("ULIMSGISWindowsService.OnStart(string[] args)" + Environment.NewLine + ex.ToString());//Write error to log file
+            }
 
             //Apply Timer Settings
 
@@ -106,7 +203,7 @@ namespace wcf.ulims.com.na
             catch (Exception ex)
             {
 
-                Logger.WriteErrorLog(ex);//Write error to log file
+                Logger.WriteErrorLog(ex.ToString());//Write error to log file
             }
         }
 
@@ -115,44 +212,59 @@ namespace wcf.ulims.com.na
         /// </summary>
         protected override void OnStop()
         {
-            if (serviceHost != null)
+            try
             {
-                serviceHost.Close();
-                serviceHost = null;
+                if (serviceHost != null)
+                {
+                    serviceHost.Close();
+                    serviceHost = null;
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteErrorLog("ULIMSGISWindowsService.OnStop()" + Environment.NewLine + ex.ToString());//Write error to log file
             }
         }
 
         private void initializeGISObjects()
         {
-            /*
-             * Get instance of IPythonLibrary class
-             * Contains propoerties and methods to help with execution
-             */
-            IPythonLibrary = new ULIMSGISPython.PythonLibrary();
+            try
+            {
+                /*
+                 * Get instance of IPythonLibrary class
+                 * Contains propoerties and methods to help with execution
+                 */
+                IPythonLibrary = new ULIMSGISPython.PythonLibrary();
 
 
-            /*
-             * Get instance of GISService class
-             * Contains propoerties and methods to help with execution
-             */
-            mIULIMSGISService = new ULIMSGISService();
+                /*
+                 * Get instance of GISService class
+                 * Contains propoerties and methods to help with execution
+                 */
+                mIULIMSGISService = new ULIMSGISService();
 
-            mIULIMSGISService.MIPythonLibrary = IPythonLibrary;
+                mIULIMSGISService.MIPythonLibrary = IPythonLibrary;
 
-            //Code ensures execute path and execute directory are returned successfully
-            Logger.ExecutablePath = ""; Logger.ExecutableRootDirectory = "";
-            
-            //Get path
-            string filePathForSerializedObject = Logger.ExecutableRootDirectory + @"\" + "SavedULIMSObjects.bin";
+                //Code ensures execute path and execute directory are returned successfully
+                Logger.ExecutablePath = ""; Logger.ExecutableRootDirectory = "";
 
-            //Call save object
-            mIULIMSGISService.saveObject(filePathForSerializedObject);
+                //Get path
+                string filePathForSerializedObject = Logger.ExecutableRootDirectory + @"\" + "SavedULIMSObjects.bin";
 
-            //Write to logger
-            Logger.WriteErrorLog("Executable Path :"+Environment.NewLine + Logger.ExecutablePath);
-            Logger.WriteErrorLog("Execute Root Directory"+Environment.NewLine + Logger.ExecutableRootDirectory);
+                //Call save object
+                mIULIMSGISService.saveObject(filePathForSerializedObject);
 
-            //mIULIMSGISService.mCalculatorWindowsService = uLIMSGISWindowsService;
+                //Write to logger
+                Logger.WriteErrorLog("Executable Path :" + Environment.NewLine + Logger.ExecutablePath);
+                Logger.WriteErrorLog("Execute Root Directory" + Environment.NewLine + Logger.ExecutableRootDirectory);
+            }
+            catch (Exception ex)
+            {
+
+                //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                throw new Exception("ULIMSGISWindowsService.initializeGISObjects() ", ex);
+            }
+
         }
 
         private void timerSettings()
@@ -186,63 +298,71 @@ namespace wcf.ulims.com.na
             catch (Exception ex)
             {
 
-                Logger.WriteErrorLog(ex);//Write error to log file
+                //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                throw new Exception("ULIMSGISWindowsService.timerSettings() ", ex);
             }
         }
 
         private void mTimer_Tick(object sender, ElapsedEventArgs e)
         {
-            mIULIMSGISService.readObject();
-
-
-            if (mIULIMSGISService.mULIMSSerializer.HasGISSyncProcessstarted == true)
+            try
             {
-                //Check that elapsed event raises this event handler and executes code in it 
-                //  if and only if the previous execution has completed
-                if (mIULIMSGISService.mEexecuting)
-                    return;
+                mIULIMSGISService.readObject();
 
-                //Set MPythonLibrary is executing as true
-                mIULIMSGISService.mEexecuting = true;
-
-                try
+                if (mIULIMSGISService.mULIMSSerializer.HasGISSyncProcessstarted == true)
                 {
-                    //Indicate and write to log file shouting that execution of python code is firing from all cylinders
-                    Logger.WriteErrorLog(@"Timer ticked and executePythonCode()  method or 
+                    //Check that elapsed event raises this event handler and executes code in it 
+                    //  if and only if the previous execution has completed
+                    if (mIULIMSGISService.mEexecuting)
+                        return;
+
+                    //Set MPythonLibrary is executing as true
+                    mIULIMSGISService.mEexecuting = true;
+
+                    try
+                    {
+                        //Indicate and write to log file shouting that execution of python code is firing from all cylinders
+                        Logger.WriteErrorLog(@"Timer ticked and executePythonCode()  method or 
                         job has been done fired");
 
-                    //Call method that executes python code
-                    executePythonCode();
-                }
-                catch (Exception ex)
-                {
-                    Logger.WriteErrorLog(ex);//Write error to log file
-                }
-                finally
-                {
-                    //Tell the timer GIS synch process has stopped executing
-                    mIULIMSGISService.mEexecuting = false;
-                    Logger.WriteErrorLog(@"Tell the timer GIS synch process has stopped executing)");
+                        //Call method that executes python code
+                        executePythonCode();
+                    }
+                    catch (Exception ex)
+                    {
+                        Logger.WriteErrorLog("ULIMSGISWindowsService.executePythonCode()" + Environment.NewLine + ex.ToString());//Write error to log file
+                    }
+                    finally
+                    {
+                        //Tell the timer GIS synch process has stopped executing
+                        mIULIMSGISService.mEexecuting = false;
+                        Logger.WriteErrorLog(@"Tell the timer GIS synch process has stopped executing)");
 
-                    //Tell process to stop GIS Synch Process
-                    //save object file with false parameter. 
-                    //This stops the Windows service from running GIS synch process until instructed so by a client
-                    mIULIMSGISService.saveObject(false);
+                        //Tell process to stop GIS Synch Process
+                        //save object file with false parameter. 
+                        //This stops the Windows service from running GIS synch process until instructed so by a client
+                        mIULIMSGISService.saveObject(false);
 
-                    Logger.WriteErrorLog(@"Tell process to stop GIS Synch Process
+                        Logger.WriteErrorLog(@"Tell process to stop GIS Synch Process
                         save object file with false parameter. 
                         This stops the Windows service from running GIS synch process until instructed so by a client)");
 
-                    //GIS synch process has completed successfully.//Tell the GIS to Sharepoint client to start shipping erfs to SharePoint
-                    mIULIMSGISService.MGISSyncProcess = true;
+                        //GIS synch process has completed successfully.//Tell the GIS to Sharepoint client to start shipping erfs to SharePoint
+                        mIULIMSGISService.MGISSyncProcess = true;
 
-                    Logger.WriteErrorLog(@"GIS synch process has completed successfully.
+                        Logger.WriteErrorLog(@"GIS synch process has completed successfully.
                         Tell the GIS to Sharepoint client to start shipping erfs to SharePoint)");
 
-                    Logger.WriteErrorLog(@"Timer ticked and executePythonCode()  method or 
+                        Logger.WriteErrorLog(@"Timer ticked and executePythonCode()  method or 
                         job has successfully completed(But with a pinch of salt-There could be errors)");
 
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+
+                Logger.WriteErrorLog("ULIMSGISWindowsService.mTimer_Tick(object sender, ElapsedEventArgs e)" + Environment.NewLine + ex.ToString());//Write error to log file
             }
 
         }
@@ -255,7 +375,7 @@ namespace wcf.ulims.com.na
             try
             {
                 //Load config settings from app.config file               
-                IPythonLibrary.mPythonCodeFolder = ConfigurationManager.AppSettings["python_folder"];
+                IPythonLibrary.MPythonCodeFolder = ConfigurationManager.AppSettings["python_folder"];
 
                 //Call function to execute python process for all towns
                 IPythonLibrary.executePythonProcess();
@@ -268,9 +388,10 @@ namespace wcf.ulims.com.na
                  */
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw; //In case of an error then throws it up the stack trace
+                //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                throw new Exception("ULIMSGISWindowsService.executePythonCode() ", ex);
             }
         }
     }

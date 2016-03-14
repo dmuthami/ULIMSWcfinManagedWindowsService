@@ -83,6 +83,8 @@ namespace ULIMSWcfClient
             catch (Exception ex)
             {
                 Console.WriteLine(ex.StackTrace); //Write to console the stack trace
+                //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                throw new Exception("SQLJob2.Execute() Inner Try: ", ex);
             }
             finally
             {

@@ -8,29 +8,26 @@ using System.Configuration;//Required to read config files
 using System.Collections.Specialized; //NameValueCollection
 using System.Collections;
 
+using Utility.ulims.com.na;
+
 namespace ulimsgispython.ulims.com.na
 {
     class ConfigReader : IConfigReader
     {
-        private IPythonLibrary iPythonLibrary;
 
+        #region Constructors
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="MULIMSGISService"> The python library class</param>
-        public ConfigReader(IPythonLibrary iPythonLibrary)
+        public ConfigReader()
         {
-            try
-            {
-                //assign by ref the class level variable from the argument variable
-                this.iPythonLibrary = iPythonLibrary;
-            }
-            catch (Exception)
-            {
 
-                throw;//In case of an error then throws it up the stack trace
-            }
         }
+        #endregion
+
+        #region Methods
+
         /// <summary>
         /// Reads the app.config file. Specifically the section NamibiaLocalAuthorities and resturns a dictionary of the towns
         /// </summary>
@@ -54,15 +51,19 @@ namespace ulimsgispython.ulims.com.na
                     //Write to Log file indicating 
                     this.writeSectionToLog(dictionary);
                 }
+                
                 //Pass by reference the dictionary object
                 return dictionary;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;//In case of an error then throws it up the stack trace
+                //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                throw new Exception("ConfigReader.Dictionary<String, String> readNamibiaLocalAuthoritiesSection() : ", ex);
+            
             }
         }
+        
         /// <summary>
         /// //Loop thru the name value collection and add the key, value pairs to the dictionary
         /// </summary>
@@ -84,10 +85,12 @@ namespace ulimsgispython.ulims.com.na
                 //return dictionary with towns in it
                 return namibiaTownsDictionary;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;//In case of an error then throws it up the stack trace
+                //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                throw new Exception("ConfigReader.Dictionary<String, String> hashtableToDictionary(NameValueCollection nameValueCollection) : ", ex);
+            
             }
         }
 
@@ -108,13 +111,21 @@ namespace ulimsgispython.ulims.com.na
                     //Call function to execute python process for each town        
                     stringBuilder.Append(String.Format("Town : {0}", (String)townpair.Value));
                 }
+                Logger.WriteErrorLog("ConfigReader.writeSectionToLog(Dictionary<String, String> dictionary) : "+
+                    Environment.NewLine + stringBuilder.ToString() + Environment.NewLine);
+                
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;//In case of an error then throws it up the stack trace
+                //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                throw new Exception("ConfigReader.writeSectionToLog(Dictionary<String, String> dictionary) : ", ex);
+            
             }
 
         }
+    
+        #endregion
+
     }
 }

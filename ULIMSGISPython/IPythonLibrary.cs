@@ -15,6 +15,7 @@ namespace ulimsgispython.ulims.com.na
         /// </summary>
         /// 
         void executePythonProcess();
+
         /// <summary>
         /// Method : executePythonProcess(String townName)
         /// Creates a python process, passess it parameers and waits for completion. 
@@ -25,24 +26,9 @@ namespace ulimsgispython.ulims.com.na
         void executePythonProcessPerTown(string townName, String pythonFileToExecute);
 
         /// <summary>
-        /// Property : mNumOutputLines
-        /// Wrapped up in a getter and setter
-        /// </summary>        
-
-        int mNumOutputLines { get; set; }
-        /// <summary>
-        /// Property : mPythonCodeFolder
-        /// Wrapped up in a getter and setter
-        /// </summary>        string mPythonCodeFolder { get; set; }
-
-        System.Text.StringBuilder mSortOutput { get; set; }
-
-        /// <summary>
         /// Property : mPythonCodeFolder
         /// Wrapped up in a getter and setter
         /// </summary>   
-        string mPythonCodeFolder { get; set; }
-
-
+        string MPythonCodeFolder { get; set; }
     }
 }

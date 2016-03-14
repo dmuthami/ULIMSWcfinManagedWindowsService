@@ -11,42 +11,49 @@ using System.Configuration;//Process
 
 using Utility.ulims.com.na;
 
-
-
 namespace ulimsgispython.ulims.com.na
 {
+    /// <summary>
+    /// PythonLibrary Implements IPythonLibrary
+    /// Responsible for executing all python scripts
+    /// Specifically, compute stand no and Auto Reconcile and Post scripts
+    /// </summary>
     public class PythonLibrary : IPythonLibrary
     {
-        #region Member Variables
 
-        private string mExecutablePath;
-        private string mExecutableRootDirectory;
+        #region Member Variables
+        //Add memeber variables here
+        private StringBuilder mSortOutput;
+
+        private int mNumOutputLines;
+
+        private string mPythonCodeFolder;
 
         #endregion
-
 
         #region Getter and Setters
 
         /// <summary>
-        /// Property : mSortOutput
+        /// Property : MSortOutput
         /// Wrapped up in a getter and setter
         /// </summary>
-        public StringBuilder mSortOutput { get; set; }
+        public StringBuilder MSortOutput { get { return mSortOutput; } set { mSortOutput= value; } }
 
         /// <summary>
-        /// Property : mNumOutputLines
+        /// Property : MNumOutputLines
         /// Wrapped up in a getter and setter
         /// </summary>
-        public int mNumOutputLines { get; set; }
+        public int MNumOutputLines { get { return mNumOutputLines; } set { mNumOutputLines = value; } }
 
         /// <summary>
-        /// Property : mPythonCodeFolder
+        /// Property : MPythonCodeFolder
         /// Wrapped up in a getter and setter
         /// </summary>
-        public string mPythonCodeFolder { get; set; }
+        public string MPythonCodeFolder { get { return mPythonCodeFolder; } set { mPythonCodeFolder = value; } }
 
         #endregion
 
+        #region Methods
 
         /// <summary>
         /// Method : executePythonProcess()
@@ -61,7 +68,7 @@ namespace ulimsgispython.ulims.com.na
                 Dictionary<string, string> dictionary = new Dictionary<string, string>();
 
                 //Read towns from config file
-                IConfigReader iConfigReader = new ConfigReader(this);
+                IConfigReader iConfigReader = new ConfigReader();
 
                 //Method returns listof towns as a dictionary
                 dictionary = iConfigReader.readNamibiaLocalAuthoritiesSection();
@@ -86,7 +93,7 @@ namespace ulimsgispython.ulims.com.na
                     {
 
                         string msg = String.Format("{0}Execution of Compute Stand No : {1} has not been fired/started for {2}.", Environment.NewLine, computeStandNo.ToString(), townpair);
-                        Logger.WriteErrorLog(msg);
+                        Logger.WriteErrorLog("PythonLibrary.executePythonProcess() : "+ msg);
 
                     }
 
@@ -100,7 +107,7 @@ namespace ulimsgispython.ulims.com.na
                     {
 
                         string msg = String.Format("{0}Execution of Auto Reconcile and Post : {1} has not been fired/started for {2}.", Environment.NewLine, autoReconcileAndPost.ToString(), townpair);
-                        Logger.WriteErrorLog(msg);
+                        Logger.WriteErrorLog("PythonLibrary.executePythonProcess() : " + msg);
 
                     }
                 }
@@ -117,7 +124,7 @@ namespace ulimsgispython.ulims.com.na
                 {
                     //Write error log
                     string msg = String.Format("{0}Execution of Job Name : {1} has been fired/started.", Environment.NewLine, jobName);
-                    Logger.WriteErrorLog(msg);
+                    Logger.WriteErrorLog("PythonLibrary.executePythonProcess() : " + msg);
 
                     //Instantiate class that runs SQL Job
                     SQLJob2 sQLJob2 = new SQLJob2();
@@ -128,7 +135,6 @@ namespace ulimsgispython.ulims.com.na
                     sQLJob2.Login = (ConfigurationManager.AppSettings["username"].ToString());
                     sQLJob2.Password = (ConfigurationManager.AppSettings["password"].ToString());
                     sQLJob2.ServerName = (ConfigurationManager.AppSettings["servername"].ToString());
-                    sQLJob2.IPythonLibrary = this; //Pass an instance of this class to the instance of SQLjob class 
                     //Fire the execute method to run te SQL job
                     sQLJob2.Execute();
                 }
@@ -136,17 +142,19 @@ namespace ulimsgispython.ulims.com.na
                 {
 
                     string msg = String.Format("{0}Execution of Job Name : {1} has not been fired/started.", Environment.NewLine, jobName);
-                    Logger.WriteErrorLog(msg);
+                    Logger.WriteErrorLog("PythonLibrary.executePythonProcess() : " + msg);
 
                 }
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw; //In case of an error then throws it up the stack trace
+                //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                throw new Exception("PythonLibrary.executePythonProcess() : ", ex);
             }
 
         }
+
         /// <summary>
         /// Method : executePythonProcess(String townName)
         /// Creates a python process, passess it parameers and waits for completion. 
@@ -188,7 +196,7 @@ namespace ulimsgispython.ulims.com.na
                 process.StartInfo.RedirectStandardOutput = true;
 
                 //intialize pointer to memory location storing a Stringbuilder object
-                mSortOutput = new StringBuilder("");
+                MSortOutput = new StringBuilder("");
 
                 // Set our event handler to asynchronously read the sort output.
                 process.OutputDataReceived += new DataReceivedEventHandler(sortOutputHandler);
@@ -213,16 +221,17 @@ namespace ulimsgispython.ulims.com.na
                 //Wait for the python process
                 process.WaitForExit();
 
-                Logger.WriteErrorLog(mSortOutput.ToString());//Write to dotnet log file
+                Logger.WriteErrorLog("PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : " + MSortOutput.ToString());//Write to dotnet log file
 
                 //Releases all resources by the component
                 process.Close();
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;//In case of an error then throws it up the stack trace
+                //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                throw new Exception("PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute): ", ex);
             }
 
         }
@@ -240,19 +249,22 @@ namespace ulimsgispython.ulims.com.na
                 // Collect the sort command output.
                 if (!String.IsNullOrEmpty(outLine.Data))
                 {
-                    mNumOutputLines++; //concatenate
+                    MNumOutputLines++; //concatenate
 
                     // Add the text to the collected output.
-                    mSortOutput.Append(Environment.NewLine +
-                        "[" + mNumOutputLines.ToString() + "] - " + outLine.Data);
+                    MSortOutput.Append(Environment.NewLine +
+                        "[" + MNumOutputLines.ToString() + "] - " + outLine.Data);
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;//In case of an error then throws it up the stack trace
+                //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                throw new Exception("PythonLibrary.sortOutputHandler(object sendingProcess, DataReceivedEventArgs outLine) : ", ex);
             }
         }
+
+        #endregion
 
 
     }

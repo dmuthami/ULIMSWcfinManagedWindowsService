@@ -17,12 +17,21 @@ namespace wcf.ulims.com.na
 
         public ProjectInstaller()
         {
-            process = new ServiceProcessInstaller();
-            process.Account = ServiceAccount.LocalSystem;
-            service = new ServiceInstaller();
-            service.ServiceName = "ULIMS WCF GIS Synch Service";
-            Installers.Add(process);
-            Installers.Add(service);
+            try
+            {
+                process = new ServiceProcessInstaller();
+                process.Account = ServiceAccount.LocalSystem;
+                service = new ServiceInstaller();
+                service.ServiceName = "ULIMS WCF GIS Synch Service";
+                Installers.Add(process);
+                Installers.Add(service);
+            }
+            catch (Exception ex)
+            {
+
+                //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                throw new Exception("ProjectInstaller.ProjectInstaller() : ", ex);
+            }
         }
     }
 }
