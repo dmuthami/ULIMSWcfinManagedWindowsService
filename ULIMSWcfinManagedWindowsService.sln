@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{0196D8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{A31CB773-C545-4049-A676-B3B3A04E731E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ULIMSWcfServiceLibrary", "ULIMSWcfServiceLibrary\ULIMSWcfServiceLibrary.csproj", "{9A61FE8F-B616-45C3-8346-8B3532B94652}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +48,10 @@ Global
 		{A31CB773-C545-4049-A676-B3B3A04E731E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A31CB773-C545-4049-A676-B3B3A04E731E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A31CB773-C545-4049-A676-B3B3A04E731E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A61FE8F-B616-45C3-8346-8B3532B94652}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A61FE8F-B616-45C3-8346-8B3532B94652}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A61FE8F-B616-45C3-8346-8B3532B94652}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A61FE8F-B616-45C3-8346-8B3532B94652}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

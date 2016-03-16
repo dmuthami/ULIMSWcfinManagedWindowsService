@@ -1,22 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
-using System.Threading.Tasks;
 using ulimsgispython.ulims.com.na;
 
 namespace wcf.ulims.com.na
 {
+    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
     [ServiceContract(Namespace = "http://wcf.ulims.com.na")]
     public interface IULIMSGISService
     {
-        /// <summary>
-        /// Property : mExecuting
-        /// Checks that 
-        /// Wrapped up in a getter and setter
-        /// </summary>       
-        bool mEexecuting { get; set; }
 
         /// <summary>
         /// Indicated as a service contract method
@@ -28,18 +23,25 @@ namespace wcf.ulims.com.na
         string startGISSyncProcess(bool shallStart);
 
         /// <summary>
-        /// Property : MGISSyncProcess
-        /// Wrapped up in a getter and setter
-        /// </summary>
-        bool MGISSyncProcess { get; set; }
-
-        /// <summary>
         /// Property : isSuccessGISSyncProcess
         /// Exposed to the WCF client
         /// Wrapped up in a getter and setter
         /// </summary>
         [OperationContract]
         bool isSuccessGISSyncProcess();
+
+        /// <summary>
+        /// Property : mExecuting
+        /// Checks that 
+        /// Wrapped up in a getter and setter
+        /// </summary>       
+        bool mEexecuting { get; set; }
+
+        /// <summary>
+        /// Property : MGISSyncProcess
+        /// Wrapped up in a getter and setter
+        /// </summary>
+        bool MGISSyncProcess { get; set; }
 
         /// <summary>
         /// Property : HasGISSyncProcessstarted
@@ -79,6 +81,10 @@ namespace wcf.ulims.com.na
         /// </summary>
         IPythonLibrary MIPythonLibrary { get; set; }
 
+        /// <summary>
+        /// executePythonCode Method: Calls other functions to execute python code
+        /// </summary>
+        void executePythonCode();
     }
-}
 
+}

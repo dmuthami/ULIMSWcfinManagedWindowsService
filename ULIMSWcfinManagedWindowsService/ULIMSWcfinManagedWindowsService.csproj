@@ -45,11 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ULIMSGISService.cs" />
     <Compile Include="ULIMSGISWindowsService.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="IULIMSGISService.cs" />
     <Compile Include="ProjectInstaller.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -159,6 +157,10 @@
     <ProjectReference Include="..\ULIMSSerializer\ULIMSSerializer.csproj">
       <Project>{2ef39110-c39b-4a9a-9f53-5f69d1559927}</Project>
       <Name>ULIMSSerializer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ULIMSWcfServiceLibrary\ULIMSWcfServiceLibrary.csproj">
+      <Project>{9a61fe8f-b616-45c3-8346-8b3532b94652}</Project>
+      <Name>ULIMSWcfServiceLibrary</Name>
     </ProjectReference>
     <ProjectReference Include="..\Utility\Utility.csproj">
       <Project>{a31cb773-c545-4049-a676-b3b3a04e731e}</Project>

@@ -7,7 +7,7 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace wcf.ulims.com.na
+namespace wsh.ulims.com.na
 {
     [RunInstaller(true)]//allows 
     public class ProjectInstaller : Installer

@@ -12,7 +12,9 @@ using ULIMSGISPython = ulimsgispython.ulims.com.na; //python class
 //Utility Clacc library
 using Utility.ulims.com.na;
 
-namespace wcf.ulims.com.na
+using wcf.ulims.com.na;
+
+namespace wsh.ulims.com.na
 {
     public class ULIMSGISWindowsService : ServiceBase
     {
@@ -369,7 +371,7 @@ namespace wcf.ulims.com.na
                         job has been done fired");
 
                         //Call method that executes python code
-                        executePythonCode();
+                        MIULIMSGISService.executePythonCode();
                     }
                     catch (Exception ex)
                     {
@@ -408,34 +410,6 @@ namespace wcf.ulims.com.na
                 Logger.WriteErrorLog("ULIMSGISWindowsService.mTimer_Tick(object sender, ElapsedEventArgs e)" + Environment.NewLine + ex.ToString());//Write error to log file
             }
 
-        }
-
-        /// <summary>
-        /// executePythonCode Method: Calls other functions to execute python code
-        /// </summary>
-        private void executePythonCode()
-        {
-            try
-            {
-                //Load config settings from app.config file               
-                IPythonLibrary.MPythonCodeFolder = ConfigurationManager.AppSettings["python_folder"];
-
-                //Call function to execute python process for all towns
-                IPythonLibrary.executePythonProcess();
-
-                /*
-                 * Add code to call .Net Synch Service that performs write to SharePoint Lists
-                 * Add new Erfs to SharePoint Lists
-                 * Update to SharePoint lists
-                 * Flag deleted erfs in SharePoint List
-                 */
-
-            }
-            catch (Exception ex)
-            {
-                //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
-                throw new Exception("ULIMSGISWindowsService.executePythonCode() ", ex);
-            }
         }
    
         #endregion

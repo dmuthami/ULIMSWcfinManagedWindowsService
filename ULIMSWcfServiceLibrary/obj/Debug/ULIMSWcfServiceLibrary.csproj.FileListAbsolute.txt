@@ -1,0 +1,12 @@
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Debug\ULIMSWcfServiceLibrary.dll.config
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Debug\ULIMSWcfServiceLibrary.dll
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Debug\ULIMSWcfServiceLibrary.pdb
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Debug\ULIMSGISPython.dll
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Debug\ULIMSSerializer.dll
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Debug\Utility.dll
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Debug\ULIMSGISPython.pdb
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Debug\ULIMSSerializer.pdb
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Debug\Utility.pdb
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\obj\Debug\ULIMSWcfServiceLibrary.csprojResolveAssemblyReference.cache
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\obj\Debug\ULIMSWcfServiceLibrary.dll
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\obj\Debug\ULIMSWcfServiceLibrary.pdb

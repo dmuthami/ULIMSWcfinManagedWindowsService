@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.IO; /*Utility assembly*/
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using System.IO;
-using System.Diagnostics;
+using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
-using ulimsgispython.ulims.com.na;//Process
-
-using Utility.ulims.com.na; /*Utility assembly*/
+using System.ServiceModel;
+using System.Text;
+using ulimsgispython.ulims.com.na;
+using Utility.ulims.com.na;
 
 namespace wcf.ulims.com.na
 {
+    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in both code and config file together.
     public class ULIMSGISService : IULIMSGISService
     {
 
@@ -317,7 +317,7 @@ namespace wcf.ulims.com.na
                 Stream TestFileStream = File.Create(Logger.MFileName);
                 BinaryFormatter serializer = new BinaryFormatter();
                 serializer.Serialize(TestFileStream, mULIMSSerializer);
-                TestFileStream.Close(); 
+                TestFileStream.Close();
 
                 Logger.WriteErrorLog(Environment.NewLine + "Serialized Object File Path :" + Logger.MFileName);
             }
@@ -328,7 +328,34 @@ namespace wcf.ulims.com.na
                 throw new Exception("ULIMSGISService.saveObject(string filePathForSerializedObject) : ", ex);
             }
         }
-        
+
+        /// <summary>
+        /// executePythonCode Method: Calls other functions to execute python code
+        /// </summary>
+        public void executePythonCode()
+        {
+            try
+            {
+                //Load config settings from app.config file               
+                MIPythonLibrary.MPythonCodeFolder = ConfigurationManager.AppSettings["python_folder"];
+
+                //Call function to execute python process for all towns
+                MIPythonLibrary.executePythonProcess();
+
+                /*
+                 * Add code to call .Net Synch Service that performs write to SharePoint Lists
+                 * Add new Erfs to SharePoint Lists
+                 * Update to SharePoint lists
+                 * Flag deleted erfs in SharePoint List
+                 */
+
+            }
+            catch (Exception ex)
+            {
+                //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                throw new Exception("ULIMSGISWindowsService.executePythonCode() ", ex);
+            }
+        }
         #endregion
 
     }
