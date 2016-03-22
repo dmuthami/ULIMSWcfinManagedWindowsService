@@ -1,0 +1,50 @@
+17/03/2016 08:31:11: Program.Main(string[] args)System.Exception: Program.GISSynchProcess() :  ---> System.Exception: Program.retrieveConfigSettings() :  ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at ConfigLibrary.ConfigReader.get_MTimerInterval() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ConfigLibrary\ConfigReader.cs:line 116
+   at ULIMSWcfClient.Program.retrieveConfigSettings() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 122
+   --- End of inner exception stack trace ---
+   at ULIMSWcfClient.Program.retrieveConfigSettings() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 129
+   at ULIMSWcfClient.Program.GISSynchProcess() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 69
+   --- End of inner exception stack trace ---
+   at ULIMSWcfClient.Program.GISSynchProcess() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 107
+   at ULIMSWcfClient.Program.Main(String[] args) in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 34
+17/03/2016 08:32:36: Program.Main(string[] args)System.Exception: Program.GISSynchProcess() :  ---> System.Exception: Program.retrieveConfigSettings() :  ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at ConfigLibrary.ConfigReader.get_MTimerInterval() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ConfigLibrary\ConfigReader.cs:line 116
+   at ULIMSWcfClient.Program.retrieveConfigSettings() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 122
+   --- End of inner exception stack trace ---
+   at ULIMSWcfClient.Program.retrieveConfigSettings() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 129
+   at ULIMSWcfClient.Program.GISSynchProcess() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 69
+   --- End of inner exception stack trace ---
+   at ULIMSWcfClient.Program.GISSynchProcess() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 107
+   at ULIMSWcfClient.Program.Main(String[] args) in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 34
+21/03/2016 11:56:45: Program.Main(string[] args)System.Exception: Program.GISSynchProcess() :  ---> System.ServiceModel.EndpointNotFoundException: There was no endpoint listening at http://localhost:8888/ulimsgiswcf/service that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8888
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ClientReliableChannelBinder`1.RequestClientReliableChannelBinder`1.OnRequest(TRequestChannel channel, Message message, TimeSpan timeout, MaskingMode maskingMode)
+   at System.ServiceModel.Channels.ClientReliableChannelBinder`1.Request(Message message, TimeSpan timeout, MaskingMode maskingMode)
+   at System.ServiceModel.Channels.ClientReliableChannelBinder`1.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Security.SecuritySessionClientSettings`1.SecurityRequestSessionChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at ULIMSWcfClient.ULIMSGISServiceRef.IULIMSGISService.isSuccessGISSyncProcess()
+   at ULIMSWcfClient.ULIMSGISServiceRef.ULIMSGISServiceClient.isSuccessGISSyncProcess() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Service References\ULIMSGISServiceRef\Reference.cs:line 67
+   at ULIMSWcfClient.Program.GISSynchProcess() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 85
+   --- End of inner exception stack trace ---
+   at ULIMSWcfClient.Program.GISSynchProcess() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 107
+   at ULIMSWcfClient.Program.Main(String[] args) in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 34

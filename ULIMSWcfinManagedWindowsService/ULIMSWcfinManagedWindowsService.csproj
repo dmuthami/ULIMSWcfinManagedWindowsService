@@ -150,6 +150,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ConfigLibrary\ConfigLibrary.csproj">
+      <Project>{521ba15b-d65e-439e-af64-2988a20e1ae1}</Project>
+      <Name>ConfigLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ULIMSGISPython\ULIMSGISPython.csproj">
       <Project>{1ce50939-5390-421a-956c-aaa177453ae2}</Project>
       <Name>ULIMSGISPython</Name>

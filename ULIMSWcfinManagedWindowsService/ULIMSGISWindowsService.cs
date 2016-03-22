@@ -27,7 +27,6 @@ namespace wsh.ulims.com.na
         //Create pointer for ULIMS GIS service object
         private IULIMSGISService mULIMSGISService = null;
 
-
         //Create pointer for python library object
         private ULIMSGISPython.IPythonLibrary iPythonLibrary = null;
 
@@ -316,7 +315,7 @@ namespace wsh.ulims.com.na
 
                 //Get timer interval from app.config
                 double timerInterval;
-                timerInterval = Convert.ToDouble(ConfigurationManager.AppSettings["timer_interval"].ToString());//Read  timer value from app.config
+                timerInterval = ((ConfigLibrary.IConfigReader)(new ConfigLibrary.ConfigReader())).MTimerInterval;
                 MTimer.Interval = timerInterval;
                 /*
                  * Wire timer elapsed event to the timer tick handler

@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Diagnostics;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Configuration;//Process
+using System.Configuration;
+using Utility.ulims.com.na;//Process
 
-using Utility.ulims.com.na;
+using ConfigLibrary; //Reads from config file
 
 namespace ulimsgispython.ulims.com.na
 {
@@ -40,19 +41,103 @@ namespace ulimsgispython.ulims.com.na
         /// Property : MSortOutput
         /// Wrapped up in a getter and setter
         /// </summary>
-        public StringBuilder MSortOutput { get { return mSortOutput; } set { mSortOutput= value; } }
+        public StringBuilder MSortOutput
+        {
+            get
+            {
+                try
+                {
+                    return mSortOutput;
+                }
+                catch (Exception ex)
+                {
+                    
+                    //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                    throw new Exception("PythonLibrary.cs StringBuilder MSortOutput get : ", ex);
+                }
+            }
+            set
+            {
+                try
+                {
+                    mSortOutput = value;
+                }
+                catch (Exception ex)
+                {
+                    
+                    //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                    throw new Exception("PythonLibrary.cs StringBuilder MSortOutput set : ", ex);
+                }
+            }
+        }
 
         /// <summary>
         /// Property : MNumOutputLines
         /// Wrapped up in a getter and setter
         /// </summary>
-        public int MNumOutputLines { get { return mNumOutputLines; } set { mNumOutputLines = value; } }
+        public int MNumOutputLines
+        {
+            get
+            {
+                try
+                {
+                    return mNumOutputLines;
+                }
+                catch (Exception ex)
+                {
+                    
+                    //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                    throw new Exception("PythonLibrary.cs int MNumOutputLines get : ", ex);
+                }
+            }
+            set
+            {
+                try
+                {
+                    mNumOutputLines = value;
+                }
+                catch (Exception ex)
+                {
+                    
+                    //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                    throw new Exception("PythonLibrary.cs int MNumOutputLines set : ", ex);
+                }
+            }
+        }
 
         /// <summary>
         /// Property : MPythonCodeFolder
         /// Wrapped up in a getter and setter
         /// </summary>
-        public string MPythonCodeFolder { get { return mPythonCodeFolder; } set { mPythonCodeFolder = value; } }
+        public string MPythonCodeFolder
+        {
+            get
+            {
+                try
+                {
+                    return mPythonCodeFolder;
+                }
+                catch (Exception ex)
+                {
+                    
+                    //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                    throw new Exception("PythonLibrary.cs string MPythonCodeFolder get : ", ex);
+                }
+            }
+            set
+            {
+                try
+                {
+                    mPythonCodeFolder = value;
+                }
+                catch (Exception ex)
+                {
+                    
+                    //In case of an error then throws it explicitly up the stack trace and add a message to the re-thrown error
+                    throw new Exception("PythonLibrary.cs string MPythonCodeFolder set : ", ex);
+                }
+            }
+        }
 
         #endregion
 
@@ -69,6 +154,7 @@ namespace ulimsgispython.ulims.com.na
             {
                 //Create a dictionary object with all the 10 piloting sites
                 Dictionary<string, string> dictionary = new Dictionary<string, string>();
+                
 
                 //Read towns from config file
                 IConfigReader iConfigReader = new ConfigReader();
@@ -77,11 +163,11 @@ namespace ulimsgispython.ulims.com.na
                 dictionary = iConfigReader.readNamibiaLocalAuthoritiesSection();
 
                 //Check if we can compute stand number
-                Boolean computeStandNo = Convert.ToBoolean(ConfigurationManager.AppSettings["compute_stand_no"].ToString());
+                Boolean computeStandNo = iConfigReader.MComputeStandNo;
 
 
                 //Check if we can conduct auto reconcile and post
-                Boolean autoReconcileAndPost = Convert.ToBoolean(ConfigurationManager.AppSettings["auto_reconcile_and_post"].ToString());
+                Boolean autoReconcileAndPost = iConfigReader.MAutoReconcileAndPost;
 
                 //Loop over pairs with foreach loop
                 foreach (KeyValuePair<string, string> townpair in dictionary)
@@ -115,14 +201,13 @@ namespace ulimsgispython.ulims.com.na
                     }
                 }
 
-
                 //Call code to excute SQL job
                 //Check if we can fire the SQL job
-                Boolean sqlJob = Convert.ToBoolean(ConfigurationManager.AppSettings["sql_job"].ToString());
+                Boolean sqlJob = iConfigReader.MSQLJob;
 
                 //Check if we can conduct sql job execution
                 //Read job name from appconfig file
-                string jobName = (ConfigurationManager.AppSettings["jobName"].ToString());
+                string jobName = iConfigReader.MJobName;
                 if (sqlJob == true)
                 {
                     //Write error log
@@ -135,9 +220,9 @@ namespace ulimsgispython.ulims.com.na
                      * Set the folowing properties in the SQL Job object
                      */
                     iSQLJob2.JobName = jobName;//pass the job name as an argument
-                    iSQLJob2.Login = (ConfigurationManager.AppSettings["username"].ToString());
-                    iSQLJob2.Password = (ConfigurationManager.AppSettings["password"].ToString());
-                    iSQLJob2.ServerName = (ConfigurationManager.AppSettings["servername"].ToString());
+                    iSQLJob2.Login = iConfigReader.MUsername;
+                    iSQLJob2.Password = iConfigReader.MPassword;
+                    iSQLJob2.ServerName = iConfigReader.MServername;
                     //Fire the execute method to run te SQL job
                     iSQLJob2.Execute();
                 }
@@ -268,7 +353,6 @@ namespace ulimsgispython.ulims.com.na
         }
 
         #endregion
-
 
     }
 }

@@ -1,7 +1,9 @@
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Debug\ULIMSGISPython.dll
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Debug\ULIMSGISPython.pdb
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Debug\ConfigLibrary.dll
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Debug\ULIMSSerializer.dll
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Debug\Utility.dll
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Debug\ConfigLibrary.pdb
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Debug\ULIMSSerializer.pdb
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Debug\Utility.pdb
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\obj\Debug\ULIMSGISPython.csprojResolveAssemblyReference.cache

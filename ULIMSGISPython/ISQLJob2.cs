@@ -1,6 +1,9 @@
 ﻿using System;
 namespace ulimsgispython
 {
+    /// <summary>
+    /// Contract: Specifiies how to connect to SQL and execute spefified job
+    /// </summary>
     interface ISQLJob2
     {
         /// <summary>

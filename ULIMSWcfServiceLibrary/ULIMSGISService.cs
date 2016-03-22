@@ -9,6 +9,7 @@ using System.ServiceModel;
 using System.Text;
 using ulimsgispython.ulims.com.na;
 using Utility.ulims.com.na;
+using ConfigLibrary;
 
 namespace wcf.ulims.com.na
 {
@@ -336,8 +337,9 @@ namespace wcf.ulims.com.na
         {
             try
             {
-                //Load config settings from app.config file               
-                MIPythonLibrary.MPythonCodeFolder = ConfigurationManager.AppSettings["python_folder"];
+                //Load config settings from app.config file 
+
+                MIPythonLibrary.MPythonCodeFolder = ((IConfigReader)(new ConfigReader())).MPythonFolder;
 
                 //Call function to execute python process for all towns
                 MIPythonLibrary.executePythonProcess();

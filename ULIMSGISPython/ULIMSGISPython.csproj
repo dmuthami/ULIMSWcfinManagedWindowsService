@@ -56,8 +56,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConfigReader.cs" />
-    <Compile Include="IConfigReader.cs" />
     <Compile Include="IPythonLibrary.cs" />
     <Compile Include="ISQLJob2.cs" />
     <Compile Include="PythonLibrary.cs" />
@@ -65,6 +63,10 @@
     <Compile Include="SQLJob2.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ConfigLibrary\ConfigLibrary.csproj">
+      <Project>{521ba15b-d65e-439e-af64-2988a20e1ae1}</Project>
+      <Name>ConfigLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ULIMSSerializer\ULIMSSerializer.csproj">
       <Project>{2ef39110-c39b-4a9a-9f53-5f69d1559927}</Project>
       <Name>ULIMSSerializer</Name>

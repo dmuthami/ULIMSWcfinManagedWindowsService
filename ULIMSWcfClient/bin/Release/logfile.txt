@@ -1,0 +1,18 @@
+17/03/2016 08:30:07: Program.Main(string[] args)System.Exception: Program.GISSynchProcess() :  ---> System.Exception: Program.retrieveConfigSettings() :  ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at ConfigLibrary.ConfigReader.get_MTimerInterval() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ConfigLibrary\ConfigReader.cs:line 116
+   at ULIMSWcfClient.Program.retrieveConfigSettings() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 122
+   --- End of inner exception stack trace ---
+   at ULIMSWcfClient.Program.retrieveConfigSettings() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 129
+   at ULIMSWcfClient.Program.GISSynchProcess() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 69
+   --- End of inner exception stack trace ---
+   at ULIMSWcfClient.Program.GISSynchProcess() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 107
+   at ULIMSWcfClient.Program.Main(String[] args) in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 34
+21/03/2016 09:58:55: Program.Main(string[] args)System.Exception: Program.GISSynchProcess() :  ---> System.Exception: Program.retrieveConfigSettings() :  ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at ConfigLibrary.ConfigReader.get_MTimerInterval() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ConfigLibrary\ConfigReader.cs:line 116
+   at ULIMSWcfClient.Program.retrieveConfigSettings() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 122
+   --- End of inner exception stack trace ---
+   at ULIMSWcfClient.Program.retrieveConfigSettings() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 129
+   at ULIMSWcfClient.Program.GISSynchProcess() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 69
+   --- End of inner exception stack trace ---
+   at ULIMSWcfClient.Program.GISSynchProcess() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 107
+   at ULIMSWcfClient.Program.Main(String[] args) in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 34

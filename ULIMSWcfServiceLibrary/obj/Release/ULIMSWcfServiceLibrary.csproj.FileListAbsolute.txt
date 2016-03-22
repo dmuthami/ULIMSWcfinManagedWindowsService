@@ -1,9 +1,11 @@
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\ULIMSWcfServiceLibrary.dll.config
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\ULIMSWcfServiceLibrary.dll
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\ULIMSWcfServiceLibrary.pdb
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\ConfigLibrary.dll
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\ULIMSGISPython.dll
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\ULIMSSerializer.dll
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\Utility.dll
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\ConfigLibrary.pdb
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\ULIMSGISPython.pdb
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\ULIMSSerializer.pdb
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\Utility.pdb

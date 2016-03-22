@@ -118,7 +118,9 @@ namespace ULIMSWcfClient
             {
                 //Get timer interval from app.config
                 int threadInterval;
-                threadInterval = Convert.ToInt32(ConfigurationManager.AppSettings["thread_interval"].ToString());//Read  timer value from app.config
+                //var config = ((ConfigLibrary.IConfigReader)(new ConfigLibrary.ConfigReader()));
+                //threadInterval = Convert.ToInt32(config.MTimerInterval);//Read  timer value from app.config
+                threadInterval= Convert.ToInt32(ConfigurationManager.AppSettings["thread_interval"].ToString());
                 return threadInterval;
             }
             catch (Exception ex)
