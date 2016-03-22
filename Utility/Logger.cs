@@ -18,6 +18,7 @@ namespace Utility.ulims.com.na
         #endregion
 
         #region Getter and Setters
+
         /// <summary>
         /// Property : mExecutablePath
         /// Wrapped up in a getter and setter
@@ -41,6 +42,7 @@ namespace Utility.ulims.com.na
                 }
             }
         }
+        
         /// <summary>
         /// Property : mExecutableRootDirectory
         /// Wrapped up in a getter and setter
@@ -66,6 +68,10 @@ namespace Utility.ulims.com.na
             }
         }
 
+        /// <summary>
+        /// Property : MFileName
+        /// Wrapped up in a getter and setter
+        /// </summary>
         public static string MFileName
         {
             get { return mFileName; }

@@ -268,3 +268,10 @@ Job Name : temp_h_job has successfully completed
                         Tell the GIS to Sharepoint client to start shipping erfs to SharePoint)
 21/03/2016 20:38:53: Timer ticked and executePythonCode()  method or 
                         job has successfully completed(But with a pinch of salt-There could be errors)
+22/03/2016 15:35:51: 
+Serialized Object File Path :E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\SavedULIMSObjects.bin
+22/03/2016 15:35:51: Executable Path :
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\Utility.dll
+22/03/2016 15:35:51: Execute Root Directory
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug
+22/03/2016 15:35:52: ULIMS GIS Synchonization Service started

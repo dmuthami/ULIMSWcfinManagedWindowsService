@@ -9,13 +9,19 @@ using System.Threading.Tasks;
 
 namespace wsh.ulims.com.na
 {
-    [RunInstaller(true)]//allows 
+    /// <summary>
+    /// Class Name : ProjectInstaller
+    /// Class inherits from installer and marked with RunInstallerAttribute set to true
+    /// This allows the windows servce to be installed by instalutil.exe tool
+    /// </summary>
+    [RunInstaller(true)]
     public class ProjectInstaller : Installer
     {
 
         #region Member Variables
-        private ServiceProcessInstaller process;
-        private ServiceInstaller service;
+
+        private ServiceProcessInstaller process; //process
+        private ServiceInstaller service; //installer
 
         #endregion
 

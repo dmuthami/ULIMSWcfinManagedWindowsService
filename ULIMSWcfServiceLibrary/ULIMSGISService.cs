@@ -19,12 +19,28 @@ namespace wcf.ulims.com.na
 
         #region Member Variables
 
+        /*
+         * Boolean variable 
+         * Determines status of GIS synch process
+         */
         private bool mGISSyncProcess;
 
+        /*
+         * Boolean variable 
+         * Determines if the GIS synchronization process has started
+         */
         private bool hasGISSyncProcessstarted;
 
+        /*
+         * Instance of the ULIMSSerializer class 
+         * persists some important states/information that need to be accesses by the WCF client and the windows service
+         */
         private ULIMSSerializer.ULIMSSerializer uLIMSSerializer = new ULIMSSerializer.ULIMSSerializer();
 
+        /*
+         * variable storing memory ocation for an Instance of the PythonLibrary class 
+         * This is the class that executes python code
+         */
         IPythonLibrary mIPythonLibrary;
 
         #endregion

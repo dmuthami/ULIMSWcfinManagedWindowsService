@@ -5,6 +5,6 @@ E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\bin\Debug\C
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\bin\Debug\Utility.dll
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\bin\Debug\ConfigLibrary.pdb
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\bin\Debug\Utility.pdb
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\obj\Debug\ULIMSWcfClient.csprojResolveAssemblyReference.cache
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\obj\Debug\ULIMSWcfClient.exe
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\obj\Debug\ULIMSWcfClient.pdb
-E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\obj\Debug\ULIMSWcfClient.csprojResolveAssemblyReference.cache
