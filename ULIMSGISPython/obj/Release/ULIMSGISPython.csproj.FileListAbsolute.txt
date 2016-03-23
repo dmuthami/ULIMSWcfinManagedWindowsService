@@ -1,3 +1,7 @@
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Release\lib\Microsoft.SqlServer.ConnectionInfo.dll
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Release\lib\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Release\lib\Microsoft.SqlServer.Smo.dll
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Release\lib\Microsoft.SqlServer.SqlEnum.dll
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Release\ULIMSGISPython.dll
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Release\ULIMSGISPython.pdb
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Release\ConfigLibrary.dll
