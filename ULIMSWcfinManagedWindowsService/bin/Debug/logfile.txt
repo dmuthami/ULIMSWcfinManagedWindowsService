@@ -545,3 +545,1098 @@ Job Name : temp_h_job has successfully completed
                         Tell the GIS to Sharepoint client to start shipping erfs to SharePoint)
 23/03/2016 00:13:54: Timer ticked and executePythonCode()  method or 
                         job has successfully completed(But with a pinch of salt-There could be errors)
+23/03/2016 14:05:30: 
+Serialized Object File Path :E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\SavedULIMSObjects.bin
+23/03/2016 14:05:30: Executable Path :
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\Utility.dll
+23/03/2016 14:05:30: Execute Root Directory
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug
+23/03/2016 14:05:30: ULIMS GIS Synchonization Service started
+23/03/2016 14:08:30: Timer ticked and executePythonCode()  method or 
+                        job has been done fired
+23/03/2016 14:08:30: ConfigReader.writeSectionToLog(Dictionary<String, String> dictionary) : 
+
+Local authorities read from config file
+Town : helao_nafidiTown : katima_muliloTown : keetmanshoopTown : okahandjaTown : oshakatiTown : otjiwarongoTown : outapiTown : runduTown : tsumebTown : walvis_bay
+
+23/03/2016 14:09:14: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[1] - ---------------------------------Compute Stand No---------------------------------
+[2] - Start Time : -16-03-23_14-09-01
+[3] - ------------------------------------------------------------------
+[4] -  Local Authority : helao_nafidi
+[5] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\helao_nafidi\connection_files\gisadmin_helao_nafidi@helao_nafidi@localhost.sde
+[6] -  Reference Number/Stand No : hn_stand_no
+[7] -  Feature Class to compute stand number : helao_nafidi_Parcels
+[8] -  Object ID Field Name : OBJECTID
+[9] -  Local Authority ID Field Name : hn_local_authority_id
+[10] - Computation of Stand No's is complete
+[11] - Exited Computing Stand No In Spectacular Success 
+[12] - -------------Compute Stand No-----------------------------------------------------
+[13] - End Time : -16-03-23_14-09-13
+[14] - ------------------------------------------------------------------
+23/03/2016 14:09:38: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[15] - --------------------------------Auto Reconcile and Post----------------------------------
+[16] - Start Time : -16-03-23_14-09-19
+[17] - ------------------------------------------------------------------
+[18] -  Local Authority : helao_nafidi
+[19] - Exited with Spectacular Success 
+[20] - ------------------Auto Reconcile and Post------------------------------------------------
+[21] - End Time : -16-03-23_14-09-37
+[22] - ------------------------------------------------------------------
+23/03/2016 14:09:48: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[23] - ---------------------------------Compute Stand No---------------------------------
+[24] - Start Time : -16-03-23_14-09-43
+[25] - ------------------------------------------------------------------
+[26] -  Local Authority : katima_mulilo
+[27] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\katima_mulilo\connection_files\gisadmin_katima_mulilo@katima_mulilo@localhost.sde
+[28] -  Reference Number/Stand No : km_stand_no
+[29] -  Feature Class to compute stand number : katima_Parcels
+[30] -  Object ID Field Name : OBJECTID
+[31] -  Local Authority ID Field Name : km_local_authority_id
+[32] - Computation of Stand No's is complete
+[33] - Exited Computing Stand No In Spectacular Success 
+[34] - -------------Compute Stand No-----------------------------------------------------
+[35] - End Time : -16-03-23_14-09-47
+[36] - ------------------------------------------------------------------
+23/03/2016 14:10:29: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[37] - --------------------------------Auto Reconcile and Post----------------------------------
+[38] - Start Time : -16-03-23_14-09-52
+[39] - ------------------------------------------------------------------
+[40] -  Local Authority : katima_mulilo
+[41] - Exited with Spectacular Success 
+[42] - ------------------Auto Reconcile and Post------------------------------------------------
+[43] - End Time : -16-03-23_14-10-28
+[44] - ------------------------------------------------------------------
+23/03/2016 14:10:39: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[45] - ---------------------------------Compute Stand No---------------------------------
+[46] - Start Time : -16-03-23_14-10-34
+[47] - ------------------------------------------------------------------
+[48] -  Local Authority : keetmanshoop
+[49] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\keetmanshoop\connection_files\gisadmin_keetmanshoop@keetmanshoop@localhost.sde
+[50] -  Reference Number/Stand No : k_stand_no
+[51] -  Feature Class to compute stand number : keetmanshoop_Parcels
+[52] -  Object ID Field Name : OBJECTID
+[53] -  Local Authority ID Field Name : k_local_authority_id
+[54] - Computation of Stand No's is complete
+[55] - Exited Computing Stand No In Spectacular Success 
+[56] - -------------Compute Stand No-----------------------------------------------------
+[57] - End Time : -16-03-23_14-10-39
+[58] - ------------------------------------------------------------------
+23/03/2016 14:11:24: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[59] - --------------------------------Auto Reconcile and Post----------------------------------
+[60] - Start Time : -16-03-23_14-10-45
+[61] - ------------------------------------------------------------------
+[62] -  Local Authority : keetmanshoop
+[63] - Exited with Spectacular Success 
+[64] - ------------------Auto Reconcile and Post------------------------------------------------
+[65] - End Time : -16-03-23_14-11-23
+[66] - ------------------------------------------------------------------
+23/03/2016 14:11:34: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[67] - ---------------------------------Compute Stand No---------------------------------
+[68] - Start Time : -16-03-23_14-11-29
+[69] - ------------------------------------------------------------------
+[70] -  Local Authority : okahandja
+[71] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\okahandja\connection_files\gisadmin_okahandja@okahandja@localhost.sde
+[72] -  Reference Number/Stand No : oh_stand_no
+[73] -  Feature Class to compute stand number : okahandja_Parcels
+[74] -  Object ID Field Name : OBJECTID
+[75] -  Local Authority ID Field Name : oh_local_authority_id
+[76] - Computation of Stand No's is complete
+[77] - Exited Computing Stand No In Spectacular Success 
+[78] - -------------Compute Stand No-----------------------------------------------------
+[79] - End Time : -16-03-23_14-11-34
+[80] - ------------------------------------------------------------------
+23/03/2016 14:12:08: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[81] - --------------------------------Auto Reconcile and Post----------------------------------
+[82] - Start Time : -16-03-23_14-11-39
+[83] - ------------------------------------------------------------------
+[84] -  Local Authority : okahandja
+[85] - Exited with Spectacular Success 
+[86] - ------------------Auto Reconcile and Post------------------------------------------------
+[87] - End Time : -16-03-23_14-12-07
+[88] - ------------------------------------------------------------------
+23/03/2016 14:12:19: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[89] - ---------------------------------Compute Stand No---------------------------------
+[90] - Start Time : -16-03-23_14-12-13
+[91] - ------------------------------------------------------------------
+[92] -  Local Authority : oshakati
+[93] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\oshakati\connection_files\gisadmin_oshakati@oshakati@localhost.sde
+[94] -  Reference Number/Stand No : sh_stand_no
+[95] -  Feature Class to compute stand number : oshakati_Parcels
+[96] -  Object ID Field Name : OBJECTID
+[97] -  Local Authority ID Field Name : sh_local_authority_id
+[98] - Computation of Stand No's is complete
+[99] - Exited Computing Stand No In Spectacular Success 
+[100] - -------------Compute Stand No-----------------------------------------------------
+[101] - End Time : -16-03-23_14-12-19
+[102] - ------------------------------------------------------------------
+23/03/2016 14:12:44: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[103] - --------------------------------Auto Reconcile and Post----------------------------------
+[104] - Start Time : -16-03-23_14-12-24
+[105] - ------------------------------------------------------------------
+[106] -  Local Authority : oshakati
+[107] - Exited with Spectacular Success 
+[108] - ------------------Auto Reconcile and Post------------------------------------------------
+[109] - End Time : -16-03-23_14-12-43
+[110] - ------------------------------------------------------------------
+23/03/2016 14:12:55: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[111] - ---------------------------------Compute Stand No---------------------------------
+[112] - Start Time : -16-03-23_14-12-48
+[113] - ------------------------------------------------------------------
+[114] -  Local Authority : otjiwarongo
+[115] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\otjiwarongo\connection_files\gisadmin_otjiwarongo@otjiwarongo@localhost.sde
+[116] -  Reference Number/Stand No : ot_stand_no
+[117] -  Feature Class to compute stand number : otjiwarongo_Parcels
+[118] -  Object ID Field Name : OBJECTID
+[119] -  Local Authority ID Field Name : ot_local_authority_id
+[120] - Computation of Stand No's is complete
+[121] - Exited Computing Stand No In Spectacular Success 
+[122] - -------------Compute Stand No-----------------------------------------------------
+[123] - End Time : -16-03-23_14-12-54
+[124] - ------------------------------------------------------------------
+23/03/2016 14:13:40: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[125] - --------------------------------Auto Reconcile and Post----------------------------------
+[126] - Start Time : -16-03-23_14-13-00
+[127] - ------------------------------------------------------------------
+[128] -  Local Authority : otjiwarongo
+[129] - Exited with Spectacular Success 
+[130] - ------------------Auto Reconcile and Post------------------------------------------------
+[131] - End Time : -16-03-23_14-13-38
+[132] - ------------------------------------------------------------------
+23/03/2016 14:13:50: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[133] - ---------------------------------Compute Stand No---------------------------------
+[134] - Start Time : -16-03-23_14-13-44
+[135] - ------------------------------------------------------------------
+[136] -  Local Authority : outapi
+[137] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\outapi\connection_files\gisadmin_outapi@outapi@localhost.sde
+[138] -  Reference Number/Stand No : up_stand_no
+[139] -  Feature Class to compute stand number : outapi_Parcels
+[140] -  Object ID Field Name : OBJECTID
+[141] -  Local Authority ID Field Name : up_local_authority_id
+[142] - Computation of Stand No's is complete
+[143] - Exited Computing Stand No In Spectacular Success 
+[144] - -------------Compute Stand No-----------------------------------------------------
+[145] - End Time : -16-03-23_14-13-49
+[146] - ------------------------------------------------------------------
+23/03/2016 14:14:13: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[147] - --------------------------------Auto Reconcile and Post----------------------------------
+[148] - Start Time : -16-03-23_14-13-54
+[149] - ------------------------------------------------------------------
+[150] -  Local Authority : outapi
+[151] - Exited with Spectacular Success 
+[152] - ------------------Auto Reconcile and Post------------------------------------------------
+[153] - End Time : -16-03-23_14-14-12
+[154] - ------------------------------------------------------------------
+23/03/2016 14:14:24: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[155] - ---------------------------------Compute Stand No---------------------------------
+[156] - Start Time : -16-03-23_14-14-18
+[157] - ------------------------------------------------------------------
+[158] -  Local Authority : rundu
+[159] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\rundu\connection_files\gisadmin_rundu@rundu@localhost.sde
+[160] -  Reference Number/Stand No : ru_stand_no
+[161] -  Feature Class to compute stand number : rundu_Parcels
+[162] -  Object ID Field Name : OBJECTID
+[163] -  Local Authority ID Field Name : ru_local_authority_id
+[164] - Computation of Stand No's is complete
+[165] - Exited Computing Stand No In Spectacular Success 
+[166] - -------------Compute Stand No-----------------------------------------------------
+[167] - End Time : -16-03-23_14-14-24
+[168] - ------------------------------------------------------------------
+23/03/2016 14:16:17: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[169] - --------------------------------Auto Reconcile and Post----------------------------------
+[170] - Start Time : -16-03-23_14-14-29
+[171] - ------------------------------------------------------------------
+[172] -  Local Authority : rundu
+[173] - Exited with Spectacular Success 
+[174] - ------------------Auto Reconcile and Post------------------------------------------------
+[175] - End Time : -16-03-23_14-16-16
+[176] - ------------------------------------------------------------------
+23/03/2016 14:16:27: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[177] - ---------------------------------Compute Stand No---------------------------------
+[178] - Start Time : -16-03-23_14-16-22
+[179] - ------------------------------------------------------------------
+[180] -  Local Authority : tsumeb
+[181] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\tsumeb\connection_files\gisadmin_tsumeb@tsumeb@localhost.sde
+[182] -  Reference Number/Stand No : t_stand_no
+[183] -  Feature Class to compute stand number : tsumeb_Parcels
+[184] -  Object ID Field Name : OBJECTID
+[185] -  Local Authority ID Field Name : t_local_authority_id
+[186] - Computation of Stand No's is complete
+[187] - Exited Computing Stand No In Spectacular Success 
+[188] - -------------Compute Stand No-----------------------------------------------------
+[189] - End Time : -16-03-23_14-16-26
+[190] - ------------------------------------------------------------------
+23/03/2016 14:16:59: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[191] - --------------------------------Auto Reconcile and Post----------------------------------
+[192] - Start Time : -16-03-23_14-16-31
+[193] - ------------------------------------------------------------------
+[194] -  Local Authority : tsumeb
+[195] - Exited with Spectacular Success 
+[196] - ------------------Auto Reconcile and Post------------------------------------------------
+[197] - End Time : -16-03-23_14-16-58
+[198] - ------------------------------------------------------------------
+23/03/2016 14:17:10: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[199] - ---------------------------------Compute Stand No---------------------------------
+[200] - Start Time : -16-03-23_14-17-04
+[201] - ------------------------------------------------------------------
+[202] -  Local Authority : walvis_bay
+[203] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\walvis_bay\connection_files\gisadmin_walvis_bay@walvis_bay@localhost.sde
+[204] -  Reference Number/Stand No : wb_stand_no
+[205] -  Feature Class to compute stand number : walvis_bay_Parcels
+[206] -  Object ID Field Name : OBJECTID
+[207] -  Local Authority ID Field Name : wb_local_authority_id
+[208] - Computation of Stand No's is complete
+[209] - Exited Computing Stand No In Spectacular Success 
+[210] - -------------Compute Stand No-----------------------------------------------------
+[211] - End Time : -16-03-23_14-17-09
+[212] - ------------------------------------------------------------------
+23/03/2016 14:19:07: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[213] - --------------------------------Auto Reconcile and Post----------------------------------
+[214] - Start Time : -16-03-23_14-17-15
+[215] - ------------------------------------------------------------------
+[216] -  Local Authority : walvis_bay
+[217] - Exited with Spectacular Success 
+[218] - ------------------Auto Reconcile and Post------------------------------------------------
+[219] - End Time : -16-03-23_14-19-06
+[220] - ------------------------------------------------------------------
+23/03/2016 14:19:07: PythonLibrary.executePythonProcess() : 
+Execution of Job Name : temp_h_job has been fired/started.
+23/03/2016 14:19:07: ULIMSGISWindowsService.executePythonCode()
+System.Exception: ULIMSGISWindowsService.executePythonCode()  ---> System.Exception: PythonLibrary.executePythonProcess() :  ---> System.Exception: SQLJob2.Execute() :  ---> Microsoft.SqlServer.Management.Common.ConnectionFailureException: Failed to connect to server .. ---> System.Data.SqlClient.SqlException: Login failed for user 'sa'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.SqlServer.Management.Common.ConnectionManager.InternalConnect(WindowsIdentity impersonatedIdentity)
+   at Microsoft.SqlServer.Management.Common.ConnectionManager.Connect()
+   --- End of inner exception stack trace ---
+   at Microsoft.SqlServer.Management.Common.ConnectionManager.Connect()
+   at ulimsgispython.ulims.com.na.SQLJob2.Execute() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\SQLJob2.cs:line 270
+   --- End of inner exception stack trace ---
+   at ulimsgispython.ulims.com.na.SQLJob2.Execute() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\SQLJob2.cs:line 317
+   at ulimsgispython.ulims.com.na.PythonLibrary.executePythonProcess() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\PythonLibrary.cs:line 227
+   --- End of inner exception stack trace ---
+   at ulimsgispython.ulims.com.na.PythonLibrary.executePythonProcess() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\PythonLibrary.cs:line 241
+   at wcf.ulims.com.na.ULIMSGISService.executePythonCode() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\ULIMSGISService.cs:line 361
+   --- End of inner exception stack trace ---
+   at wcf.ulims.com.na.ULIMSGISService.executePythonCode() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\ULIMSGISService.cs:line 374
+   at wsh.ulims.com.na.ULIMSGISWindowsService.mTimer_Tick(Object sender, ElapsedEventArgs e) in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\ULIMSGISWindowsService.cs:line 373
+23/03/2016 14:19:07: Tell the timer GIS synch process has stopped executing)
+23/03/2016 14:19:07: Tell process to stop GIS Synch Process
+                        save object file with false parameter. 
+                        This stops the Windows service from running GIS synch process until instructed so by a client)
+23/03/2016 14:19:07: GIS synch process has completed successfully.
+                        Tell the GIS to Sharepoint client to start shipping erfs to SharePoint)
+23/03/2016 14:19:07: Timer ticked and executePythonCode()  method or 
+                        job has successfully completed(But with a pinch of salt-There could be errors)
+23/03/2016 14:25:16: 
+Serialized Object File Path :E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\SavedULIMSObjects.bin
+23/03/2016 14:25:16: Executable Path :
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\Utility.dll
+23/03/2016 14:25:16: Execute Root Directory
+E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug
+23/03/2016 14:25:16: ULIMS GIS Synchonization Service started
+23/03/2016 14:27:16: Timer ticked and executePythonCode()  method or 
+                        job has been done fired
+23/03/2016 14:27:16: ConfigReader.writeSectionToLog(Dictionary<String, String> dictionary) : 
+
+Local authorities read from config file
+Town : helao_nafidiTown : katima_muliloTown : keetmanshoopTown : okahandjaTown : oshakatiTown : otjiwarongoTown : outapiTown : runduTown : tsumebTown : walvis_bay
+
+23/03/2016 14:27:36: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[1] - ---------------------------------Compute Stand No---------------------------------
+[2] - Start Time : -16-03-23_14-27-32
+[3] - ------------------------------------------------------------------
+[4] -  Local Authority : helao_nafidi
+[5] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\helao_nafidi\connection_files\gisadmin_helao_nafidi@helao_nafidi@localhost.sde
+[6] -  Reference Number/Stand No : hn_stand_no
+[7] -  Feature Class to compute stand number : helao_nafidi_Parcels
+[8] -  Object ID Field Name : OBJECTID
+[9] -  Local Authority ID Field Name : hn_local_authority_id
+[10] - Computation of Stand No's is complete
+[11] - Exited Computing Stand No In Spectacular Success 
+[12] - -------------Compute Stand No-----------------------------------------------------
+[13] - End Time : -16-03-23_14-27-36
+[14] - ------------------------------------------------------------------
+23/03/2016 14:28:06: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[15] - --------------------------------Auto Reconcile and Post----------------------------------
+[16] - Start Time : -16-03-23_14-27-52
+[17] - ------------------------------------------------------------------
+[18] -  Local Authority : helao_nafidi
+[19] - Exited with Spectacular Success 
+[20] - ------------------Auto Reconcile and Post------------------------------------------------
+[21] - End Time : -16-03-23_14-28-05
+[22] - ------------------------------------------------------------------
+23/03/2016 14:28:26: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[23] - ---------------------------------Compute Stand No---------------------------------
+[24] - Start Time : -16-03-23_14-28-22
+[25] - ------------------------------------------------------------------
+[26] -  Local Authority : katima_mulilo
+[27] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\katima_mulilo\connection_files\gisadmin_katima_mulilo@katima_mulilo@localhost.sde
+[28] -  Reference Number/Stand No : km_stand_no
+[29] -  Feature Class to compute stand number : katima_Parcels
+[30] -  Object ID Field Name : OBJECTID
+[31] -  Local Authority ID Field Name : km_local_authority_id
+[32] - Computation of Stand No's is complete
+[33] - Exited Computing Stand No In Spectacular Success 
+[34] - -------------Compute Stand No-----------------------------------------------------
+[35] - End Time : -16-03-23_14-28-25
+[36] - ------------------------------------------------------------------
+23/03/2016 14:29:11: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[37] - --------------------------------Auto Reconcile and Post----------------------------------
+[38] - Start Time : -16-03-23_14-28-42
+[39] - ------------------------------------------------------------------
+[40] -  Local Authority : katima_mulilo
+[41] - Exited with Spectacular Success 
+[42] - ------------------Auto Reconcile and Post------------------------------------------------
+[43] - End Time : -16-03-23_14-29-10
+[44] - ------------------------------------------------------------------
+23/03/2016 14:29:41: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[45] - ---------------------------------Compute Stand No---------------------------------
+[46] - Start Time : -16-03-23_14-29-35
+[47] - ------------------------------------------------------------------
+[48] -  Local Authority : keetmanshoop
+[49] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\keetmanshoop\connection_files\gisadmin_keetmanshoop@keetmanshoop@localhost.sde
+[50] -  Reference Number/Stand No : k_stand_no
+[51] -  Feature Class to compute stand number : keetmanshoop_Parcels
+[52] -  Object ID Field Name : OBJECTID
+[53] -  Local Authority ID Field Name : k_local_authority_id
+[54] - Computation of Stand No's is complete
+[55] - Exited Computing Stand No In Spectacular Success 
+[56] - -------------Compute Stand No-----------------------------------------------------
+[57] - End Time : -16-03-23_14-29-40
+[58] - ------------------------------------------------------------------
+23/03/2016 14:30:26: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[59] - --------------------------------Auto Reconcile and Post----------------------------------
+[60] - Start Time : -16-03-23_14-29-56
+[61] - ------------------------------------------------------------------
+[62] -  Local Authority : keetmanshoop
+[63] - Exited with Spectacular Success 
+[64] - ------------------Auto Reconcile and Post------------------------------------------------
+[65] - End Time : -16-03-23_14-30-25
+[66] - ------------------------------------------------------------------
+23/03/2016 14:30:46: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[67] - ---------------------------------Compute Stand No---------------------------------
+[68] - Start Time : -16-03-23_14-30-42
+[69] - ------------------------------------------------------------------
+[70] -  Local Authority : okahandja
+[71] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\okahandja\connection_files\gisadmin_okahandja@okahandja@localhost.sde
+[72] -  Reference Number/Stand No : oh_stand_no
+[73] -  Feature Class to compute stand number : okahandja_Parcels
+[74] -  Object ID Field Name : OBJECTID
+[75] -  Local Authority ID Field Name : oh_local_authority_id
+[76] - Computation of Stand No's is complete
+[77] - Exited Computing Stand No In Spectacular Success 
+[78] - -------------Compute Stand No-----------------------------------------------------
+[79] - End Time : -16-03-23_14-30-45
+[80] - ------------------------------------------------------------------
+23/03/2016 14:31:30: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[81] - --------------------------------Auto Reconcile and Post----------------------------------
+[82] - Start Time : -16-03-23_14-31-02
+[83] - ------------------------------------------------------------------
+[84] -  Local Authority : okahandja
+[85] - Exited with Spectacular Success 
+[86] - ------------------Auto Reconcile and Post------------------------------------------------
+[87] - End Time : -16-03-23_14-31-29
+[88] - ------------------------------------------------------------------
+23/03/2016 14:31:50: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[89] - ---------------------------------Compute Stand No---------------------------------
+[90] - Start Time : -16-03-23_14-31-46
+[91] - ------------------------------------------------------------------
+[92] -  Local Authority : oshakati
+[93] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\oshakati\connection_files\gisadmin_oshakati@oshakati@localhost.sde
+[94] -  Reference Number/Stand No : sh_stand_no
+[95] -  Feature Class to compute stand number : oshakati_Parcels
+[96] -  Object ID Field Name : OBJECTID
+[97] -  Local Authority ID Field Name : sh_local_authority_id
+[98] - Computation of Stand No's is complete
+[99] - Exited Computing Stand No In Spectacular Success 
+[100] - -------------Compute Stand No-----------------------------------------------------
+[101] - End Time : -16-03-23_14-31-50
+[102] - ------------------------------------------------------------------
+23/03/2016 14:32:22: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[103] - --------------------------------Auto Reconcile and Post----------------------------------
+[104] - Start Time : -16-03-23_14-32-06
+[105] - ------------------------------------------------------------------
+[106] -  Local Authority : oshakati
+[107] - Exited with Spectacular Success 
+[108] - ------------------Auto Reconcile and Post------------------------------------------------
+[109] - End Time : -16-03-23_14-32-21
+[110] - ------------------------------------------------------------------
+23/03/2016 14:33:21: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[111] - ---------------------------------Compute Stand No---------------------------------
+[112] - Start Time : -16-03-23_14-33-16
+[113] - ------------------------------------------------------------------
+[114] -  Local Authority : otjiwarongo
+[115] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\otjiwarongo\connection_files\gisadmin_otjiwarongo@otjiwarongo@localhost.sde
+[116] -  Reference Number/Stand No : ot_stand_no
+[117] -  Feature Class to compute stand number : otjiwarongo_Parcels
+[118] -  Object ID Field Name : OBJECTID
+[119] -  Local Authority ID Field Name : ot_local_authority_id
+[120] - Computation of Stand No's is complete
+[121] - Exited Computing Stand No In Spectacular Success 
+[122] - -------------Compute Stand No-----------------------------------------------------
+[123] - End Time : -16-03-23_14-33-21
+[124] - ------------------------------------------------------------------
+23/03/2016 14:34:12: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[125] - --------------------------------Auto Reconcile and Post----------------------------------
+[126] - Start Time : -16-03-23_14-33-37
+[127] - ------------------------------------------------------------------
+[128] -  Local Authority : otjiwarongo
+[129] - Exited with Spectacular Success 
+[130] - ------------------Auto Reconcile and Post------------------------------------------------
+[131] - End Time : -16-03-23_14-34-10
+[132] - ------------------------------------------------------------------
+23/03/2016 14:34:31: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[133] - ---------------------------------Compute Stand No---------------------------------
+[134] - Start Time : -16-03-23_14-34-27
+[135] - ------------------------------------------------------------------
+[136] -  Local Authority : outapi
+[137] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\outapi\connection_files\gisadmin_outapi@outapi@localhost.sde
+[138] -  Reference Number/Stand No : up_stand_no
+[139] -  Feature Class to compute stand number : outapi_Parcels
+[140] -  Object ID Field Name : OBJECTID
+[141] -  Local Authority ID Field Name : up_local_authority_id
+[142] - Computation of Stand No's is complete
+[143] - Exited Computing Stand No In Spectacular Success 
+[144] - -------------Compute Stand No-----------------------------------------------------
+[145] - End Time : -16-03-23_14-34-31
+[146] - ------------------------------------------------------------------
+23/03/2016 14:35:05: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[147] - --------------------------------Auto Reconcile and Post----------------------------------
+[148] - Start Time : -16-03-23_14-34-47
+[149] - ------------------------------------------------------------------
+[150] -  Local Authority : outapi
+[151] - Exited with Spectacular Success 
+[152] - ------------------Auto Reconcile and Post------------------------------------------------
+[153] - End Time : -16-03-23_14-35-04
+[154] - ------------------------------------------------------------------
+23/03/2016 14:35:28: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[155] - ---------------------------------Compute Stand No---------------------------------
+[156] - Start Time : -16-03-23_14-35-21
+[157] - ------------------------------------------------------------------
+[158] -  Local Authority : rundu
+[159] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\rundu\connection_files\gisadmin_rundu@rundu@localhost.sde
+[160] -  Reference Number/Stand No : ru_stand_no
+[161] -  Feature Class to compute stand number : rundu_Parcels
+[162] -  Object ID Field Name : OBJECTID
+[163] -  Local Authority ID Field Name : ru_local_authority_id
+[164] - Computation of Stand No's is complete
+[165] - Exited Computing Stand No In Spectacular Success 
+[166] - -------------Compute Stand No-----------------------------------------------------
+[167] - End Time : -16-03-23_14-35-28
+[168] - ------------------------------------------------------------------
+23/03/2016 14:37:22: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[169] - --------------------------------Auto Reconcile and Post----------------------------------
+[170] - Start Time : -16-03-23_14-35-44
+[171] - ------------------------------------------------------------------
+[172] -  Local Authority : rundu
+[173] - Exited with Spectacular Success 
+[174] - ------------------Auto Reconcile and Post------------------------------------------------
+[175] - End Time : -16-03-23_14-37-21
+[176] - ------------------------------------------------------------------
+23/03/2016 14:37:31: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[177] - ---------------------------------Compute Stand No---------------------------------
+[178] - Start Time : -16-03-23_14-37-26
+[179] - ------------------------------------------------------------------
+[180] -  Local Authority : tsumeb
+[181] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\tsumeb\connection_files\gisadmin_tsumeb@tsumeb@localhost.sde
+[182] -  Reference Number/Stand No : t_stand_no
+[183] -  Feature Class to compute stand number : tsumeb_Parcels
+[184] -  Object ID Field Name : OBJECTID
+[185] -  Local Authority ID Field Name : t_local_authority_id
+[186] - Computation of Stand No's is complete
+[187] - Exited Computing Stand No In Spectacular Success 
+[188] - -------------Compute Stand No-----------------------------------------------------
+[189] - End Time : -16-03-23_14-37-30
+[190] - ------------------------------------------------------------------
+23/03/2016 14:38:05: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[191] - --------------------------------Auto Reconcile and Post----------------------------------
+[192] - Start Time : -16-03-23_14-37-39
+[193] - ------------------------------------------------------------------
+[194] -  Local Authority : tsumeb
+[195] - Exited with Spectacular Success 
+[196] - ------------------Auto Reconcile and Post------------------------------------------------
+[197] - End Time : -16-03-23_14-38-04
+[198] - ------------------------------------------------------------------
+23/03/2016 14:38:21: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[199] - ---------------------------------Compute Stand No---------------------------------
+[200] - Start Time : -16-03-23_14-38-12
+[201] - ------------------------------------------------------------------
+[202] -  Local Authority : walvis_bay
+[203] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\walvis_bay\connection_files\gisadmin_walvis_bay@walvis_bay@localhost.sde
+[204] -  Reference Number/Stand No : wb_stand_no
+[205] -  Feature Class to compute stand number : walvis_bay_Parcels
+[206] -  Object ID Field Name : OBJECTID
+[207] -  Local Authority ID Field Name : wb_local_authority_id
+[208] - Computation of Stand No's is complete
+[209] - Exited Computing Stand No In Spectacular Success 
+[210] - -------------Compute Stand No-----------------------------------------------------
+[211] - End Time : -16-03-23_14-38-20
+[212] - ------------------------------------------------------------------
+23/03/2016 14:40:10: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[213] - --------------------------------Auto Reconcile and Post----------------------------------
+[214] - Start Time : -16-03-23_14-38-28
+[215] - ------------------------------------------------------------------
+[216] -  Local Authority : walvis_bay
+[217] - Exited with Spectacular Success 
+[218] - ------------------Auto Reconcile and Post------------------------------------------------
+[219] - End Time : -16-03-23_14-40-09
+[220] - ------------------------------------------------------------------
+23/03/2016 14:40:10: PythonLibrary.executePythonProcess() : 
+Execution of Job Name : temp_h_job has been fired/started.
+23/03/2016 14:40:18: 
+Job Name : temp_h_job is processing. Please wait for 5000 milliseconds
+23/03/2016 14:40:23: 
+Job Name : temp_h_job is processing. Please wait for 5000 milliseconds
+23/03/2016 14:40:28: 
+Job Name : temp_h_job is processing. Please wait for 5000 milliseconds
+23/03/2016 14:40:33: 
+Job Name : temp_h_job has successfully completed
+23/03/2016 14:40:33: 
+Job Name : temp_h_job has successfully completed
+23/03/2016 14:40:33: Tell the timer GIS synch process has stopped executing)
+23/03/2016 14:40:33: Tell process to stop GIS Synch Process
+                        save object file with false parameter. 
+                        This stops the Windows service from running GIS synch process until instructed so by a client)
+23/03/2016 14:40:33: GIS synch process has completed successfully.
+                        Tell the GIS to Sharepoint client to start shipping erfs to SharePoint)
+23/03/2016 14:40:33: Timer ticked and executePythonCode()  method or 
+                        job has successfully completed(But with a pinch of salt-There could be errors)
+25/03/2016 11:53:42: Timer ticked and executePythonCode()  method or 
+                        job has been done fired
+25/03/2016 11:53:42: ConfigReader.writeSectionToLog(Dictionary<String, String> dictionary) : 
+
+Local authorities read from config file
+Town : helao_nafidiTown : katima_muliloTown : keetmanshoopTown : okahandjaTown : oshakatiTown : otjiwarongoTown : outapiTown : runduTown : tsumebTown : walvis_bay
+
+25/03/2016 11:54:10: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[221] - ---------------------------------Compute Stand No---------------------------------
+[222] - Start Time : -16-03-25_11-53-56
+[223] - ------------------------------------------------------------------
+[224] -  Local Authority : helao_nafidi
+[225] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\helao_nafidi\connection_files\gisadmin_helao_nafidi@helao_nafidi@localhost.sde
+[226] -  Reference Number/Stand No : hn_stand_no
+[227] -  Feature Class to compute stand number : helao_nafidi_Parcels
+[228] -  Object ID Field Name : OBJECTID
+[229] -  Local Authority ID Field Name : hn_local_authority_id
+[230] - Computation of Stand No's is complete
+[231] - Exited Computing Stand No In Spectacular Success 
+[232] - -------------Compute Stand No-----------------------------------------------------
+[233] - End Time : -16-03-25_11-54-09
+[234] - ------------------------------------------------------------------
+25/03/2016 11:54:33: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[235] - --------------------------------Auto Reconcile and Post----------------------------------
+[236] - Start Time : -16-03-25_11-54-14
+[237] - ------------------------------------------------------------------
+[238] -  Local Authority : helao_nafidi
+[239] - Exited with Spectacular Success 
+[240] - ------------------Auto Reconcile and Post------------------------------------------------
+[241] - End Time : -16-03-25_11-54-31
+[242] - ------------------------------------------------------------------
+25/03/2016 11:55:23: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[243] - ---------------------------------Compute Stand No---------------------------------
+[244] - Start Time : -16-03-25_11-54-37
+[245] - ------------------------------------------------------------------
+[246] -  Local Authority : katima_mulilo
+[247] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\katima_mulilo\connection_files\gisadmin_katima_mulilo@katima_mulilo@localhost.sde
+[248] -  Reference Number/Stand No : km_stand_no
+[249] -  Feature Class to compute stand number : katima_Parcels
+[250] -  Object ID Field Name : OBJECTID
+[251] -  Local Authority ID Field Name : km_local_authority_id
+[252] - Computation of Stand No's is complete
+[253] - Exited Computing Stand No In Spectacular Success 
+[254] - -------------Compute Stand No-----------------------------------------------------
+[255] - End Time : -16-03-25_11-55-22
+[256] - ------------------------------------------------------------------
+25/03/2016 11:56:07: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[257] - --------------------------------Auto Reconcile and Post----------------------------------
+[258] - Start Time : -16-03-25_11-55-27
+[259] - ------------------------------------------------------------------
+[260] -  Local Authority : katima_mulilo
+[261] - Exited with Spectacular Success 
+[262] - ------------------Auto Reconcile and Post------------------------------------------------
+[263] - End Time : -16-03-25_11-56-06
+[264] - ------------------------------------------------------------------
+25/03/2016 11:56:58: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[265] - ---------------------------------Compute Stand No---------------------------------
+[266] - Start Time : -16-03-25_11-56-11
+[267] - ------------------------------------------------------------------
+[268] -  Local Authority : keetmanshoop
+[269] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\keetmanshoop\connection_files\gisadmin_keetmanshoop@keetmanshoop@localhost.sde
+[270] -  Reference Number/Stand No : k_stand_no
+[271] -  Feature Class to compute stand number : keetmanshoop_Parcels
+[272] -  Object ID Field Name : OBJECTID
+[273] -  Local Authority ID Field Name : k_local_authority_id
+[274] - Computation of Stand No's is complete
+[275] - Exited Computing Stand No In Spectacular Success 
+[276] - -------------Compute Stand No-----------------------------------------------------
+[277] - End Time : -16-03-25_11-56-58
+[278] - ------------------------------------------------------------------
+25/03/2016 11:57:40: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[279] - --------------------------------Auto Reconcile and Post----------------------------------
+[280] - Start Time : -16-03-25_11-57-02
+[281] - ------------------------------------------------------------------
+[282] -  Local Authority : keetmanshoop
+[283] - Exited with Spectacular Success 
+[284] - ------------------Auto Reconcile and Post------------------------------------------------
+[285] - End Time : -16-03-25_11-57-38
+[286] - ------------------------------------------------------------------
+25/03/2016 11:58:27: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[287] - ---------------------------------Compute Stand No---------------------------------
+[288] - Start Time : -16-03-25_11-57-44
+[289] - ------------------------------------------------------------------
+[290] -  Local Authority : okahandja
+[291] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\okahandja\connection_files\gisadmin_okahandja@okahandja@localhost.sde
+[292] -  Reference Number/Stand No : oh_stand_no
+[293] -  Feature Class to compute stand number : okahandja_Parcels
+[294] -  Object ID Field Name : OBJECTID
+[295] -  Local Authority ID Field Name : oh_local_authority_id
+[296] - Computation of Stand No's is complete
+[297] - Exited Computing Stand No In Spectacular Success 
+[298] - -------------Compute Stand No-----------------------------------------------------
+[299] - End Time : -16-03-25_11-58-27
+[300] - ------------------------------------------------------------------
+25/03/2016 11:59:05: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[301] - --------------------------------Auto Reconcile and Post----------------------------------
+[302] - Start Time : -16-03-25_11-58-32
+[303] - ------------------------------------------------------------------
+[304] -  Local Authority : okahandja
+[305] - Exited with Spectacular Success 
+[306] - ------------------Auto Reconcile and Post------------------------------------------------
+[307] - End Time : -16-03-25_11-59-04
+[308] - ------------------------------------------------------------------
+25/03/2016 11:59:26: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[309] - ---------------------------------Compute Stand No---------------------------------
+[310] - Start Time : -16-03-25_11-59-09
+[311] - ------------------------------------------------------------------
+[312] -  Local Authority : oshakati
+[313] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\oshakati\connection_files\gisadmin_oshakati@oshakati@localhost.sde
+[314] -  Reference Number/Stand No : sh_stand_no
+[315] -  Feature Class to compute stand number : oshakati_Parcels
+[316] -  Object ID Field Name : OBJECTID
+[317] -  Local Authority ID Field Name : sh_local_authority_id
+[318] - Computation of Stand No's is complete
+[319] - Exited Computing Stand No In Spectacular Success 
+[320] - -------------Compute Stand No-----------------------------------------------------
+[321] - End Time : -16-03-25_11-59-26
+[322] - ------------------------------------------------------------------
+25/03/2016 11:59:50: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[323] - --------------------------------Auto Reconcile and Post----------------------------------
+[324] - Start Time : -16-03-25_11-59-31
+[325] - ------------------------------------------------------------------
+[326] -  Local Authority : oshakati
+[327] - Exited with Spectacular Success 
+[328] - ------------------Auto Reconcile and Post------------------------------------------------
+[329] - End Time : -16-03-25_11-59-48
+[330] - ------------------------------------------------------------------
+25/03/2016 12:00:40: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[331] - ---------------------------------Compute Stand No---------------------------------
+[332] - Start Time : -16-03-25_11-59-54
+[333] - ------------------------------------------------------------------
+[334] -  Local Authority : otjiwarongo
+[335] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\otjiwarongo\connection_files\gisadmin_otjiwarongo@otjiwarongo@localhost.sde
+[336] -  Reference Number/Stand No : ot_stand_no
+[337] -  Feature Class to compute stand number : otjiwarongo_Parcels
+[338] -  Object ID Field Name : OBJECTID
+[339] -  Local Authority ID Field Name : ot_local_authority_id
+[340] - Computation of Stand No's is complete
+[341] - Exited Computing Stand No In Spectacular Success 
+[342] - -------------Compute Stand No-----------------------------------------------------
+[343] - End Time : -16-03-25_12-00-39
+[344] - ------------------------------------------------------------------
+25/03/2016 12:01:39: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[345] - --------------------------------Auto Reconcile and Post----------------------------------
+[346] - Start Time : -16-03-25_12-00-47
+[347] - ------------------------------------------------------------------
+[348] -  Local Authority : otjiwarongo
+[349] - Exited with Spectacular Success 
+[350] - ------------------Auto Reconcile and Post------------------------------------------------
+[351] - End Time : -16-03-25_12-01-38
+[352] - ------------------------------------------------------------------
+25/03/2016 12:02:03: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[353] - ---------------------------------Compute Stand No---------------------------------
+[354] - Start Time : -16-03-25_12-01-44
+[355] - ------------------------------------------------------------------
+[356] -  Local Authority : outapi
+[357] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\outapi\connection_files\gisadmin_outapi@outapi@localhost.sde
+[358] -  Reference Number/Stand No : up_stand_no
+[359] -  Feature Class to compute stand number : outapi_Parcels
+[360] -  Object ID Field Name : OBJECTID
+[361] -  Local Authority ID Field Name : up_local_authority_id
+[362] - Computation of Stand No's is complete
+[363] - Exited Computing Stand No In Spectacular Success 
+[364] - -------------Compute Stand No-----------------------------------------------------
+[365] - End Time : -16-03-25_12-02-02
+[366] - ------------------------------------------------------------------
+25/03/2016 12:02:26: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[367] - --------------------------------Auto Reconcile and Post----------------------------------
+[368] - Start Time : -16-03-25_12-02-07
+[369] - ------------------------------------------------------------------
+[370] -  Local Authority : outapi
+[371] - Exited with Spectacular Success 
+[372] - ------------------Auto Reconcile and Post------------------------------------------------
+[373] - End Time : -16-03-25_12-02-25
+[374] - ------------------------------------------------------------------
+25/03/2016 12:09:32: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[375] - ---------------------------------Compute Stand No---------------------------------
+[376] - Start Time : -16-03-25_12-02-30
+[377] - ------------------------------------------------------------------
+[378] -  Local Authority : rundu
+[379] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\rundu\connection_files\gisadmin_rundu@rundu@localhost.sde
+[380] -  Reference Number/Stand No : ru_stand_no
+[381] -  Feature Class to compute stand number : rundu_Parcels
+[382] -  Object ID Field Name : OBJECTID
+[383] -  Local Authority ID Field Name : ru_local_authority_id
+[384] - Computation of Stand No's is complete
+[385] - Exited Computing Stand No In Spectacular Success 
+[386] - -------------Compute Stand No-----------------------------------------------------
+[387] - End Time : -16-03-25_12-09-32
+[388] - ------------------------------------------------------------------
+25/03/2016 12:11:32: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[389] - --------------------------------Auto Reconcile and Post----------------------------------
+[390] - Start Time : -16-03-25_12-09-37
+[391] - ------------------------------------------------------------------
+[392] -  Local Authority : rundu
+[393] - Exited with Spectacular Success 
+[394] - ------------------Auto Reconcile and Post------------------------------------------------
+[395] - End Time : -16-03-25_12-11-31
+[396] - ------------------------------------------------------------------
+25/03/2016 12:12:10: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[397] - ---------------------------------Compute Stand No---------------------------------
+[398] - Start Time : -16-03-25_12-11-37
+[399] - ------------------------------------------------------------------
+[400] -  Local Authority : tsumeb
+[401] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\tsumeb\connection_files\gisadmin_tsumeb@tsumeb@localhost.sde
+[402] -  Reference Number/Stand No : t_stand_no
+[403] -  Feature Class to compute stand number : tsumeb_Parcels
+[404] -  Object ID Field Name : OBJECTID
+[405] -  Local Authority ID Field Name : t_local_authority_id
+[406] - Computation of Stand No's is complete
+[407] - Exited Computing Stand No In Spectacular Success 
+[408] - -------------Compute Stand No-----------------------------------------------------
+[409] - End Time : -16-03-25_12-12-09
+[410] - ------------------------------------------------------------------
+25/03/2016 12:12:45: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[411] - --------------------------------Auto Reconcile and Post----------------------------------
+[412] - Start Time : -16-03-25_12-12-14
+[413] - ------------------------------------------------------------------
+[414] -  Local Authority : tsumeb
+[415] - Exited with Spectacular Success 
+[416] - ------------------Auto Reconcile and Post------------------------------------------------
+[417] - End Time : -16-03-25_12-12-44
+[418] - ------------------------------------------------------------------
+25/03/2016 12:17:21: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[419] - ---------------------------------Compute Stand No---------------------------------
+[420] - Start Time : -16-03-25_12-12-51
+[421] - ------------------------------------------------------------------
+[422] -  Local Authority : walvis_bay
+[423] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\walvis_bay\connection_files\gisadmin_walvis_bay@walvis_bay@localhost.sde
+[424] -  Reference Number/Stand No : wb_stand_no
+[425] -  Feature Class to compute stand number : walvis_bay_Parcels
+[426] -  Object ID Field Name : OBJECTID
+[427] -  Local Authority ID Field Name : wb_local_authority_id
+[428] - Computation of Stand No's is complete
+[429] - Exited Computing Stand No In Spectacular Success 
+[430] - -------------Compute Stand No-----------------------------------------------------
+[431] - End Time : -16-03-25_12-17-21
+[432] - ------------------------------------------------------------------
+25/03/2016 12:19:32: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[433] - --------------------------------Auto Reconcile and Post----------------------------------
+[434] - Start Time : -16-03-25_12-17-26
+[435] - ------------------------------------------------------------------
+[436] -  Local Authority : walvis_bay
+[437] - Exited with Spectacular Success 
+[438] - ------------------Auto Reconcile and Post------------------------------------------------
+[439] - End Time : -16-03-25_12-19-31
+[440] - ------------------------------------------------------------------
+25/03/2016 12:19:32: PythonLibrary.executePythonProcess() : 
+Execution of Job Name : temp_h_job has been fired/started.
+25/03/2016 12:19:42: 
+Job Name : temp_h_job is processing. Please wait for 5000 milliseconds
+25/03/2016 12:19:47: 
+Job Name : temp_h_job is processing. Please wait for 5000 milliseconds
+25/03/2016 12:19:52: 
+Job Name : temp_h_job has successfully completed
+25/03/2016 12:19:52: 
+Job Name : temp_h_job has successfully completed
+25/03/2016 12:19:52: Tell the timer GIS synch process has stopped executing)
+25/03/2016 12:19:52: Tell process to stop GIS Synch Process
+                        save object file with false parameter. 
+                        This stops the Windows service from running GIS synch process until instructed so by a client)
+25/03/2016 12:19:52: GIS synch process has completed successfully.
+                        Tell the GIS to Sharepoint client to start shipping erfs to SharePoint)
+25/03/2016 12:19:52: Timer ticked and executePythonCode()  method or 
+                        job has successfully completed(But with a pinch of salt-There could be errors)
+25/03/2016 14:24:42: Timer ticked and executePythonCode()  method or 
+                        job has been done fired
+25/03/2016 14:24:42: ConfigReader.writeSectionToLog(Dictionary<String, String> dictionary) : 
+
+Local authorities read from config file
+Town : helao_nafidiTown : katima_muliloTown : keetmanshoopTown : okahandjaTown : oshakatiTown : otjiwarongoTown : outapiTown : runduTown : tsumebTown : walvis_bay
+
+25/03/2016 14:24:52: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[441] - ---------------------------------Compute Stand No---------------------------------
+[442] - Start Time : -16-03-25_14-24-47
+[443] - ------------------------------------------------------------------
+[444] -  Local Authority : helao_nafidi
+[445] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\helao_nafidi\connection_files\gisadmin_helao_nafidi@helao_nafidi@localhost.sde
+[446] -  Reference Number/Stand No : hn_stand_no
+[447] -  Feature Class to compute stand number : helao_nafidi_Parcels
+[448] -  Object ID Field Name : OBJECTID
+[449] -  Local Authority ID Field Name : hn_local_authority_id
+[450] - Computation of Stand No's is complete
+[451] - Exited Computing Stand No In Spectacular Success 
+[452] - -------------Compute Stand No-----------------------------------------------------
+[453] - End Time : -16-03-25_14-24-51
+[454] - ------------------------------------------------------------------
+25/03/2016 14:25:10: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[455] - --------------------------------Auto Reconcile and Post----------------------------------
+[456] - Start Time : -16-03-25_14-24-56
+[457] - ------------------------------------------------------------------
+[458] -  Local Authority : helao_nafidi
+[459] - Exited with Spectacular Success 
+[460] - ------------------Auto Reconcile and Post------------------------------------------------
+[461] - End Time : -16-03-25_14-25-09
+[462] - ------------------------------------------------------------------
+25/03/2016 14:25:19: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[463] - ---------------------------------Compute Stand No---------------------------------
+[464] - Start Time : -16-03-25_14-25-14
+[465] - ------------------------------------------------------------------
+[466] -  Local Authority : katima_mulilo
+[467] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\katima_mulilo\connection_files\gisadmin_katima_mulilo@katima_mulilo@localhost.sde
+[468] -  Reference Number/Stand No : km_stand_no
+[469] -  Feature Class to compute stand number : katima_Parcels
+[470] -  Object ID Field Name : OBJECTID
+[471] -  Local Authority ID Field Name : km_local_authority_id
+[472] - Computation of Stand No's is complete
+[473] - Exited Computing Stand No In Spectacular Success 
+[474] - -------------Compute Stand No-----------------------------------------------------
+[475] - End Time : -16-03-25_14-25-18
+[476] - ------------------------------------------------------------------
+25/03/2016 14:25:53: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[477] - --------------------------------Auto Reconcile and Post----------------------------------
+[478] - Start Time : -16-03-25_14-25-23
+[479] - ------------------------------------------------------------------
+[480] -  Local Authority : katima_mulilo
+[481] - Exited with Spectacular Success 
+[482] - ------------------Auto Reconcile and Post------------------------------------------------
+[483] - End Time : -16-03-25_14-25-52
+[484] - ------------------------------------------------------------------
+25/03/2016 14:26:03: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[485] - ---------------------------------Compute Stand No---------------------------------
+[486] - Start Time : -16-03-25_14-25-57
+[487] - ------------------------------------------------------------------
+[488] -  Local Authority : keetmanshoop
+[489] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\keetmanshoop\connection_files\gisadmin_keetmanshoop@keetmanshoop@localhost.sde
+[490] -  Reference Number/Stand No : k_stand_no
+[491] -  Feature Class to compute stand number : keetmanshoop_Parcels
+[492] -  Object ID Field Name : OBJECTID
+[493] -  Local Authority ID Field Name : k_local_authority_id
+[494] - Computation of Stand No's is complete
+[495] - Exited Computing Stand No In Spectacular Success 
+[496] - -------------Compute Stand No-----------------------------------------------------
+[497] - End Time : -16-03-25_14-26-02
+[498] - ------------------------------------------------------------------
+25/03/2016 14:26:35: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[499] - --------------------------------Auto Reconcile and Post----------------------------------
+[500] - Start Time : -16-03-25_14-26-08
+[501] - ------------------------------------------------------------------
+[502] -  Local Authority : keetmanshoop
+[503] - Exited with Spectacular Success 
+[504] - ------------------Auto Reconcile and Post------------------------------------------------
+[505] - End Time : -16-03-25_14-26-34
+[506] - ------------------------------------------------------------------
+25/03/2016 14:26:45: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[507] - ---------------------------------Compute Stand No---------------------------------
+[508] - Start Time : -16-03-25_14-26-39
+[509] - ------------------------------------------------------------------
+[510] -  Local Authority : okahandja
+[511] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\okahandja\connection_files\gisadmin_okahandja@okahandja@localhost.sde
+[512] -  Reference Number/Stand No : oh_stand_no
+[513] -  Feature Class to compute stand number : okahandja_Parcels
+[514] -  Object ID Field Name : OBJECTID
+[515] -  Local Authority ID Field Name : oh_local_authority_id
+[516] - Computation of Stand No's is complete
+[517] - Exited Computing Stand No In Spectacular Success 
+[518] - -------------Compute Stand No-----------------------------------------------------
+[519] - End Time : -16-03-25_14-26-44
+[520] - ------------------------------------------------------------------
+25/03/2016 14:27:15: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[521] - --------------------------------Auto Reconcile and Post----------------------------------
+[522] - Start Time : -16-03-25_14-26-49
+[523] - ------------------------------------------------------------------
+[524] -  Local Authority : okahandja
+[525] - Exited with Spectacular Success 
+[526] - ------------------Auto Reconcile and Post------------------------------------------------
+[527] - End Time : -16-03-25_14-27-14
+[528] - ------------------------------------------------------------------
+25/03/2016 14:27:25: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[529] - ---------------------------------Compute Stand No---------------------------------
+[530] - Start Time : -16-03-25_14-27-19
+[531] - ------------------------------------------------------------------
+[532] -  Local Authority : oshakati
+[533] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\oshakati\connection_files\gisadmin_oshakati@oshakati@localhost.sde
+[534] -  Reference Number/Stand No : sh_stand_no
+[535] -  Feature Class to compute stand number : oshakati_Parcels
+[536] -  Object ID Field Name : OBJECTID
+[537] -  Local Authority ID Field Name : sh_local_authority_id
+[538] - Computation of Stand No's is complete
+[539] - Exited Computing Stand No In Spectacular Success 
+[540] - -------------Compute Stand No-----------------------------------------------------
+[541] - End Time : -16-03-25_14-27-24
+[542] - ------------------------------------------------------------------
+25/03/2016 14:27:48: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[543] - --------------------------------Auto Reconcile and Post----------------------------------
+[544] - Start Time : -16-03-25_14-27-29
+[545] - ------------------------------------------------------------------
+[546] -  Local Authority : oshakati
+[547] - Exited with Spectacular Success 
+[548] - ------------------Auto Reconcile and Post------------------------------------------------
+[549] - End Time : -16-03-25_14-27-47
+[550] - ------------------------------------------------------------------
+25/03/2016 14:27:58: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[551] - ---------------------------------Compute Stand No---------------------------------
+[552] - Start Time : -16-03-25_14-27-52
+[553] - ------------------------------------------------------------------
+[554] -  Local Authority : otjiwarongo
+[555] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\otjiwarongo\connection_files\gisadmin_otjiwarongo@otjiwarongo@localhost.sde
+[556] -  Reference Number/Stand No : ot_stand_no
+[557] -  Feature Class to compute stand number : otjiwarongo_Parcels
+[558] -  Object ID Field Name : OBJECTID
+[559] -  Local Authority ID Field Name : ot_local_authority_id
+[560] - Computation of Stand No's is complete
+[561] - Exited Computing Stand No In Spectacular Success 
+[562] - -------------Compute Stand No-----------------------------------------------------
+[563] - End Time : -16-03-25_14-27-58
+[564] - ------------------------------------------------------------------
+25/03/2016 14:28:41: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[565] - --------------------------------Auto Reconcile and Post----------------------------------
+[566] - Start Time : -16-03-25_14-28-03
+[567] - ------------------------------------------------------------------
+[568] -  Local Authority : otjiwarongo
+[569] - Exited with Spectacular Success 
+[570] - ------------------Auto Reconcile and Post------------------------------------------------
+[571] - End Time : -16-03-25_14-28-40
+[572] - ------------------------------------------------------------------
+25/03/2016 14:28:50: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[573] - ---------------------------------Compute Stand No---------------------------------
+[574] - Start Time : -16-03-25_14-28-45
+[575] - ------------------------------------------------------------------
+[576] -  Local Authority : outapi
+[577] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\outapi\connection_files\gisadmin_outapi@outapi@localhost.sde
+[578] -  Reference Number/Stand No : up_stand_no
+[579] -  Feature Class to compute stand number : outapi_Parcels
+[580] -  Object ID Field Name : OBJECTID
+[581] -  Local Authority ID Field Name : up_local_authority_id
+[582] - Computation of Stand No's is complete
+[583] - Exited Computing Stand No In Spectacular Success 
+[584] - -------------Compute Stand No-----------------------------------------------------
+[585] - End Time : -16-03-25_14-28-49
+[586] - ------------------------------------------------------------------
+25/03/2016 14:29:12: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[587] - --------------------------------Auto Reconcile and Post----------------------------------
+[588] - Start Time : -16-03-25_14-28-54
+[589] - ------------------------------------------------------------------
+[590] -  Local Authority : outapi
+[591] - Exited with Spectacular Success 
+[592] - ------------------Auto Reconcile and Post------------------------------------------------
+[593] - End Time : -16-03-25_14-29-10
+[594] - ------------------------------------------------------------------
+25/03/2016 14:29:22: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[595] - ---------------------------------Compute Stand No---------------------------------
+[596] - Start Time : -16-03-25_14-29-16
+[597] - ------------------------------------------------------------------
+[598] -  Local Authority : rundu
+[599] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\rundu\connection_files\gisadmin_rundu@rundu@localhost.sde
+[600] -  Reference Number/Stand No : ru_stand_no
+[601] -  Feature Class to compute stand number : rundu_Parcels
+[602] -  Object ID Field Name : OBJECTID
+[603] -  Local Authority ID Field Name : ru_local_authority_id
+[604] - Computation of Stand No's is complete
+[605] - Exited Computing Stand No In Spectacular Success 
+[606] - -------------Compute Stand No-----------------------------------------------------
+[607] - End Time : -16-03-25_14-29-21
+[608] - ------------------------------------------------------------------
+25/03/2016 14:31:01: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[609] - --------------------------------Auto Reconcile and Post----------------------------------
+[610] - Start Time : -16-03-25_14-29-26
+[611] - ------------------------------------------------------------------
+[612] -  Local Authority : rundu
+[613] - Exited with Spectacular Success 
+[614] - ------------------Auto Reconcile and Post------------------------------------------------
+[615] - End Time : -16-03-25_14-31-00
+[616] - ------------------------------------------------------------------
+25/03/2016 14:31:14: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[617] - ---------------------------------Compute Stand No---------------------------------
+[618] - Start Time : -16-03-25_14-31-06
+[619] - ------------------------------------------------------------------
+[620] -  Local Authority : tsumeb
+[621] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\tsumeb\connection_files\gisadmin_tsumeb@tsumeb@localhost.sde
+[622] -  Reference Number/Stand No : t_stand_no
+[623] -  Feature Class to compute stand number : tsumeb_Parcels
+[624] -  Object ID Field Name : OBJECTID
+[625] -  Local Authority ID Field Name : t_local_authority_id
+[626] - Computation of Stand No's is complete
+[627] - Exited Computing Stand No In Spectacular Success 
+[628] - -------------Compute Stand No-----------------------------------------------------
+[629] - End Time : -16-03-25_14-31-14
+[630] - ------------------------------------------------------------------
+25/03/2016 14:31:46: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[631] - --------------------------------Auto Reconcile and Post----------------------------------
+[632] - Start Time : -16-03-25_14-31-19
+[633] - ------------------------------------------------------------------
+[634] -  Local Authority : tsumeb
+[635] - Exited with Spectacular Success 
+[636] - ------------------Auto Reconcile and Post------------------------------------------------
+[637] - End Time : -16-03-25_14-31-45
+[638] - ------------------------------------------------------------------
+25/03/2016 14:32:01: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[639] - ---------------------------------Compute Stand No---------------------------------
+[640] - Start Time : -16-03-25_14-31-50
+[641] - ------------------------------------------------------------------
+[642] -  Local Authority : walvis_bay
+[643] -  Data owner(GIS Admin) connection file path : E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\walvis_bay\connection_files\gisadmin_walvis_bay@walvis_bay@localhost.sde
+[644] -  Reference Number/Stand No : wb_stand_no
+[645] -  Feature Class to compute stand number : walvis_bay_Parcels
+[646] -  Object ID Field Name : OBJECTID
+[647] -  Local Authority ID Field Name : wb_local_authority_id
+[648] - Computation of Stand No's is complete
+[649] - Exited Computing Stand No In Spectacular Success 
+[650] - -------------Compute Stand No-----------------------------------------------------
+[651] - End Time : -16-03-25_14-32-00
+[652] - ------------------------------------------------------------------
+25/03/2016 14:34:14: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[653] - --------------------------------Auto Reconcile and Post----------------------------------
+[654] - Start Time : -16-03-25_14-32-05
+[655] - ------------------------------------------------------------------
+[656] -  Local Authority : walvis_bay
+[657] - Exited with Spectacular Success 
+[658] - ------------------Auto Reconcile and Post------------------------------------------------
+[659] - End Time : -16-03-25_14-34-13
+[660] - ------------------------------------------------------------------
+25/03/2016 14:34:14: PythonLibrary.executePythonProcess() : 
+Execution of Job Name : temp_h_job has been fired/started.
+25/03/2016 14:34:25: 
+Job Name : temp_h_job is processing. Please wait for 5000 milliseconds
+25/03/2016 14:34:30: 
+Job Name : temp_h_job has successfully completed
+25/03/2016 14:34:31: 
+Job Name : temp_h_job has successfully completed
+25/03/2016 14:34:31: Tell the timer GIS synch process has stopped executing)
+25/03/2016 14:34:31: Tell process to stop GIS Synch Process
+                        save object file with false parameter. 
+                        This stops the Windows service from running GIS synch process until instructed so by a client)
+25/03/2016 14:34:31: GIS synch process has completed successfully.
+                        Tell the GIS to Sharepoint client to start shipping erfs to SharePoint)
+25/03/2016 14:34:31: Timer ticked and executePythonCode()  method or 
+                        job has successfully completed(But with a pinch of salt-There could be errors)
