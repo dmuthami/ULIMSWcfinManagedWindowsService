@@ -18,6 +18,33 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigLibrary", "ConfigLibrary\ConfigLibrary.csproj", "{521BA15B-D65E-439E-AF64-2988A20E1AE1}"
 EndProject
 Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.10.125:8080/tfs/projectservices
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ConfigLibrary\\ConfigLibrary.csproj
+		SccProjectName1 = ConfigLibrary
+		SccLocalPath1 = ConfigLibrary
+		SccProjectUniqueName2 = ULIMSGISPython\\ULIMSGISPython.csproj
+		SccProjectName2 = ULIMSGISPython
+		SccLocalPath2 = ULIMSGISPython
+		SccProjectUniqueName3 = ULIMSSerializer\\ULIMSSerializer.csproj
+		SccProjectName3 = ULIMSSerializer
+		SccLocalPath3 = ULIMSSerializer
+		SccProjectUniqueName4 = ULIMSWcfClient\\ULIMSWcfClient.csproj
+		SccProjectName4 = ULIMSWcfClient
+		SccLocalPath4 = ULIMSWcfClient
+		SccProjectUniqueName5 = ULIMSWcfinManagedWindowsService\\ULIMSWcfinManagedWindowsService.csproj
+		SccProjectName5 = ULIMSWcfinManagedWindowsService
+		SccLocalPath5 = ULIMSWcfinManagedWindowsService
+		SccProjectUniqueName6 = ULIMSWcfServiceLibrary\\ULIMSWcfServiceLibrary.csproj
+		SccProjectName6 = ULIMSWcfServiceLibrary
+		SccLocalPath6 = ULIMSWcfServiceLibrary
+		SccProjectUniqueName7 = Utility\\Utility.csproj
+		SccProjectName7 = Utility
+		SccLocalPath7 = Utility
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

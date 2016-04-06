@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace Utility.ulims.com.na
 {
+    /// <summary>
+    /// Class: Logger
+    /// Writes errors and messages to log file
+    /// </summary>
     public static class Logger
     {
         #region Member Variables
