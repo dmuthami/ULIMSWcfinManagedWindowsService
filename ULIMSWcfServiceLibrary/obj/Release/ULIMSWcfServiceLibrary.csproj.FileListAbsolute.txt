@@ -12,3 +12,17 @@ E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\obj\Release\ULIMSWcfServiceLibrary.csprojResolveAssemblyReference.cache
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\obj\Release\ULIMSWcfServiceLibrary.dll
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\obj\Release\ULIMSWcfServiceLibrary.pdb
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\ULIMSWcfServiceLibrary.dll.config
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\ULIMSWcfServiceLibrary.dll
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\ULIMSWcfServiceLibrary.pdb
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\ConfigLibrary.dll
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\ULIMSGISPython.dll
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\ULIMSSerializer.dll
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\Utility.dll
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\ConfigLibrary.pdb
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\ULIMSGISPython.pdb
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\ULIMSSerializer.pdb
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\bin\Release\Utility.pdb
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\obj\Release\ULIMSWcfServiceLibrary.csprojResolveAssemblyReference.cache
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\obj\Release\ULIMSWcfServiceLibrary.dll
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfServiceLibrary\obj\Release\ULIMSWcfServiceLibrary.pdb

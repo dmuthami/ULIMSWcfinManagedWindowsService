@@ -123,34 +123,6 @@ try:
     #Accept new connections to the database.
     arcpy.AcceptConnections(connSDE, True)
 
-
-    ##----------------------------------------------------------
-    ##-------------------------Call code to compute stand number
-    ##----------------------------------------------------------
-##    print "\n Data owner(GIS Admin) connection file path : "+connGISADMIN
-##    print "\n Reference Number/Stand No : "+Configurations.Configurations_standNo_fieldName
-##    print "\n Feature Class to compute stand number : "+Configurations.Configurations_featureClass
-##    print "\n Object ID Field Name : "+Configurations.Configurations_objectID_fieldName
-##    print "\n Local Authority ID Field Name : "+Configurations.Configurations_local_authority_id_fieldName
-
-    ##-----------Set workspace again to GIS admin so as to compute stand no
-    ##------------
-
-##    env.workspace = connGISADMIN
-
-    ## Call to compute stand no
-    ##------------------------
-##    Compute_Stand_No.mainMethod(connGISADMIN,\
-##    Configurations.Configurations_featureClass,
-##    Configurations.Configurations_objectID_fieldName,\
-##    Configurations.Configurations_standNo_fieldName,\
-##    Configurations.Configurations_local_authority_id_fieldName)
-
-    ##---- Re-set the workspace
-    ##------
-    env.workspace = connSDE
-    wrkspc = env.workspace #workspace variable
-
     ##---
     ##---Find Connected Users
     ##---
@@ -158,55 +130,11 @@ try:
     userList = arcpy.ListUsers(connSDE)
 
     ##---
-    ##---Pass the list of connected users
-    ##---
-
-        ##    # get a list of user names from the list of named tuples returned from ListUsers
-        ##    userNames = [u.Name for u in userList]
-        ##
-        ##    # take the userNames list and make email addresses by appending the appropriate suffix.
-        ##    emailList = [name +  '@company.com' for name in userNames]
-
-
-    ##---
-    ##---Generate and send an E-Mail
-    ##---
-
-        ##    import smtplib
-        ##    SERVER = "mailserver.yourcompany.com"
-        ##    FROM = "SDE Admin <python@yourcompany.com>"
-        ##    TO = emailList
-        ##    SUBJECT = "Maintenance is about to be performed"
-        ##    MSG = "Auto generated Message.\n\rServer maintenance will be performed in 15 minutes. Please log off."
-        ##
-        ##    # Prepare actual message
-        ##    MESSAGE = """\
-        ##    From: %s
-        ##    To: %s
-        ##    Subject: %s
-        ##
-        ##    %s
-        ##    """ % (FROM, ", ".join(TO), SUBJECT, MSG)
-        ##
-        ##    # Send the mail
-        ##    server = smtplib.SMTP(SERVER)
-        ##    server.sendmail(FROM, TO, MESSAGE)
-        ##    server.quit()
-
-    ##---
     ##---Block connections to the geodatabase
     ##---
 
     #Block new connections to the database.
     arcpy.AcceptConnections(connSDE, False)
-
-    ##---
-    ##---Pause the script for a minute
-    ##--- Time is in seconds boss
-    ##---
-    #import time
-    #time.sleep(10)#time is specified in seconds
-
 
     ##---
     ##---Disconnect users
@@ -264,11 +192,12 @@ try:
         dataList += arcpy.ListFeatureClasses(feature_dataset=dataset)
 
     # Execute rebuild indexes and analyze datasets
-    # Note: to use the "SYSTEM" option, the user must be an administrator.
+    ## Must be geodatabase administrator to gather statistics on
+    ## the states and state lineages tables (include_system option).
+    include_system = "SYSTEM"
+    arcpy.RebuildIndexes_management(connSDE, include_system, dataList, "ALL")
 
-    arcpy.RebuildIndexes_management(connSDE, "SYSTEM", dataList, "ALL")
-
-    arcpy.AnalyzeDatasets_management(connSDE, "SYSTEM", dataList, "ANALYZE_BASE", "ANALYZE_DELTA", "ANALYZE_ARCHIVE")
+    arcpy.AnalyzeDatasets_management(connSDE, include_system, dataList, "ANALYZE_BASE", "ANALYZE_DELTA", "ANALYZE_ARCHIVE")
 
     ###-------------------------------------------------------------
     ### Rebuild indices and update statistics for second data owner gisadmin user
@@ -276,11 +205,15 @@ try:
 
     #reset the workspace
     env.workspace = connGISADMIN
+    wrkspc = env.workspace #workspace variable
 
     # Get the user name for the workspace
     # this assumes you are using database authentication.
     # OS authentication connection files do not have a 'user' property.
     userName = arcpy.Describe(env.workspace).connectionProperties.user
+
+    #Re-initialize
+    dataList = None
 
     # Get a list of all the datasets the user has access to.
     # First, get all the stand alone tables, feature classes and rasters owned by the current user.
@@ -292,13 +225,12 @@ try:
         dataList += arcpy.ListFeatureClasses(feature_dataset=dataset)
 
 
-    # Execute rebuild indexes and analyze datasets
-    # Note: to use the "SYSTEM" option, the user must be an administrator.
-
+    # Execute rebuild indexes and analyze datasets as data owner
+    include_system = "NO_SYSTEM"
     try:
-        arcpy.RebuildIndexes_management(env.workspace, "NO_SYSTEM", dataList, "ALL")
+        arcpy.RebuildIndexes_management(wrkspc, include_system, dataList, "ALL")
         #Try the below as well
-        arcpy.AnalyzeDatasets_management(env.workspace, "NO_SYSTEM", dataList, "ANALYZE_BASE", "ANALYZE_DELTA", "ANALYZE_ARCHIVE")
+        arcpy.AnalyzeDatasets_management(wrkspc, include_system, dataList, "ANALYZE_BASE", "ANALYZE_DELTA", "ANALYZE_ARCHIVE")
 
     except:
         ## Return any Python specific errors and any error returned by the geoprocessor

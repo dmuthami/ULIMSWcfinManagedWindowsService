@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ULIMSWcfinManagedWindowsService", "ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService.csproj", "{733BE3D1-B69A-43F3-B90E-AB247E0F7A4C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ULIMSWcfClient", "ULIMSWcfClient\ULIMSWcfClient.csproj", "{DBF105C8-4CD1-49B4-8FA9-AE92061AB887}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9A61FE8F-B616-45C3-8346-8B3532B94652} = {9A61FE8F-B616-45C3-8346-8B3532B94652}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ULIMSSerializer", "ULIMSSerializer\ULIMSSerializer.csproj", "{2EF39110-C39B-4A9A-9F53-5F69D1559927}"
 EndProject

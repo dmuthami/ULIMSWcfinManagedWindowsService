@@ -9,3 +9,14 @@ E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Release
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\obj\Release\ULIMSGISPython.csprojResolveAssemblyReference.cache
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\obj\Release\ULIMSGISPython.dll
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSGISPython\obj\Release\ULIMSGISPython.pdb
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Release\ULIMSGISPython.dll
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Release\ULIMSGISPython.pdb
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Release\ConfigLibrary.dll
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Release\ULIMSSerializer.dll
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Release\Utility.dll
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Release\ConfigLibrary.pdb
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Release\ULIMSSerializer.pdb
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSGISPython\bin\Release\Utility.pdb
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSGISPython\obj\Release\ULIMSGISPython.csprojResolveAssemblyReference.cache
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSGISPython\obj\Release\ULIMSGISPython.dll
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSGISPython\obj\Release\ULIMSGISPython.pdb

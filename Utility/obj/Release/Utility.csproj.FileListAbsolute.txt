@@ -2,3 +2,7 @@ E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\Utility\bin\Release\Utilit
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\Utility\bin\Release\Utility.pdb
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\Utility\obj\Release\Utility.dll
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\Utility\obj\Release\Utility.pdb
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\Utility\bin\Release\Utility.dll
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\Utility\bin\Release\Utility.pdb
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\Utility\obj\Release\Utility.dll
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\Utility\obj\Release\Utility.pdb

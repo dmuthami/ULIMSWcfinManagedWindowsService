@@ -2,3 +2,7 @@ E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSSerializer\bin\Releas
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSSerializer\bin\Release\ULIMSSerializer.pdb
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSSerializer\obj\Release\ULIMSSerializer.dll
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSSerializer\obj\Release\ULIMSSerializer.pdb
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSSerializer\bin\Release\ULIMSSerializer.dll
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSSerializer\bin\Release\ULIMSSerializer.pdb
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSSerializer\obj\Release\ULIMSSerializer.dll
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSSerializer\obj\Release\ULIMSSerializer.pdb

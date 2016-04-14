@@ -5,3 +5,10 @@ E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ConfigLibrary\bin\Debug\Ut
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ConfigLibrary\obj\Debug\ConfigLibrary.csprojResolveAssemblyReference.cache
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ConfigLibrary\obj\Debug\ConfigLibrary.dll
 E:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ConfigLibrary\obj\Debug\ConfigLibrary.pdb
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ConfigLibrary\bin\Debug\ConfigLibrary.dll
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ConfigLibrary\bin\Debug\ConfigLibrary.pdb
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ConfigLibrary\bin\Debug\Utility.dll
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ConfigLibrary\bin\Debug\Utility.pdb
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ConfigLibrary\obj\Debug\ConfigLibrary.csprojResolveAssemblyReference.cache
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ConfigLibrary\obj\Debug\ConfigLibrary.dll
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ConfigLibrary\obj\Debug\ConfigLibrary.pdb
