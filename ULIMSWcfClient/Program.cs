@@ -27,6 +27,11 @@ namespace ULIMSWcfClient
         {
             try
             {
+                if (ULIMSWcfClient.SingleApplication.Run() == false)
+                {
+                	return;
+                }
+
                 //Create instance of this class
                 Program program = new Program();
 
@@ -41,8 +46,6 @@ namespace ULIMSWcfClient
                 //SQLJob2 sQLJob2 = new SQLJob2();
                 //sQLJob2.Execute();
                 //Console.ReadLine();
-
-
             }
             catch (Exception ex)
             {

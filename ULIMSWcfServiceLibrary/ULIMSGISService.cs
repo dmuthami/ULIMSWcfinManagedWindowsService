@@ -13,7 +13,9 @@ using ConfigLibrary;
 
 namespace wcf.ulims.com.na
 {
-    
+    /// <summary>
+    /// Implementing class for the service contract
+    /// </summary>
     public class ULIMSGISService : IULIMSGISService
     {
 
