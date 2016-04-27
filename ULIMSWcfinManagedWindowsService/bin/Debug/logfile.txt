@@ -1,20 +1,124 @@
-14/04/2016 17:12:11: 
+27/04/2016 15:40:32: 
 Serialized Object File Path :E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\SavedULIMSObjects.bin
-14/04/2016 17:12:11: Executable Path :
+27/04/2016 15:40:32: Executable Path :
 E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\Utility.dll
-14/04/2016 17:12:11: Execute Root Directory
+27/04/2016 15:40:32: Execute Root Directory
 E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug
-14/04/2016 17:12:12: ULIMS GIS Synchonization Service started
-14/04/2016 17:15:12: Timer ticked and executePythonCode()  method or 
+27/04/2016 15:40:33: ULIMS GIS Synchonization Service started
+27/04/2016 16:16:54: 
+Serialized Object File Path :E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\SavedULIMSObjects.bin
+27/04/2016 16:16:54: Executable Path :
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\Utility.dll
+27/04/2016 16:16:54: Execute Root Directory
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug
+27/04/2016 16:16:54: ULIMS GIS Synchonization Service started
+27/04/2016 16:18:54: Timer ticked and executePythonCode()  method or 
                         job has been done fired
-14/04/2016 17:15:12: ConfigReader.writeSectionToLog(Dictionary<String, String> dictionary) : 
+27/04/2016 16:18:55: ConfigReader.writeSectionToLog(Dictionary<String, String> dictionary) : 
 
 Local authorities read from config file
 Town : helao_nafidiTown : katima_muliloTown : keetmanshoopTown : okahandjaTown : oshakatiTown : otjiwarongoTown : outapiTown : runduTown : tsumebTown : walvis_bay
 
-14/04/2016 17:16:04: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+27/04/2016 16:19:55: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[1] - ERROR: PYTHON ERRORS:
+[2] - Traceback Info:
+[3] -   File "E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\python_code\InvokeComputeStandNo.py", line 124, in <module>
+[4] -     arcpy.AcceptConnections(connSDE, True)
+[5] - Error Info:
+[6] -     <type 'exceptions.TypeError'>: Could not open SDE workspace.
+[7] - ERROR: Geoprocessing  Errors :
+[8] - ---------------------------------Compute Stand No---------------------------------
+[9] - Start Time : -16-04-27_16-19-30
+[10] - ------------------------------------------------------------------
+[11] -  Local Authority : helao_nafidi
+[12] - PYTHON ERRORS:
+[13] - Traceback Info:
+[14] -   File "E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\python_code\InvokeComputeStandNo.py", line 124, in <module>
+[15] -     arcpy.AcceptConnections(connSDE, True)
+[16] - Error Info:
+[17] -     <type 'exceptions.TypeError'>: Could not open SDE workspace.
+[18] - Geoprocessing  Errors :
+[19] - Failed 
+[20] - -------------------------------Compute Stand No-----------------------------------
+[21] - End Time : -16-04-27_16-19-54
+[22] - ------------------------------------------------------------------
+27/04/2016 16:20:17: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[23] - ERROR: PYTHON ERRORS:
+[24] - Traceback Info:
+[25] -   File "E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\python_code\AutoReconcileAndPost.py", line 124, in <module>
+[26] -     arcpy.AcceptConnections(connSDE, True)
+[27] - Error Info:
+[28] -     <type 'exceptions.TypeError'>: Could not open SDE workspace.
+[29] - ERROR: Geoprocessing  Errors :
+[30] - --------------------------------Auto Reconcile and Post----------------------------------
+[31] - Start Time : -16-04-27_16-20-00
+[32] - ------------------------------------------------------------------
+[33] -  Local Authority : helao_nafidi
+[34] - PYTHON ERRORS:
+[35] - Traceback Info:
+[36] -   File "E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\python_code\AutoReconcileAndPost.py", line 124, in <module>
+[37] -     arcpy.AcceptConnections(connSDE, True)
+[38] - Error Info:
+[39] -     <type 'exceptions.TypeError'>: Could not open SDE workspace.
+[40] - Geoprocessing  Errors :
+[41] - Failed 
+[42] - ----------------Auto Reconcile and Post--------------------------------------------------
+[43] - End Time : -16-04-27_16-20-17
+[44] - ------------------------------------------------------------------
+27/04/2016 16:20:39: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+[45] - ERROR: PYTHON ERRORS:
+[46] - Traceback Info:
+[47] -   File "E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\python_code\InvokeComputeStandNo.py", line 124, in <module>
+[48] -     arcpy.AcceptConnections(connSDE, True)
+[49] - Error Info:
+[50] -     <type 'exceptions.TypeError'>: Could not open SDE workspace.
+[51] - ERROR: Geoprocessing  Errors :
+[52] - ---------------------------------Compute Stand No---------------------------------
+[53] - Start Time : -16-04-27_16-20-22
+[54] - ------------------------------------------------------------------
+[55] -  Local Authority : katima_mulilo
+[56] - PYTHON ERRORS:
+[57] - Traceback Info:
+[58] -   File "E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\python_code\InvokeComputeStandNo.py", line 124, in <module>
+[59] -     arcpy.AcceptConnections(connSDE, True)
+[60] - Error Info:
+[61] -     <type 'exceptions.TypeError'>: Could not open SDE workspace.
+[62] - Geoprocessing  Errors :
+[63] - Failed 
+[64] - -------------------------------Compute Stand No-----------------------------------
+[65] - End Time : -16-04-27_16-20-39
+[66] - ------------------------------------------------------------------
+27/04/2016 16:21:01: 
+Serialized Object File Path :E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\SavedULIMSObjects.bin
+27/04/2016 16:21:01: Executable Path :
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\Utility.dll
+27/04/2016 16:21:01: Execute Root Directory
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug
+27/04/2016 16:21:02: ULIMS GIS Synchonization Service started
+27/04/2016 16:23:32: 
+Serialized Object File Path :E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\SavedULIMSObjects.bin
+27/04/2016 16:23:32: Executable Path :
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\Utility.dll
+27/04/2016 16:23:32: Execute Root Directory
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug
+27/04/2016 16:23:33: ULIMS GIS Synchonization Service started
+27/04/2016 16:31:55: 
+Serialized Object File Path :E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\SavedULIMSObjects.bin
+27/04/2016 16:31:55: Executable Path :
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\Utility.dll
+27/04/2016 16:31:55: Execute Root Directory
+E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug
+27/04/2016 16:31:56: ULIMS GIS Synchonization Service started
+27/04/2016 16:35:56: Timer ticked and executePythonCode()  method or 
+                        job has been done fired
+27/04/2016 16:35:56: ConfigReader.writeSectionToLog(Dictionary<String, String> dictionary) : 
+
+Local authorities read from config file
+Town : helao_nafidiTown : katima_muliloTown : keetmanshoopTown : okahandjaTown : oshakatiTown : otjiwarongoTown : outapiTown : runduTown : tsumebTown : walvis_bay
+
+27/04/2016 16:36:14: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
 [1] - ---------------------------------Compute Stand No---------------------------------
-[2] - Start Time : -16-04-14_17-15-44
+[2] - Start Time : -16-04-27_16-36-00
 [3] - ------------------------------------------------------------------
 [4] -  Local Authority : helao_nafidi
 [5] -  Data owner(GIS Admin) connection file path : E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\helao_nafidi\connection_files\gisadmin_helao_nafidi@helao_nafidi@localhost.sde
@@ -25,20 +129,20 @@ Town : helao_nafidiTown : katima_muliloTown : keetmanshoopTown : okahandjaTown :
 [10] - Computation of Stand No's is complete
 [11] - Exited Computing Stand No In Spectacular Success 
 [12] - -------------Compute Stand No-----------------------------------------------------
-[13] - End Time : -16-04-14_17-16-03
+[13] - End Time : -16-04-27_16-36-13
 [14] - ------------------------------------------------------------------
-14/04/2016 17:16:33: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+27/04/2016 16:36:40: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
 [15] - --------------------------------Auto Reconcile and Post----------------------------------
-[16] - Start Time : -16-04-14_17-16-11
+[16] - Start Time : -16-04-27_16-36-18
 [17] - ------------------------------------------------------------------
 [18] -  Local Authority : helao_nafidi
 [19] - Exited with Spectacular Success 
 [20] - ------------------Auto Reconcile and Post------------------------------------------------
-[21] - End Time : -16-04-14_17-16-32
+[21] - End Time : -16-04-27_16-36-39
 [22] - ------------------------------------------------------------------
-14/04/2016 17:16:47: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+27/04/2016 16:36:53: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
 [23] - ---------------------------------Compute Stand No---------------------------------
-[24] - Start Time : -16-04-14_17-16-39
+[24] - Start Time : -16-04-27_16-36-45
 [25] - ------------------------------------------------------------------
 [26] -  Local Authority : katima_mulilo
 [27] -  Data owner(GIS Admin) connection file path : E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\katima_mulilo\connection_files\gisadmin_katima_mulilo@katima_mulilo@localhost.sde
@@ -49,20 +153,20 @@ Town : helao_nafidiTown : katima_muliloTown : keetmanshoopTown : okahandjaTown :
 [32] - Computation of Stand No's is complete
 [33] - Exited Computing Stand No In Spectacular Success 
 [34] - -------------Compute Stand No-----------------------------------------------------
-[35] - End Time : -16-04-14_17-16-46
+[35] - End Time : -16-04-27_16-36-52
 [36] - ------------------------------------------------------------------
-14/04/2016 17:17:22: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+27/04/2016 16:37:25: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
 [37] - --------------------------------Auto Reconcile and Post----------------------------------
-[38] - Start Time : -16-04-14_17-16-53
+[38] - Start Time : -16-04-27_16-36-57
 [39] - ------------------------------------------------------------------
 [40] -  Local Authority : katima_mulilo
 [41] - Exited with Spectacular Success 
 [42] - ------------------Auto Reconcile and Post------------------------------------------------
-[43] - End Time : -16-04-14_17-17-21
+[43] - End Time : -16-04-27_16-37-24
 [44] - ------------------------------------------------------------------
-14/04/2016 17:17:36: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+27/04/2016 16:37:38: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
 [45] - ---------------------------------Compute Stand No---------------------------------
-[46] - Start Time : -16-04-14_17-17-28
+[46] - Start Time : -16-04-27_16-37-30
 [47] - ------------------------------------------------------------------
 [48] -  Local Authority : keetmanshoop
 [49] -  Data owner(GIS Admin) connection file path : E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\keetmanshoop\connection_files\gisadmin_keetmanshoop@keetmanshoop@localhost.sde
@@ -73,20 +177,20 @@ Town : helao_nafidiTown : katima_muliloTown : keetmanshoopTown : okahandjaTown :
 [54] - Computation of Stand No's is complete
 [55] - Exited Computing Stand No In Spectacular Success 
 [56] - -------------Compute Stand No-----------------------------------------------------
-[57] - End Time : -16-04-14_17-17-36
+[57] - End Time : -16-04-27_16-37-38
 [58] - ------------------------------------------------------------------
-14/04/2016 17:18:09: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+27/04/2016 16:38:10: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
 [59] - --------------------------------Auto Reconcile and Post----------------------------------
-[60] - Start Time : -16-04-14_17-17-42
+[60] - Start Time : -16-04-27_16-37-43
 [61] - ------------------------------------------------------------------
 [62] -  Local Authority : keetmanshoop
 [63] - Exited with Spectacular Success 
 [64] - ------------------Auto Reconcile and Post------------------------------------------------
-[65] - End Time : -16-04-14_17-18-08
+[65] - End Time : -16-04-27_16-38-09
 [66] - ------------------------------------------------------------------
-14/04/2016 17:18:22: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+27/04/2016 16:38:23: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
 [67] - ---------------------------------Compute Stand No---------------------------------
-[68] - Start Time : -16-04-14_17-18-14
+[68] - Start Time : -16-04-27_16-38-14
 [69] - ------------------------------------------------------------------
 [70] -  Local Authority : okahandja
 [71] -  Data owner(GIS Admin) connection file path : E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\okahandja\connection_files\gisadmin_okahandja@okahandja@localhost.sde
@@ -97,20 +201,20 @@ Town : helao_nafidiTown : katima_muliloTown : keetmanshoopTown : okahandjaTown :
 [76] - Computation of Stand No's is complete
 [77] - Exited Computing Stand No In Spectacular Success 
 [78] - -------------Compute Stand No-----------------------------------------------------
-[79] - End Time : -16-04-14_17-18-21
+[79] - End Time : -16-04-27_16-38-22
 [80] - ------------------------------------------------------------------
-14/04/2016 17:18:54: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+27/04/2016 16:38:54: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
 [81] - --------------------------------Auto Reconcile and Post----------------------------------
-[82] - Start Time : -16-04-14_17-18-27
+[82] - Start Time : -16-04-27_16-38-28
 [83] - ------------------------------------------------------------------
 [84] -  Local Authority : okahandja
 [85] - Exited with Spectacular Success 
 [86] - ------------------Auto Reconcile and Post------------------------------------------------
-[87] - End Time : -16-04-14_17-18-53
+[87] - End Time : -16-04-27_16-38-53
 [88] - ------------------------------------------------------------------
-14/04/2016 17:19:06: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+27/04/2016 16:39:06: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
 [89] - ---------------------------------Compute Stand No---------------------------------
-[90] - Start Time : -16-04-14_17-18-59
+[90] - Start Time : -16-04-27_16-38-59
 [91] - ------------------------------------------------------------------
 [92] -  Local Authority : oshakati
 [93] -  Data owner(GIS Admin) connection file path : E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\oshakati\connection_files\gisadmin_oshakati@oshakati@localhost.sde
@@ -121,20 +225,20 @@ Town : helao_nafidiTown : katima_muliloTown : keetmanshoopTown : okahandjaTown :
 [98] - Computation of Stand No's is complete
 [99] - Exited Computing Stand No In Spectacular Success 
 [100] - -------------Compute Stand No-----------------------------------------------------
-[101] - End Time : -16-04-14_17-19-05
+[101] - End Time : -16-04-27_16-39-05
 [102] - ------------------------------------------------------------------
-14/04/2016 17:19:30: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+27/04/2016 16:39:28: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
 [103] - --------------------------------Auto Reconcile and Post----------------------------------
-[104] - Start Time : -16-04-14_17-19-12
+[104] - Start Time : -16-04-27_16-39-10
 [105] - ------------------------------------------------------------------
 [106] -  Local Authority : oshakati
 [107] - Exited with Spectacular Success 
 [108] - ------------------Auto Reconcile and Post------------------------------------------------
-[109] - End Time : -16-04-14_17-19-29
+[109] - End Time : -16-04-27_16-39-27
 [110] - ------------------------------------------------------------------
-14/04/2016 17:19:47: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+27/04/2016 16:39:43: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
 [111] - ---------------------------------Compute Stand No---------------------------------
-[112] - Start Time : -16-04-14_17-19-36
+[112] - Start Time : -16-04-27_16-39-33
 [113] - ------------------------------------------------------------------
 [114] -  Local Authority : otjiwarongo
 [115] -  Data owner(GIS Admin) connection file path : E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\otjiwarongo\connection_files\gisadmin_otjiwarongo@otjiwarongo@localhost.sde
@@ -145,20 +249,20 @@ Town : helao_nafidiTown : katima_muliloTown : keetmanshoopTown : okahandjaTown :
 [120] - Computation of Stand No's is complete
 [121] - Exited Computing Stand No In Spectacular Success 
 [122] - -------------Compute Stand No-----------------------------------------------------
-[123] - End Time : -16-04-14_17-19-46
+[123] - End Time : -16-04-27_16-39-42
 [124] - ------------------------------------------------------------------
-14/04/2016 17:20:29: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+27/04/2016 16:40:24: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
 [125] - --------------------------------Auto Reconcile and Post----------------------------------
-[126] - Start Time : -16-04-14_17-19-52
+[126] - Start Time : -16-04-27_16-39-48
 [127] - ------------------------------------------------------------------
 [128] -  Local Authority : otjiwarongo
 [129] - Exited with Spectacular Success 
 [130] - ------------------Auto Reconcile and Post------------------------------------------------
-[131] - End Time : -16-04-14_17-20-28
+[131] - End Time : -16-04-27_16-40-23
 [132] - ------------------------------------------------------------------
-14/04/2016 17:20:41: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+27/04/2016 16:40:36: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
 [133] - ---------------------------------Compute Stand No---------------------------------
-[134] - Start Time : -16-04-14_17-20-34
+[134] - Start Time : -16-04-27_16-40-28
 [135] - ------------------------------------------------------------------
 [136] -  Local Authority : outapi
 [137] -  Data owner(GIS Admin) connection file path : E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\outapi\connection_files\gisadmin_outapi@outapi@localhost.sde
@@ -169,20 +273,20 @@ Town : helao_nafidiTown : katima_muliloTown : keetmanshoopTown : okahandjaTown :
 [142] - Computation of Stand No's is complete
 [143] - Exited Computing Stand No In Spectacular Success 
 [144] - -------------Compute Stand No-----------------------------------------------------
-[145] - End Time : -16-04-14_17-20-41
+[145] - End Time : -16-04-27_16-40-35
 [146] - ------------------------------------------------------------------
-14/04/2016 17:21:05: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+27/04/2016 16:40:58: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
 [147] - --------------------------------Auto Reconcile and Post----------------------------------
-[148] - Start Time : -16-04-14_17-20-47
+[148] - Start Time : -16-04-27_16-40-40
 [149] - ------------------------------------------------------------------
 [150] -  Local Authority : outapi
 [151] - Exited with Spectacular Success 
 [152] - ------------------Auto Reconcile and Post------------------------------------------------
-[153] - End Time : -16-04-14_17-21-04
+[153] - End Time : -16-04-27_16-40-57
 [154] - ------------------------------------------------------------------
-14/04/2016 17:21:22: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+27/04/2016 16:41:15: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
 [155] - ---------------------------------Compute Stand No---------------------------------
-[156] - Start Time : -16-04-14_17-21-10
+[156] - Start Time : -16-04-27_16-41-03
 [157] - ------------------------------------------------------------------
 [158] -  Local Authority : rundu
 [159] -  Data owner(GIS Admin) connection file path : E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\rundu\connection_files\gisadmin_rundu@rundu@localhost.sde
@@ -193,20 +297,20 @@ Town : helao_nafidiTown : katima_muliloTown : keetmanshoopTown : okahandjaTown :
 [164] - Computation of Stand No's is complete
 [165] - Exited Computing Stand No In Spectacular Success 
 [166] - -------------Compute Stand No-----------------------------------------------------
-[167] - End Time : -16-04-14_17-21-21
+[167] - End Time : -16-04-27_16-41-14
 [168] - ------------------------------------------------------------------
-14/04/2016 17:23:04: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+27/04/2016 16:42:50: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
 [169] - --------------------------------Auto Reconcile and Post----------------------------------
-[170] - Start Time : -16-04-14_17-21-27
+[170] - Start Time : -16-04-27_16-41-20
 [171] - ------------------------------------------------------------------
 [172] -  Local Authority : rundu
 [173] - Exited with Spectacular Success 
 [174] - ------------------Auto Reconcile and Post------------------------------------------------
-[175] - End Time : -16-04-14_17-23-03
+[175] - End Time : -16-04-27_16-42-49
 [176] - ------------------------------------------------------------------
-14/04/2016 17:23:18: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+27/04/2016 16:43:03: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
 [177] - ---------------------------------Compute Stand No---------------------------------
-[178] - Start Time : -16-04-14_17-23-10
+[178] - Start Time : -16-04-27_16-42-55
 [179] - ------------------------------------------------------------------
 [180] -  Local Authority : tsumeb
 [181] -  Data owner(GIS Admin) connection file path : E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\tsumeb\connection_files\gisadmin_tsumeb@tsumeb@localhost.sde
@@ -217,20 +321,20 @@ Town : helao_nafidiTown : katima_muliloTown : keetmanshoopTown : okahandjaTown :
 [186] - Computation of Stand No's is complete
 [187] - Exited Computing Stand No In Spectacular Success 
 [188] - -------------Compute Stand No-----------------------------------------------------
-[189] - End Time : -16-04-14_17-23-17
+[189] - End Time : -16-04-27_16-43-02
 [190] - ------------------------------------------------------------------
-14/04/2016 17:23:47: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+27/04/2016 16:43:31: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
 [191] - --------------------------------Auto Reconcile and Post----------------------------------
-[192] - Start Time : -16-04-14_17-23-23
+[192] - Start Time : -16-04-27_16-43-07
 [193] - ------------------------------------------------------------------
 [194] -  Local Authority : tsumeb
 [195] - Exited with Spectacular Success 
 [196] - ------------------Auto Reconcile and Post------------------------------------------------
-[197] - End Time : -16-04-14_17-23-46
+[197] - End Time : -16-04-27_16-43-30
 [198] - ------------------------------------------------------------------
-14/04/2016 17:24:02: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+27/04/2016 16:43:45: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
 [199] - ---------------------------------Compute Stand No---------------------------------
-[200] - Start Time : -16-04-14_17-23-52
+[200] - Start Time : -16-04-27_16-43-36
 [201] - ------------------------------------------------------------------
 [202] -  Local Authority : walvis_bay
 [203] -  Data owner(GIS Admin) connection file path : E:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfinManagedWindowsService\bin\Debug\local_authorities\walvis_bay\connection_files\gisadmin_walvis_bay@walvis_bay@localhost.sde
@@ -241,30 +345,30 @@ Town : helao_nafidiTown : katima_muliloTown : keetmanshoopTown : okahandjaTown :
 [208] - Computation of Stand No's is complete
 [209] - Exited Computing Stand No In Spectacular Success 
 [210] - -------------Compute Stand No-----------------------------------------------------
-[211] - End Time : -16-04-14_17-24-01
+[211] - End Time : -16-04-27_16-43-45
 [212] - ------------------------------------------------------------------
-14/04/2016 17:25:50: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
+27/04/2016 16:45:37: PythonLibrary.executePythonProcessPerTown(String townName, String pythonFileToExecute) : 
 [213] - --------------------------------Auto Reconcile and Post----------------------------------
-[214] - Start Time : -16-04-14_17-24-08
+[214] - Start Time : -16-04-27_16-43-50
 [215] - ------------------------------------------------------------------
 [216] -  Local Authority : walvis_bay
 [217] - Exited with Spectacular Success 
 [218] - ------------------Auto Reconcile and Post------------------------------------------------
-[219] - End Time : -16-04-14_17-25-49
+[219] - End Time : -16-04-27_16-45-36
 [220] - ------------------------------------------------------------------
-14/04/2016 17:25:51: PythonLibrary.executePythonProcess() : 
+27/04/2016 16:45:37: PythonLibrary.executePythonProcess() : 
 Execution of Job Name : temp_h_job has been fired/started.
-14/04/2016 17:25:57: 
+27/04/2016 16:45:44: 
 Job Name : temp_h_job is processing. Please wait for 5000 milliseconds
-14/04/2016 17:26:02: 
+27/04/2016 16:45:49: 
 Job Name : temp_h_job has successfully completed
-14/04/2016 17:26:02: 
+27/04/2016 16:45:49: 
 Job Name : temp_h_job has successfully completed
-14/04/2016 17:26:02: Tell the timer GIS synch process has stopped executing)
-14/04/2016 17:26:02: Tell process to stop GIS Synch Process
+27/04/2016 16:45:49: Tell the timer GIS synch process has stopped executing)
+27/04/2016 16:45:49: Tell process to stop GIS Synch Process
                         save object file with false parameter. 
                         This stops the Windows service from running GIS synch process until instructed so by a client)
-14/04/2016 17:26:02: GIS synch process has completed successfully.
+27/04/2016 16:45:49: GIS synch process has completed successfully.
                         Tell the GIS to Sharepoint client to start shipping erfs to SharePoint)
-14/04/2016 17:26:02: Timer ticked and executePythonCode()  method or 
+27/04/2016 16:45:49: Timer ticked and executePythonCode()  method or 
                         job has successfully completed(But with a pinch of salt-There could be errors)

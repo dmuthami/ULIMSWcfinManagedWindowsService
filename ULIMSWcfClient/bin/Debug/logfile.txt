@@ -48,3 +48,23 @@ Exception rethrown at [0]:
    --- End of inner exception stack trace ---
    at ULIMSWcfClient.Program.GISSynchProcess() in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 107
    at ULIMSWcfClient.Program.Main(String[] args) in e:\Programming\Dotnet\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 34
+27/04/2016 16:21:35: Program.Main(string[] args)System.Exception: Program.GISSynchProcess() :  ---> System.ServiceModel.Security.MessageSecurityException: An unsecured or incorrectly secured fault was received from the other party. See the inner FaultException for the fault code and detail. ---> System.ServiceModel.FaultException: The message could not be processed. This is most likely because the action 'http://wcf.ulims.com.na/IULIMSGISService/isSuccessGISSyncProcess' is incorrect or because the message contains an invalid or expired security context token or because there is a mismatch between bindings. The security context token would be invalid if the service aborted the channel due to inactivity. To prevent the service from aborting idle sessions prematurely increase the Receive timeout on the service endpoint's binding.
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Security.SecuritySessionClientSettings`1.SecurityRequestSessionChannel.ProcessReply(Message reply, TimeSpan timeout, SecurityProtocolCorrelationState correlationState)
+   at System.ServiceModel.Security.SecuritySessionClientSettings`1.SecurityRequestSessionChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at ULIMSWcfClient.ULIMSGISServiceRef.IULIMSGISService.isSuccessGISSyncProcess()
+   at ULIMSWcfClient.ULIMSGISServiceRef.ULIMSGISServiceClient.isSuccessGISSyncProcess() in e:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Service References\ULIMSGISServiceRef\Reference.cs:line 67
+   at ULIMSWcfClient.Program.GISSynchProcess() in e:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 85
+   --- End of inner exception stack trace ---
+   at ULIMSWcfClient.Program.GISSynchProcess() in e:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 107
+   at ULIMSWcfClient.Program.Main(String[] args) in e:\Projects\ULIMS\CODE\ULIMSWcfinManagedWindowsService\ULIMSWcfClient\Program.cs:line 34
